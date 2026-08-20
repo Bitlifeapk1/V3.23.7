@@ -27,6 +27,7 @@ class CavaApp {
     };
 
     this.init();
+    window.cavaAppInstance = this;
   }
 
   init() {
@@ -37,6 +38,9 @@ class CavaApp {
     this.renderBuilderStepNav();
     this.renderBuilderStep();
     this.updateBuilderSummary();
+    this.renderCalorieRankings();
+    this.renderAllergenTable();
+    this.renderFaqs();
     this.renderCart();
     this.updateHeaderBadge();
     this.renderLocationsList();
@@ -67,6 +71,10 @@ class CavaApp {
   setupEventListeners() {
     // Theme toggle
     document.getElementById('themeToggleBtn')?.addEventListener('click', () => this.toggleTheme());
+
+    // Print Buttons
+    document.getElementById('btnTopPrint')?.addEventListener('click', () => window.print());
+    document.getElementById('btnHeroPrint')?.addEventListener('click', () => window.print());
 
     // Brand logo scroll to top
     document.getElementById('brandLogoBtn')?.addEventListener('click', () => {
@@ -258,7 +266,9 @@ class CavaApp {
       return `
         <article class="menu-card" data-id="${item.id}">
           <div class="card-image-wrap">
-            <img src="${item.image}" alt="${item.name}" loading="lazy">
+            <div class="card-visual-placeholder">
+              <span class="card-emoji-visual">${item.icon || '🥗'}</span>
+            </div>
             ${item.badge ? `<span class="card-badge">${item.badge}</span>` : ''}
             <button class="favorite-btn ${isFav ? 'active' : ''}" data-fav-id="${item.id}" title="Add to Favorites" aria-label="Favorite ${item.name}">
               ${isFav ? '❤️' : '🤍'}
@@ -270,12 +280,21 @@ class CavaApp {
             <p class="card-description">${item.description}</p>
             
             <div class="card-meta">
-              <span>🔥 ${item.calories} cal</span>
+              <span>🔥 ${item.calorieRange || (item.calories + ' cal')}</span>
               <span>💪 ${item.protein} protein</span>
             </div>
 
+            ${item.allergens && item.allergens.length > 0 ? `
+              <div style="font-size: 0.76rem; color: var(--text-subtle); margin-top: 0.4rem;">
+                ⚠️ Contains: ${item.allergens.join(', ')}
+              </div>
+            ` : ''}
+
             <div class="card-footer">
-              <span class="card-price">$${item.price.toFixed(2)}</span>
+              <div>
+                <span class="card-price">$${item.price.toFixed(2)}</span>
+                <span style="display: block; font-size: 0.75rem; color: var(--text-muted);">${item.priceRange || ''}</span>
+              </div>
               <div class="card-btn-group">
                 <button class="btn-card-quickview" data-quickview-id="${item.id}">Nutrition</button>
                 <button class="btn-card-add" data-add-id="${item.id}">
@@ -788,23 +807,29 @@ class CavaApp {
   // ========================================================================
   // Quick View / Nutrition Modal
   // ========================================================================
-  openQuickView(item) {
+  openQuickView(itemOrId) {
+    const item = typeof itemOrId === 'string'
+      ? MENU_DATA.items.find(i => i.id === itemOrId)
+      : itemOrId;
     const modal = document.getElementById('quickViewModal');
     const content = document.getElementById('quickViewContent');
-    if (!modal || !content) return;
+    if (!modal || !content || !item) return;
 
     content.innerHTML = `
-      <img src="${item.image}" alt="${item.name}" class="quickview-img">
-      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+      <div style="text-align: center; padding: 1.75rem 0 1rem; background: linear-gradient(180deg, var(--bg-subtle), var(--bg-card)); border-radius: var(--radius-md); margin-bottom: 1.25rem;">
+        <span style="font-size: 4.5rem; display: block; filter: drop-shadow(0 8px 12px rgba(0,0,0,0.1));">${item.icon || '🥗'}</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem;">
         <h2 class="quickview-title">${item.name}</h2>
         <span style="font-size: 1.5rem; font-weight: 800; color: var(--primary); font-family: var(--font-heading);">$${item.price.toFixed(2)}</span>
       </div>
+      <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">Price range: <strong>${item.priceRange || ('$' + item.price.toFixed(2))}</strong> (2026 Location Avg)</div>
       <p class="quickview-desc">${item.description}</p>
 
       <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.65rem;">Nutritional Breakdown (Per Serving)</h4>
       <div class="macro-chart">
         <div>
-          <div style="font-size: 1.35rem; font-weight: 800; color: var(--primary); font-family: var(--font-heading);">${item.calories}</div>
+          <div style="font-size: 1.35rem; font-weight: 800; color: var(--primary); font-family: var(--font-heading);">${item.calorieRange || item.calories}</div>
           <div style="font-size: 0.72rem; text-transform: uppercase; color: var(--text-muted); font-weight: 600;">Calories</div>
         </div>
         <div>
@@ -821,7 +846,7 @@ class CavaApp {
         </div>
       </div>
 
-      <div style="margin-bottom: 1.5rem;">
+      <div style="margin-bottom: 1.25rem;">
         <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.35rem;">Fresh Scratch Ingredients:</h4>
         <p style="font-size: 0.88rem; color: var(--text-muted);">${item.ingredients.join(', ')}</p>
       </div>
@@ -846,6 +871,74 @@ class CavaApp {
     });
 
     this.openModal('quickViewModal');
+  }
+
+  // ========================================================================
+  // Calorie Rankings Table Renderer
+  // ========================================================================
+  renderCalorieRankings() {
+    const tbody = document.getElementById('calorieRankingsBody');
+    if (!tbody || !MENU_DATA.calorieRankings) return;
+    tbody.innerHTML = MENU_DATA.calorieRankings.map(item => `
+      <tr>
+        <td><strong>#${item.rank}</strong></td>
+        <td><strong>${item.name}</strong></td>
+        <td><span class="price-pill" style="background: var(--bg-subtle); color: var(--text-main); font-weight: 700;">${item.calories}</span></td>
+        <td><strong style="color: #10b981;">${item.protein}</strong></td>
+        <td>${item.carbs}</td>
+        <td>${item.fat}</td>
+        <td><span class="culinary-tag">${item.category}</span></td>
+        <td style="font-size: 0.85rem; color: var(--text-muted);">${item.note}</td>
+      </tr>
+    `).join('');
+  }
+
+  // ========================================================================
+  // Allergen Matrix Table Renderer
+  // ========================================================================
+  renderAllergenTable() {
+    const tbody = document.getElementById('allergenTableBody');
+    if (!tbody || !MENU_DATA.allergensTable) return;
+    tbody.innerHTML = MENU_DATA.allergensTable.map(row => `
+      <tr>
+        <td><strong>${row.item}</strong></td>
+        <td>${row.dairy ? '⚠️ Yes (Milk)' : '—'}</td>
+        <td>${row.sesame ? '⚠️ Yes (Tahini)' : '—'}</td>
+        <td>${row.wheat ? '⚠️ Yes (Wheat)' : '—'}</td>
+        <td>${row.fish ? '⚠️ Yes (Salmon)' : '—'}</td>
+        <td><span class="price-pill" style="background: rgba(239, 68, 68, 0.1); color: #dc2626;">${row.allergens}</span></td>
+      </tr>
+    `).join('');
+  }
+
+  // ========================================================================
+  // Interactive FAQ Accordion Renderer
+  // ========================================================================
+  renderFaqs() {
+    const container = document.getElementById('faqAccordion');
+    if (!container || !MENU_DATA.faqs) return;
+    container.innerHTML = MENU_DATA.faqs.map((faq, index) => `
+      <div class="faq-item ${index === 0 ? 'active' : ''}">
+        <button class="faq-question" type="button">
+          <span>${faq.q}</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>${faq.a.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}</p>
+        </div>
+      </div>
+    `).join('');
+
+    container.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isActive = item.classList.contains('active');
+        container.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    });
   }
 
   // ========================================================================
