@@ -56,13 +56,6 @@ You can also open `index.html` directly in any modern web browser.
 
 ```
 Cava menu/
-├── images/                  # High-resolution generated Mediterranean culinary photography
-│   ├── hero_bowl.jpg
-│   ├── harissa_avocado.jpg
-│   ├── tahini_caesar.jpg
-│   ├── pita_falafel.jpg
-│   ├── dips_spreads.jpg
-│   └── drinks_beverages.jpg
 ├── js/
 │   ├── data.js              # Full menu items, builder steps, allergens, macros, locations
 │   └── app.js               # Application state, builder logic, search/filters, cart drawer, modals
