@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAVA | Mediterranean Bowls, Pitas & Custom Fresh Cuisine</title>
+  <meta name="description" content="Explore bold, authentic Mediterranean flavors with CAVA. Build your custom grain bowls, chef-curated salads, warm pitas, signature Crazy Feta®, and scratch-made dips.">
+  
+  <!-- Favicon / Brand Emoji -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥗</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Outfit, Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Header Navigation
+       ======================================================================== -->
+  <header class="header">
+    <div class="container header-content">
+      <div class="brand-logo" id="brandLogoBtn" title="CAVA Mediterranean">
+        <div class="brand-icon">C</div>
+        <div class="brand-text">
+          <span class="brand-title">CAVA</span>
+          <span class="brand-subtitle">Mediterranean</span>
+        </div>
+      </div>
+
+      <!-- Location Indicator -->
+      <button class="location-btn" id="openLocationModalBtn" aria-label="Select Store Location">
+        <span class="location-dot"></span>
+        <span class="loc-name" id="selectedLocationName">Downtown Metropolis</span>
+        <span style="font-size: 0.75rem; color: var(--text-subtle);">▼</span>
+      </button>
+
+      <!-- Actions -->
+      <div class="header-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
+          🌓
+        </button>
+
+        <button class="bag-btn" id="openCartDrawerBtn" aria-label="Open Order Bag">
+          <span>🛍️ Bag</span>
+          <span class="bag-count" id="headerBagCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Hero Section
+       ======================================================================== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>🔥</span> Mediterranean Fresh & Bold Flavors
+        </div>
+        <h1 class="hero-title">
+          Custom Bowls, Warm Pitas & <span>Scratch-Made Dips</span>
+        </h1>
+        <p class="hero-desc">
+          Craft your culinary journey with wholesome grains, flame-seared proteins, signature Crazy Feta®, and 30+ sun-drenched ingredients prepared from scratch daily.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#builder-studio" class="btn-primary">
+            <span>✨</span> Build Custom Bowl
+          </a>
+          <a href="#menu-explorer" class="btn-secondary">
+            <span>📖</span> Explore Menu
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-val">30+</span>
+            <span class="stat-label">Fresh Ingredients</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-val">100%</span>
+            <span class="stat-label">Scratch-Made Daily</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-val">4.9 ★</span>
+            <span class="stat-label">Over 50k+ Reviews</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <div class="hero-image-wrapper">
+          <img src="images/hero_bowl.jpg" alt="CAVA Signature Mediterranean Grain Bowl" id="heroMainImg">
+        </div>
+        
+        <div class="floating-badge badge-top">
+          <span class="floating-badge-icon">🥑</span>
+          <div>
+            <div class="floating-badge-title">Harissa Avocado</div>
+            <div class="floating-badge-subtitle">Chef's #1 Trending</div>
+          </div>
+        </div>
+
+        <div class="floating-badge badge-bottom">
+          <span class="floating-badge-icon">🧀</span>
+          <div>
+            <div class="floating-badge-title">Crazy Feta®</div>
+            <div class="floating-badge-subtitle">Infused with Jalapeños</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Build Your Own Bowl Studio (Interactive Step Configurator)
+       ======================================================================== -->
+  <section class="studio-section" id="builder-studio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Interactive Bowl Studio</span>
+        <h2 class="section-title">Build Your Own Masterpiece</h2>
+        <p class="section-subtitle">Customize every layer of your Mediterranean bowl with live nutrition, protein tracking, and real-time macros.</p>
+      </div>
+
+      <div class="builder-layout">
+        <!-- Step Navigation & Options -->
+        <div class="builder-controls-panel">
+          <div class="builder-steps-nav" id="builderStepsNav">
+            <!-- Rendered by JS -->
+          </div>
+
+          <div class="step-pane-header">
+            <h3 class="step-pane-title" id="currentStepTitle">Step 1: Choose Your Base</h3>
+            <span class="step-pane-limit" id="currentStepLimit">Select up to 2</span>
+          </div>
+
+          <div class="options-grid" id="builderOptionsGrid">
+            <!-- Rendered by JS -->
+          </div>
+
+          <div class="builder-step-nav-btns">
+            <button class="btn-secondary" id="btnPrevStep" style="visibility: hidden;">← Previous</button>
+            <button class="btn-primary" id="btnNextStep">Next Step →</button>
+          </div>
+        </div>
+
+        <!-- Live Bowl Summary Box -->
+        <aside class="builder-summary-card">
+          <div class="summary-title">
+            <span>Your Custom Bowl</span>
+            <span class="summary-badge" id="customBowlStepBadge">Step 1 of 5</span>
+          </div>
+
+          <!-- Macros Grid -->
+          <div class="summary-macros-grid">
+            <div class="macro-box">
+              <span class="macro-num" id="builderTotalCal">0</span>
+              <span class="macro-name">Calories</span>
+            </div>
+            <div class="macro-box">
+              <span class="macro-num" id="builderTotalProtein">0g</span>
+              <span class="macro-name">Protein</span>
+            </div>
+            <div class="macro-box">
+              <span class="macro-num" id="builderTotalCarbs">0g</span>
+              <span class="macro-name">Carbs</span>
+            </div>
+            <div class="macro-box">
+              <span class="macro-num" id="builderTotalFat">0g</span>
+              <span class="macro-name">Fat</span>
+            </div>
+          </div>
+
+          <!-- Selected Ingredients List -->
+          <div class="summary-selection-list" id="builderSummaryList">
+            <!-- Rendered by JS -->
+          </div>
+
+          <div class="summary-footer">
+            <div class="summary-price-row">
+              <span class="summary-total-label">Total Price</span>
+              <span class="summary-total-price" id="builderTotalPrice">$12.95</span>
+            </div>
+            <button class="btn-add-custom-bowl" id="btnAddCustomBowlToBag">
+              <span>🛒 Add Custom Bowl to Bag</span>
+            </button>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Menu Explorer Section
+       ======================================================================== -->
+  <section class="menu-section" id="menu-explorer">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Chef's Menu</span>
+        <h2 class="section-title">Explore Mediterranean Favorites</h2>
+        <p class="section-subtitle">Curated grain bowls, warm folded pitas, tasting boards, and seasonal beverages.</p>
+      </div>
+
+      <!-- Controls & Filter Toolbar -->
+      <div class="menu-controls">
+        <!-- Category Filter Tabs -->
+        <div class="category-tabs" id="categoryTabs">
+          <!-- Rendered by JS -->
+        </div>
+
+        <!-- Search & Dietary Filters -->
+        <div class="filter-search-row">
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="menuSearchInput" class="search-input" placeholder="Search bowls, falafel, feta, dips..." aria-label="Search Menu">
+          </div>
+
+          <div class="dietary-tags-list" id="dietaryFilters">
+            <button class="dietary-tag-chip" data-diet="high-protein">💪 High Protein</button>
+            <button class="dietary-tag-chip" data-diet="vegetarian">🌱 Vegetarian</button>
+            <button class="dietary-tag-chip" data-diet="vegan">🌿 Vegan</button>
+            <button class="dietary-tag-chip" data-diet="gluten-free">🌾 Gluten-Free</button>
+            <button class="dietary-tag-chip" data-diet="dairy-free">🥛 Dairy-Free</button>
+            <button class="dietary-tag-chip" data-diet="favorites">❤️ Favorites</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Items Grid -->
+      <div class="menu-grid" id="menuGrid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Authenticity & Quality Showcase
+       ======================================================================== -->
+  <section class="story-section">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-card">
+          <span class="story-icon">🌿</span>
+          <h3 class="story-title">Sun-Drenched Herbs & Olive Oils</h3>
+          <p class="story-text">Every dip and dressing begins with cold-pressed Greek extra virgin olive oil, fragrant oregano, sumac, and freshly harvested garlic.</p>
+        </div>
+        <div class="story-card">
+          <span class="story-icon">🔥</span>
+          <h3 class="story-title">Flame-Seared & Slow-Braised</h3>
+          <p class="story-text">Our harissa chicken is seared over open fire and lamb is braised for 8 hours in Mediterranean aromatic spices for maximum tenderness.</p>
+        </div>
+        <div class="story-card">
+          <span class="story-icon">🧀</span>
+          <h3 class="story-title">Legendary Crazy Feta®</h3>
+          <p class="story-text">Our trademark creamy whipped feta is blended with charred jalapeños, onions, and extra virgin olive oil for an unforgettable burst of flavor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Slide-Over Cart Drawer
+       ======================================================================== -->
+  <div class="drawer-backdrop" id="cartDrawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Bag">
+    <div class="cart-header">
+      <h3 class="cart-title">
+        <span>🛍️</span> Your Mediterranean Bag
+      </h3>
+      <button class="cart-close-btn" id="closeCartDrawerBtn" aria-label="Close Bag">✕</button>
+    </div>
+
+    <!-- Fulfillment Method -->
+    <div class="fulfillment-selector">
+      <button class="fulfillment-btn active" data-type="pickup">🏃 Pickup</button>
+      <button class="fulfillment-btn" data-type="delivery">🚗 Delivery</button>
+      <button class="fulfillment-btn" data-type="dine-in">🍽️ Dine-In</button>
+    </div>
+
+    <!-- Cart Item List -->
+    <div class="cart-items-list" id="cartItemsList">
+      <!-- Rendered by JS -->
+    </div>
+
+    <!-- Cart Footer / Promo & Totals -->
+    <div class="cart-footer">
+      <div class="promo-input-group">
+        <input type="text" id="promoCodeInput" class="promo-input" placeholder="Promo code (e.g. FRESH20)" aria-label="Promo code">
+        <button class="btn-apply-promo" id="btnApplyPromo">Apply</button>
+      </div>
+
+      <div id="promoBadgeContainer"></div>
+
+      <div class="cart-totals-breakdown">
+        <div class="totals-row">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">$0.00</span>
+        </div>
+        <div class="totals-row discount" id="cartDiscountRow" style="display: none;">
+          <span>Promo Discount</span>
+          <span id="cartDiscountAmount">-$0.00</span>
+        </div>
+        <div class="totals-row">
+          <span>Estimated Tax</span>
+          <span id="cartTax">$0.00</span>
+        </div>
+        <div class="totals-row final">
+          <span>Total</span>
+          <span id="cartTotal">$0.00</span>
+        </div>
+      </div>
+
+      <button class="btn-checkout" id="btnProceedCheckout" disabled>
+        Proceed to Checkout
+      </button>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       Quick View / Nutrition Modal
+       ======================================================================== -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeQuickViewBtn">✕</button>
+      <div class="quickview-body" id="quickViewContent">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Checkout Confirmation Receipt Modal
+       ======================================================================== -->
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="modal-card" style="max-width: 520px;">
+      <button class="modal-close-btn" id="closeCheckoutModalBtn">✕</button>
+      <div class="receipt-header">
+        <div class="receipt-icon">✓</div>
+        <h3 class="receipt-title">Order Confirmed!</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">Thank you for ordering with CAVA</p>
+      </div>
+
+      <div class="receipt-body">
+        <div class="receipt-box" id="receiptSummaryBox">
+          <!-- Rendered by JS -->
+        </div>
+        <button class="btn-primary" id="btnReceiptDone" style="width: 100%; justify-content: center;">
+          Done / Start New Order
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Store Location Picker Modal
+       ======================================================================== -->
+  <div class="modal-overlay" id="locationModal">
+    <div class="modal-card" style="max-width: 500px;">
+      <button class="modal-close-btn" id="closeLocationModalBtn">✕</button>
+      <div style="padding: 2rem;">
+        <h3 style="font-family: var(--font-heading); font-size: 1.4rem; font-weight: 800; margin-bottom: 0.5rem;">Select CAVA Location</h3>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.5rem;">Pick your nearest restaurant for fresh pickup or delivery.</p>
+        
+        <div style="display: flex; flex-direction: column; gap: 0.85rem;" id="locationListContainer">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="brand-icon">C</div>
+            <div class="brand-text">
+              <span class="brand-title" style="color: #fff;">CAVA</span>
+              <span class="brand-subtitle" style="color: var(--accent-gold);">Mediterranean</span>
+            </div>
+          </div>
+          <p>
+            Rooted in the Mediterranean tradition of wholesome, vibrant food that feeds your spirit. Scratch-made daily with culinary integrity.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Our Menu</h4>
+          <ul class="footer-links">
+            <li><a href="#menu-explorer">Curated Bowls</a></li>
+            <li><a href="#menu-explorer">Warm Pitas</a></li>
+            <li><a href="#builder-studio">Custom Bowl Studio</a></li>
+            <li><a href="#menu-explorer">Dips & Spreads</a></li>
+            <li><a href="#menu-explorer">House Beverages</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Culinary Promise</h4>
+          <ul class="footer-links">
+            <li><a href="#">Nutrition & Allergens</a></li>
+            <li><a href="#">Sourcing & Quality</a></li>
+            <li><a href="#">Dietary Preferences</a></li>
+            <li><a href="#">Catering Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Special Offers</h4>
+          <ul class="footer-links">
+            <li><strong style="color: var(--accent-gold);">FRESH20</strong> – 20% off $25+</li>
+            <li><strong style="color: var(--accent-gold);">CAVALOVER15</strong> – 15% off</li>
+            <li><strong style="color: var(--accent-gold);">TASTECAVA</strong> – $5 Welcome</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 CAVA Mediterranean Menu Experience. Built for culinary excellence.</span>
+        <span>Made with ❤️ & Fresh Mediterranean Olive Oil</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification System -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Main JavaScript App -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
