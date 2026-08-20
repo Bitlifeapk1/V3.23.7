@@ -285,8 +285,8 @@ class CavaApp {
             </div>
 
             ${item.allergens && item.allergens.length > 0 ? `
-              <div style="font-size: 0.76rem; color: var(--text-subtle); margin-top: 0.4rem;">
-                ⚠️ Contains: ${item.allergens.join(', ')}
+              <div class="card-allergen-tag">
+                <span>🛡️ ${item.allergens.join(' • ')}</span>
               </div>
             ` : ''}
 
@@ -852,11 +852,11 @@ class CavaApp {
       </div>
 
       <div style="margin-bottom: 1.75rem;">
-        <h4 style="font-size: 0.95rem; font-weight: 700;">Allergen Information:</h4>
+        <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem;">Allergen Information:</h4>
         <div class="allergen-pills">
           ${item.allergens && item.allergens.length > 0 
-            ? item.allergens.map(a => `<span class="allergen-pill">⚠️ Contains ${a}</span>`).join('')
-            : '<span style="font-size: 0.82rem; color: #10b981; font-weight: 700;">✓ No major allergens</span>'}
+            ? item.allergens.map(a => `<span class="allergen-pill"><span class="allergen-dot"></span>Contains ${a}</span>`).join('')
+            : '<span class="allergen-safe-pill">✓ No major allergens</span>'}
         </div>
       </div>
 
@@ -881,10 +881,12 @@ class CavaApp {
     if (!tbody || !MENU_DATA.calorieRankings) return;
     tbody.innerHTML = MENU_DATA.calorieRankings.map(item => `
       <tr>
-        <td><strong>#${item.rank}</strong></td>
+        <td>
+          <span class="rank-badge ${item.rank === 1 ? 'gold' : item.rank <= 3 ? 'top' : ''}">#${item.rank}</span>
+        </td>
         <td><strong>${item.name}</strong></td>
-        <td><span class="price-pill" style="background: var(--bg-subtle); color: var(--text-main); font-weight: 700;">${item.calories}</span></td>
-        <td><strong style="color: #10b981;">${item.protein}</strong></td>
+        <td><span class="cal-badge">${item.calories}</span></td>
+        <td><strong class="protein-num">${item.protein}</strong></td>
         <td>${item.carbs}</td>
         <td>${item.fat}</td>
         <td><span class="culinary-tag">${item.category}</span></td>
@@ -902,11 +904,11 @@ class CavaApp {
     tbody.innerHTML = MENU_DATA.allergensTable.map(row => `
       <tr>
         <td><strong>${row.item}</strong></td>
-        <td>${row.dairy ? '⚠️ Yes (Milk)' : '—'}</td>
-        <td>${row.sesame ? '⚠️ Yes (Tahini)' : '—'}</td>
-        <td>${row.wheat ? '⚠️ Yes (Wheat)' : '—'}</td>
-        <td>${row.fish ? '⚠️ Yes (Salmon)' : '—'}</td>
-        <td><span class="price-pill" style="background: rgba(239, 68, 68, 0.1); color: #dc2626;">${row.allergens}</span></td>
+        <td>${row.dairy ? '<span class="allergen-tag-badge dairy">🥛 Milk</span>' : '<span class="allergen-tag-badge safe">✓ Free</span>'}</td>
+        <td>${row.sesame ? '<span class="allergen-tag-badge sesame">🌱 Sesame</span>' : '<span class="allergen-tag-badge safe">✓ Free</span>'}</td>
+        <td>${row.wheat ? '<span class="allergen-tag-badge wheat">🌾 Wheat</span>' : '<span class="allergen-tag-badge safe">✓ Free</span>'}</td>
+        <td>${row.fish ? '<span class="allergen-tag-badge fish">🐟 Salmon</span>' : '<span class="allergen-tag-badge safe">✓ Free</span>'}</td>
+        <td><span class="allergen-summary-pill">${row.allergens}</span></td>
       </tr>
     `).join('');
   }
@@ -921,7 +923,9 @@ class CavaApp {
       <div class="faq-item ${index === 0 ? 'active' : ''}">
         <button class="faq-question" type="button">
           <span>${faq.q}</span>
-          <span class="faq-icon">▼</span>
+          <span class="faq-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </span>
         </button>
         <div class="faq-answer">
           <p>${faq.a.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}</p>

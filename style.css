@@ -2747,6 +2747,183 @@ a {
 }
 
 /* ==========================================================================
+/* ==========================================================================
+   Modern Allergen Badges, Rank Medals & Refined UI Components
+   ========================================================================== */
+
+.chevron-icon {
+  display: inline-block;
+  vertical-align: middle;
+  color: var(--text-subtle);
+  transition: transform 0.2s ease;
+}
+
+.location-btn:hover .chevron-icon {
+  color: var(--primary);
+  transform: translateY(1px);
+}
+
+.card-allergen-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-full);
+  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  width: fit-content;
+}
+
+/* Modal Allergen Pills */
+.allergen-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  color: #dc2626;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 0.8rem;
+  border-radius: var(--radius-full);
+}
+
+[data-theme="dark"] .allergen-pill {
+  background: rgba(239, 68, 68, 0.18);
+  color: #f87171;
+}
+
+.allergen-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.allergen-safe-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  color: #059669;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+}
+
+/* Rank Medals in Table */
+.rank-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--bg-subtle);
+  color: var(--text-main);
+  font-size: 0.82rem;
+  font-weight: 800;
+  border: 1px solid var(--border-light);
+}
+
+.rank-badge.gold {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #fff;
+  border: none;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.35);
+}
+
+.rank-badge.top {
+  background: var(--secondary);
+  color: #fff;
+  border: none;
+}
+
+.cal-badge {
+  display: inline-block;
+  background: var(--bg-subtle);
+  color: var(--text-main);
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  border: 1px solid var(--border-light);
+}
+
+.protein-num {
+  color: #10b981;
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+/* Modern Allergen Matrix Badges */
+.allergen-tag-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.allergen-tag-badge.dairy {
+  background: rgba(2, 132, 199, 0.1);
+  color: #0284c7;
+  border: 1px solid rgba(2, 132, 199, 0.25);
+}
+
+.allergen-tag-badge.sesame {
+  background: rgba(96, 121, 85, 0.12);
+  color: #44593c;
+  border: 1px solid rgba(96, 121, 85, 0.25);
+}
+
+[data-theme="dark"] .allergen-tag-badge.sesame {
+  color: #8da47e;
+}
+
+.allergen-tag-badge.wheat {
+  background: rgba(217, 72, 15, 0.1);
+  color: #d9480f;
+  border: 1px solid rgba(217, 72, 15, 0.25);
+}
+
+.allergen-tag-badge.fish {
+  background: rgba(14, 165, 233, 0.12);
+  color: #0369a1;
+  border: 1px solid rgba(14, 165, 233, 0.25);
+}
+
+.allergen-tag-badge.safe {
+  background: rgba(16, 185, 129, 0.08);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.allergen-summary-pill {
+  display: inline-block;
+  background: rgba(239, 68, 68, 0.08);
+  color: #dc2626;
+  font-weight: 700;
+  font-size: 0.78rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+[data-theme="dark"] .allergen-summary-pill {
+  background: rgba(239, 68, 68, 0.18);
+  color: #f87171;
+}
+
+/* ==========================================================================
    Print Stylesheet for Download / PDF Guide
    ========================================================================== */
 @media print {
@@ -2838,3 +3015,4 @@ a {
     gap: 2rem;
   }
 }
+
