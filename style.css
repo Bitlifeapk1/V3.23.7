@@ -8,6 +8,7 @@
   --primary-hover: #bf3c09;
   --primary-light: #ffebd9;
   --primary-glow: rgba(217, 72, 15, 0.25);
+  --price-color: #e63946;
   
   --secondary: #1c382f;
   --secondary-light: #285244;
@@ -843,7 +844,7 @@ a {
   font-size: 1.6rem;
   font-weight: 800;
   font-family: var(--font-heading);
-  color: var(--primary);
+  color: var(--price-color);
 }
 
 .btn-add-custom-bowl {
@@ -1153,7 +1154,7 @@ a {
   font-size: 1.35rem;
   font-weight: 800;
   font-family: var(--font-heading);
-  color: var(--text-main);
+  color: var(--price-color);
 }
 
 .card-btn-group {
@@ -1398,7 +1399,7 @@ a {
 .cart-item-price {
   font-weight: 800;
   font-family: var(--font-heading);
-  color: var(--primary);
+  color: var(--price-color);
 }
 
 .cart-item-customs {
@@ -2255,7 +2256,7 @@ a {
   font-family: var(--font-heading);
   font-size: 1.25rem;
   font-weight: 800;
-  color: var(--primary);
+  color: var(--price-color);
   margin-bottom: 0.5rem;
 }
 
@@ -2317,7 +2318,7 @@ a {
 .price-pill {
   display: inline-block;
   background: var(--primary-light);
-  color: var(--primary);
+  color: var(--price-color);
   font-weight: 700;
   padding: 0.2rem 0.5rem;
   border-radius: var(--radius-sm);
@@ -2538,7 +2539,7 @@ a {
   font-family: var(--font-heading);
   font-size: 1.2rem;
   font-weight: 800;
-  color: var(--primary);
+  color: var(--price-color);
 }
 
 /* Comparison Face-off Grid */

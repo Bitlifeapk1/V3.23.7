@@ -849,7 +849,7 @@ class CavaApp {
       </div>
       <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem;">
         <h2 class="quickview-title">${item.name}</h2>
-        <span style="font-size: 1.5rem; font-weight: 800; color: var(--primary); font-family: var(--font-heading);">$${item.price.toFixed(2)}</span>
+        <span style="font-size: 1.5rem; font-weight: 800; color: var(--price-color); font-family: var(--font-heading);">$${item.price.toFixed(2)}</span>
       </div>
       <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">Price range: <strong>${item.priceRange || ('$' + item.price.toFixed(2))}</strong> (2026 Location Avg)</div>
       <p class="quickview-desc">${item.description}</p>
