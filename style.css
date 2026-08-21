@@ -1739,7 +1739,7 @@ a {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.5fr repeat(4, 1fr);
+  grid-template-columns: 2fr 1fr 1fr;
   gap: 2rem;
   margin-bottom: 3.5rem;
 }
