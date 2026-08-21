@@ -246,7 +246,7 @@ class CavaApp {
         const activeCat = (this.state.activeCategory || '').toString().toLowerCase().trim();
         
         // Handle potential singular/plural mismatches in data just in case
-        if (itemCat !== activeCat && itemCat + 's' !== activeCat && itemCat !== activeCat + 's') {
+        if (itemCat !== activeCat && itemCat + 's' !== activeCat && itemCat !== activeCat + 's' && !itemCat.includes(activeCat) && !activeCat.includes(itemCat)) {
           return false;
         }
       }
