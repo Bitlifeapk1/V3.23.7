@@ -892,6 +892,7 @@ a {
   gap: 0.75rem;
   overflow-x: auto;
   padding-bottom: 0.5rem;
+  padding-right: 1.5rem;
   scrollbar-width: thin;
 }
 

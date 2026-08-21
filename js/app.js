@@ -46,6 +46,27 @@ class CavaApp {
     this.renderLocationsList();
   }
 
+  // Called by header navigation links
+  filterByCategory(catId) {
+    this.state.activeCategory = catId;
+    const container = document.getElementById('categoryTabs');
+    if (container) {
+      container.querySelectorAll('.category-pill').forEach(p => {
+        if (p.dataset.cat === catId) {
+          p.classList.add('active');
+        } else {
+          p.classList.remove('active');
+        }
+      });
+    }
+    this.renderMenuItems();
+    // Scroll to the menu grid section smoothly
+    const menuSection = document.querySelector('.menu-controls');
+    if (menuSection) {
+      menuSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   // ========================================================================
   // Theme Toggle
   // ========================================================================
@@ -198,6 +219,14 @@ class CavaApp {
 
     container.querySelectorAll('.category-pill').forEach(pill => {
       pill.addEventListener('click', () => {
+        if (pill.dataset.cat === 'build-your-own') {
+          const buildSection = document.getElementById('build-your-own');
+          if (buildSection) {
+            buildSection.scrollIntoView({ behavior: 'smooth' });
+          }
+          return;
+        }
+
         this.state.activeCategory = pill.dataset.cat;
         container.querySelectorAll('.category-pill').forEach(p => p.classList.remove('active'));
         pill.classList.add('active');

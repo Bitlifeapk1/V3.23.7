@@ -94,11 +94,11 @@
       <!-- Main Desktop Navigation -->
       <nav class="main-nav" aria-label="Main Navigation" style="display: flex; gap: 0.75rem; align-items: center; white-space: nowrap; margin-top: 0.4rem;">
         <a href="#" class="toc-pill">Home</a>
-        <a href="#menu-prices" class="toc-pill" onclick="window.cavaAppInstance?.filterByCategory('curated-bowls')">CAVA Bowl</a>
+        <a href="#menu-prices" class="toc-pill" onclick="window.cavaAppInstance?.filterByCategory('bowls')">CAVA Bowl</a>
         <a href="#menu-prices" class="toc-pill" onclick="window.cavaAppInstance?.filterByCategory('pitas')">CAVA Pita</a>
         <a href="#menu-prices" class="toc-pill" onclick="window.cavaAppInstance?.filterByCategory('drinks')">CAVA Drink</a>
-        <a href="#menu-prices" class="toc-pill" onclick="window.cavaAppInstance?.filterByCategory('kids-catering')">Kids Menu</a>
-        <a href="#menu-prices" class="toc-pill" onclick="window.cavaAppInstance?.filterByCategory('dips-spreads')">CAVA Sides</a>
+        <a href="#menu-prices" class="toc-pill" onclick="window.cavaAppInstance?.filterByCategory('kids-meal')">Kids Menu</a>
+        <a href="#menu-prices" class="toc-pill" onclick="window.cavaAppInstance?.filterByCategory('sides')">CAVA Sides</a>
         <a href="#cava-sauces" class="toc-pill">Sauces & Dressings</a>
         <a href="#about-cava" class="toc-pill">About Us</a>
         <a href="#contact-us" class="toc-pill">Contact Us</a>
@@ -302,7 +302,7 @@
 
       <!-- Quick Category Highlights Grid -->
       <div class="pricing-category-cards-grid">
-        <div class="price-cat-box" onclick="window.cavaAppInstance?.filterByCategory('curated-bowls')" style="cursor: pointer;">
+        <div class="price-cat-box" onclick="window.cavaAppInstance?.filterByCategory('bowls')" style="cursor: pointer;">
           <div class="cat-box-header">
             <span class="cat-box-icon">🥗</span>
             <h4>CAVA Bowls</h4>
@@ -320,7 +320,7 @@
           <p class="cat-box-desc">Damascus Bakery sprouted flatbread (+230 cal). Concentrates flavors for eating on the go.</p>
         </div>
 
-        <div class="price-cat-box" onclick="window.cavaAppInstance?.filterByCategory('dips-spreads')" style="cursor: pointer;">
+        <div class="price-cat-box" onclick="window.cavaAppInstance?.filterByCategory('sides')" style="cursor: pointer;">
           <div class="cat-box-header">
             <span class="cat-box-icon">🫓</span>
             <h4>Sides & Dips</h4>
@@ -347,7 +347,7 @@
           <p class="cat-box-desc">Salted chocolate oat cookie & Greyston Bakery B-Corp certified blondies and fudge brownies.</p>
         </div>
 
-        <div class="price-cat-box" onclick="window.cavaAppInstance?.filterByCategory('kids-catering')" style="cursor: pointer;">
+        <div class="price-cat-box" onclick="window.cavaAppInstance?.filterByCategory('kids-meal')" style="cursor: pointer;">
           <div class="cat-box-header">
             <span class="cat-box-icon">🧒</span>
             <h4>Kids & Catering</h4>
@@ -1279,11 +1279,12 @@
         <div>
           <h4 class="footer-col-title">Menu & Food</h4>
           <ul class="footer-links">
-            <li><a href="#menu-prices" onclick="window.cavaAppInstance?.filterByCategory('curated-bowls')">CAVA Bowls ($11–$19)</a></li>
+            <li><a href="#menu-prices" onclick="window.cavaAppInstance?.filterByCategory('bowls')">CAVA Bowls ($11–$19)</a></li>
             <li><a href="#menu-prices" onclick="window.cavaAppInstance?.filterByCategory('pitas')">CAVA Pitas (Damascus)</a></li>
             <li><a href="#cava-sauces">CAVA Sauces & Dressings</a></li>
             <li><a href="#cava-recipes">CAVA Copycat Recipes</a></li>
-            <li><a href="#menu-prices" onclick="window.cavaAppInstance?.filterByCategory('dips-spreads')">Free Dips & Sides</a></li>
+            <li><a href="#menu-prices" onclick="window.cavaAppInstance?.filterByCategory('sides')">Free Dips & Sides</a></li>
+            <li><a href="#menu-prices" onclick="window.cavaAppInstance?.filterByCategory('kids-meal')">Kids Meals</a></li>
           </ul>
         </div>
 
