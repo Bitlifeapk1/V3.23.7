@@ -57,14 +57,14 @@
     <div class="container header-content" style="display: flex; align-items: center; justify-content: space-between; height: 4.2rem;">
       <div class="brand-logo" id="brandLogoBtn" title="CAVA Menu Guide" style="display: flex; align-items: center; gap: 0.75rem;">
         <div class="brand-icon" style="width: 40px; height: 40px; border-radius: 50%; transform: none; box-shadow: 0 4px 12px var(--primary-glow); border: 2px solid white; font-size: 1.3rem;">🥗</div>
-        <div class="brand-text" style="display: flex; flex-direction: row; align-items: baseline; gap: 0.3rem;">
+        <div class="brand-text" style="display: flex; flex-direction: column; align-items: flex-start; line-height: 1;">
           <span class="brand-title" style="font-size: 1.5rem; font-weight: 900; letter-spacing: -0.5px;">CAVA</span>
-          <span class="brand-subtitle" style="font-size: 0.7rem; margin-left: 2px; color: var(--primary);">MENU</span>
+          <span class="brand-subtitle" style="font-size: 0.7rem; color: var(--primary); font-weight: 700; margin-top: 2px;">MENU</span>
         </div>
       </div>
 
       <!-- Main Desktop Navigation -->
-      <nav class="main-nav" aria-label="Main Navigation" style="display: flex; gap: 0.75rem; align-items: center; white-space: nowrap;">
+      <nav class="main-nav" aria-label="Main Navigation" style="display: flex; gap: 0.75rem; align-items: center; white-space: nowrap; margin-top: 0.4rem;">
         <a href="#" class="toc-pill">Home</a>
         <a href="#menu-prices" class="toc-pill" onclick="window.cavaAppInstance?.filterByCategory('curated-bowls')">Bowl</a>
         <a href="#menu-prices" class="toc-pill" onclick="window.cavaAppInstance?.filterByCategory('pitas')">Pita</a>
@@ -75,13 +75,6 @@
         <a href="#about-cava" class="toc-pill">About Us</a>
         <a href="#contact-us" class="toc-pill">Contact Us</a>
       </nav>
-
-      <!-- Header Actions -->
-      <div class="header-actions">
-        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
-          🌓
-        </button>
-      </div>
     </div>
   </header>
 
