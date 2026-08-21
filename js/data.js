@@ -43,7 +43,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Mix and match your favorite greens and grains to build a bowl just the way you like it.",
       ingredients: [],
-      image: "public/img/greens-grains-bowl.webp",
+      image: "img/greens-grains-bowl.webp",
       icon: "âœ¨"
     },
     {
@@ -63,7 +63,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Choose your grain bowl base: saffron basmati rice, brown basmati rice, or black lentils.",
       ingredients: [],
-      image: "public/img/grains-bowl.webp",
+      image: "img/grains-bowl.webp",
       icon: "âœ¨"
     },
     {
@@ -83,7 +83,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Choose your greens to start building your bowl: arugula, baby spinach, romaine, Super Greens, or Power Greens.",
       ingredients: [],
-      image: "public/img/salad-bowl.webp",
+      image: "img/salad-bowl.webp",
       icon: "âœ¨"
     },
     {
@@ -103,7 +103,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Grilled chicken, hummus, tzatziki, pickled onions, tomato + onion, cucumber, feta, arugula, brown rice, Greek vinaigrette",
       ingredients: [],
-      image: "public/img/chicken-rice.webp",
+      image: "img/chicken-rice.webp",
       icon: "âœ¨"
     },
     {
@@ -123,7 +123,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Harissa honey chicken, Crazy FetaÂ®, hummus, avocado, corn, cucumber, feta, pickled onions, basmati rice, Super Greens, harissa vinaigrette",
       ingredients: [],
-      image: "public/img/harissa-avocado.webp",
+      image: "img/harissa-avocado.webp",
       icon: "âœ¨"
     },
     {
@@ -143,7 +143,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Grilled steak, Crazy FetaÂ®, red pepper hummus, tomato + onion, cucumber, feta, sumac cabbage slaw, brown rice, Super Greens, harissa vinaigrette",
       ingredients: [],
-      image: "public/img/steak-harissa.webp",
+      image: "img/steak-harissa.webp",
       icon: "âœ¨"
     },
     {
@@ -163,7 +163,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Grilled chicken, tzatziki, hummus, feta, tomato + onion, cucumber, olives, romaine, arugula, Greek vinaigrette",
       ingredients: [],
-      image: "public/img/greek-salad.webp",
+      image: "img/greek-salad.webp",
       icon: "âœ¨"
     },
     {
@@ -183,7 +183,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Half falafel, half roasted veggies, hummus, Crazy FetaÂ®, cucumber, sumac cabbage slaw, romaine, pickled onions, tomato + onion, pita crisps, rice, lentils, skhug",
       ingredients: [],
-      image: "public/img/falafel-crunch.webp",
+      image: "img/falafel-crunch.webp",
       icon: "âœ¨"
     },
     {
@@ -203,7 +203,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Spicy lamb meatballs, avocado, Crazy FetaÂ®, red pepper hummus, pickled onions, cucumber, tomato + onion, Super Greens, lentils, lemon herb tahini",
       ingredients: [],
-      image: "public/img/spicy-lamb-avocado.webp",
+      image: "img/spicy-lamb-avocado.webp",
       icon: "âœ¨"
     },
     {
@@ -223,7 +223,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Grilled steak, traditional hummus, red pepper hummus, fire-roasted corn, pickled onions, feta, Power Greens, strawberry sesame dressing",
       ingredients: [],
-      image: "public/img/strawberry-steak-salad.webp",
+      image: "img/strawberry-steak-salad.webp",
       icon: "âœ¨"
     },
     {
@@ -243,7 +243,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Glazed salmon, tzatziki, red pepper hummus, cucumber, feta, tomato + onion, sumac slaw, brown rice, spinach, and strawberry sesame dressing",
       ingredients: [],
-      image: "public/img/salmon-strawberry-sesame.webp",
+      image: "img/salmon-strawberry-sesame.webp",
       icon: "âœ¨"
     },
     {
@@ -263,7 +263,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Glazed salmon, Crazy FetaÂ®, hummus, fire-roasted corn, tomato + onion, cucumber, rice, arugula, and yogurt dill dressing",
       ingredients: [],
-      image: "public/img/salmon-yogurt-dill.webp",
+      image: "img/salmon-yogurt-dill.webp",
       icon: "âœ¨"
     },
     {
@@ -283,7 +283,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Glazed salmon, Crazy FetaÂ®, hummus, avocado, pickled onions, tomato + cucumber, fiery broccoli, saffron basmati rice, Greek vinaigrette",
       ingredients: [],
-      image: "public/img/pomegranate-glazed-salmon.webp",
+      image: "img/pomegranate-glazed-salmon.webp",
       icon: "âœ¨"
     },
     {
@@ -303,7 +303,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Fill our fluffy and perfectly chewy pita with your unique combo of ingredients. Made with sprouted grains.",
       ingredients: [],
-      image: "public/img/pita.webp",
+      image: "img/pita.webp",
       icon: "âœ¨"
     },
     {
@@ -323,7 +323,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Grilled steak, Crazy FetaÂ®, red pepper hummus, pickled onions, feta, pickles, romaine, garlic dressing, Greek vinaigrette, pita",
       ingredients: [],
-      image: "public/img/steak-feta.webp",
+      image: "img/steak-feta.webp",
       icon: "âœ¨"
     },
     {
@@ -343,7 +343,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Grilled chicken, tzatziki, tomato + onion, olives, feta, romaine, yogurt dill dressing, pita",
       ingredients: [],
-      image: "public/img/greek-chicken.webp",
+      image: "img/greek-chicken.webp",
       icon: "âœ¨"
     },
     {
@@ -363,7 +363,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Harissa honey chicken, Crazy FetaÂ®, avocado, pickles, corn, feta, pickled onions, harissa vinaigrette, pita",
       ingredients: [],
-      image: "public/img/spicy-chicken-avocado.webp",
+      image: "img/spicy-chicken-avocado.webp",
       icon: "âœ¨"
     },
     {
@@ -383,7 +383,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Barbecue meets the Mediterranean. Our classic pita chips mixed with a kick of cayenne and a blend of spices. A little spicy, a little smoky, and a tiny bit sweet.",
       ingredients: [],
-      image: "public/img/harissa-bbq-pita-chips.webp",
+      image: "img/harissa-bbq-pita-chips.webp",
       icon: "âœ¨"
     },
     {
@@ -403,7 +403,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Made from our classic pitas. Cut, then fried for a deliciously dippable, chewy bite.",
       ingredients: [],
-      image: "public/img/classic-pita-chips.webp",
+      image: "img/classic-pita-chips.webp",
       icon: "âœ¨"
     },
     {
@@ -423,7 +423,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Our fluffy and perfectly chewy pita made with sprouted grains.",
       ingredients: [],
-      image: "public/img/side-pita.webp",
+      image: "img/side-pita.webp",
       icon: "âœ¨"
     },
     {
@@ -443,7 +443,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Feta whipped with jalapeÃ±o, onion, and olive oil for just that right level of spicy. A CAVA signature.",
       ingredients: [],
-      image: "public/img/side-crazy-feta.webp",
+      image: "img/side-crazy-feta.webp",
       icon: "âœ¨"
     },
     {
@@ -463,7 +463,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Chickpeas purÃ©ed with tahini, lemon juice, fresh garlic, salt. A guest favorite and CAVA classic.",
       ingredients: [],
-      image: "public/img/side-hummus.webp",
+      image: "img/side-hummus.webp",
       icon: "âœ¨"
     },
     {
@@ -483,7 +483,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Fiery, tomato-forward, and full of spices.",
       ingredients: [],
-      image: "public/img/side-harissa.webp",
+      image: "img/side-harissa.webp",
       icon: "âœ¨"
     },
     {
@@ -503,7 +503,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Made with Greek yogurt, shredded cucumber, and dill. Thick and creamy.",
       ingredients: [],
-      image: "public/img/side-tzatziki.webp",
+      image: "img/side-tzatziki.webp",
       icon: "âœ¨"
     },
     {
@@ -523,7 +523,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Roasted red peppers purÃ©ed with chickpeas, tahini, and garlic.",
       ingredients: [],
-      image: "public/img/side-red-pepper-hummus.webp",
+      image: "img/side-red-pepper-hummus.webp",
       icon: "âœ¨"
     },
     {
@@ -543,7 +543,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Roasted eggplant blended with lemon juice, parsley, onions, and garlic.",
       ingredients: [],
-      image: "public/img/side-roasted-eggplant.webp",
+      image: "img/side-roasted-eggplant.webp",
       icon: "âœ¨"
     },
     {
@@ -563,7 +563,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "A kid-sized, build-your-own meal with a half-serving of one main + grain, one dip, one dressing, and up to three toppings. Choose three classic pita chips or a side 1/4 pita, and small juice or milk.",
       ingredients: [],
-      image: "public/img/kids-meal.webp",
+      image: "img/kids-meal.webp",
       icon: "âœ¨"
     },
     {
@@ -583,7 +583,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "A strawberry + raspberry drink with a hint of lively ginger to keep things interesting.",
       ingredients: [],
-      image: "public/img/strawberry-ginger.webp",
+      image: "img/strawberry-ginger.webp",
       icon: "âœ¨"
     },
     {
@@ -603,7 +603,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Made in-house from a purÃ©e of blueberries and lavender.",
       ingredients: [],
-      image: "public/img/blueberry-lavender.webp",
+      image: "img/blueberry-lavender.webp",
       icon: "âœ¨"
     },
     {
@@ -623,7 +623,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Sweet and cooling, balanced out with fresh lime juice. Made in-house.",
       ingredients: [],
-      image: "public/img/cucumber-mint-lime.webp",
+      image: "img/cucumber-mint-lime.webp",
       icon: "âœ¨"
     },
     {
@@ -643,7 +643,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "A sweet and refreshing lemonade made in-house.",
       ingredients: [],
-      image: "public/img/classic-lemonade.webp",
+      image: "img/classic-lemonade.webp",
       icon: "âœ¨"
     },
     {
@@ -663,7 +663,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Unsweetened iced black tea with a balanced, smooth taste. Brewed in-house.",
       ingredients: [],
-      image: "public/img/unsweet-tea.webp",
+      image: "img/unsweet-tea.webp",
       icon: "âœ¨"
     },
     {
@@ -683,7 +683,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Sweetened black tea brewed in-house.",
       ingredients: [],
-      image: "public/img/sweet-tea.jpg",
+      image: "img/sweet-tea.jpg",
       icon: "âœ¨"
     },
     {
@@ -703,7 +703,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Choose from a selection of Maine Root fountain sodas.",
       ingredients: [],
-      image: "public/img/fountain-soda.webp",
+      image: "img/fountain-soda.webp",
       icon: "âœ¨"
     },
     {
@@ -723,7 +723,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Sparkling lemon water.",
       ingredients: [],
-      image: "public/img/spindrift-lemon.webp",
+      image: "img/spindrift-lemon.webp",
       icon: "âœ¨"
     },
     {
@@ -743,7 +743,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Sparkling half tea, half lemon water.",
       ingredients: [],
-      image: "public/img/spindrift-half-tea-half-lemon.webp",
+      image: "img/spindrift-half-tea-half-lemon.webp",
       icon: "âœ¨"
     },
     {
@@ -763,7 +763,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Open Water still water.",
       ingredients: [],
-      image: "public/img/open-water-still.webp",
+      image: "img/open-water-still.webp",
       icon: "âœ¨"
     },
     {
@@ -783,7 +783,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Open Water sparkling water.",
       ingredients: [],
-      image: "public/img/open-water-sparkling.webp",
+      image: "img/open-water-sparkling.webp",
       icon: "âœ¨"
     },
     {
@@ -803,7 +803,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Organic apple juice from Honest Kids. No sugar added.",
       ingredients: [],
-      image: "public/img/kids-apple-juice.jpg",
+      image: "img/kids-apple-juice.jpg",
       icon: "âœ¨"
     },
     {
@@ -823,7 +823,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Organic 1% milk.",
       ingredients: [],
-      image: "public/img/kids-milk.webp",
+      image: "img/kids-milk.webp",
       icon: "âœ¨"
     },
     {
@@ -843,7 +843,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Organic 1% chocolate milk.",
       ingredients: [],
-      image: "public/img/kids-chocolate-milk.webp",
+      image: "img/kids-chocolate-milk.webp",
       icon: "âœ¨"
     },
     {
@@ -863,7 +863,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "If an oatmeal cookie and a salted chocolate chip cookie had a baby.",
       ingredients: [],
-      image: "public/img/salted-chocolate-oat-cookie.jpg",
+      image: "img/salted-chocolate-oat-cookie.jpg",
       icon: "âœ¨"
     },
     {
@@ -883,7 +883,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "A blondie with a super soft, almost gooey inside.",
       ingredients: [],
-      image: "public/img/greyston-blondie.webp",
+      image: "img/greyston-blondie.webp",
       icon: "âœ¨"
     },
     {
@@ -903,7 +903,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "An intensely chocolatey brownie, with a fudgy, almost gooey inside.",
       ingredients: [],
-      image: "public/img/greyston-brownie.webp",
+      image: "img/greyston-brownie.webp",
       icon: "âœ¨"
     }
   ],
