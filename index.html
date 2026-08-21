@@ -54,36 +54,30 @@
        Header Navigation with Dropdowns
        ======================================================================== -->
   <header class="header">
-    <div class="container header-content">
-      <div class="brand-logo" id="brandLogoBtn" title="CAVA Mediterranean Menu Guide 2026">
-        <div class="brand-icon">C</div>
-        <div class="brand-text">
-          <span class="brand-title">CAVA</span>
-          <span class="brand-subtitle">Menu Guide 2026</span>
+    <div class="container header-content" style="display: flex; align-items: center; justify-content: space-between;">
+      <div class="brand-logo" id="brandLogoBtn" title="CAVA Menu Guide" style="display: flex; align-items: center; gap: 0.75rem;">
+        <div class="brand-icon" style="border-radius: 50%; transform: none; box-shadow: 0 4px 12px var(--primary-glow); border: 2px solid white;">🥗</div>
+        <div class="brand-text" style="display: flex; flex-direction: row; align-items: baseline; gap: 0.3rem;">
+          <span class="brand-title" style="font-size: 1.7rem; font-weight: 900; letter-spacing: -0.5px;">CAVA</span>
+          <span class="brand-subtitle" style="font-size: 0.8rem; margin-left: 4px; color: var(--primary);">MENU</span>
         </div>
       </div>
 
       <!-- Main Desktop Navigation -->
-      <nav class="main-nav" aria-label="Main Navigation" style="display: flex; gap: 1.5rem; align-items: center; font-weight: 600; white-space: nowrap; overflow-x: auto; padding-bottom: 0.5rem; scrollbar-width: none;">
+      <nav class="main-nav" aria-label="Main Navigation" style="display: flex; gap: 1.5rem; align-items: center; font-weight: 600; white-space: nowrap;">
         <a href="#" class="nav-link">Home</a>
-        <a href="#menu-prices" class="nav-link" onclick="window.cavaAppInstance?.filterByCategory('curated-bowls')">Cava Bowl</a>
-        <a href="#menu-prices" class="nav-link" onclick="window.cavaAppInstance?.filterByCategory('pitas')">Cava Pita</a>
+        <a href="#menu-prices" class="nav-link" onclick="window.cavaAppInstance?.filterByCategory('curated-bowls')">Bowl</a>
+        <a href="#menu-prices" class="nav-link" onclick="window.cavaAppInstance?.filterByCategory('pitas')">Pita</a>
         <a href="#menu-prices" class="nav-link" onclick="window.cavaAppInstance?.filterByCategory('drinks')">Drinks</a>
         <a href="#menu-prices" class="nav-link" onclick="window.cavaAppInstance?.filterByCategory('kids-catering')">Kids Menu</a>
-        <a href="#menu-prices" class="nav-link" onclick="window.cavaAppInstance?.filterByCategory('dips-spreads')">Cava Sides</a>
-        <a href="#cava-sauces" class="nav-link">Sauces & Dressings</a>
+        <a href="#menu-prices" class="nav-link" onclick="window.cavaAppInstance?.filterByCategory('dips-spreads')">Sides</a>
+        <a href="#cava-sauces" class="nav-link">Sauces</a>
         <a href="#about-cava" class="nav-link">About Us</a>
         <a href="#contact-us" class="nav-link">Contact Us</a>
       </nav>
 
       <!-- Header Actions -->
       <div class="header-actions">
-        <button class="location-btn" id="openLocationModalBtn" aria-label="Select Store Location">
-          <span class="location-dot"></span>
-          <span class="loc-name" id="selectedLocationName">Downtown Metropolis</span>
-          <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-        </button>
-
         <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
           🌓
         </button>
