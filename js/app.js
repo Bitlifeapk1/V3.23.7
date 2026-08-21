@@ -266,7 +266,8 @@ class CavaApp {
       return `
         <article class="menu-card" data-id="${item.id}">
           <div class="card-image-wrap">
-            <div class="card-visual-placeholder">
+            ${item.image ? `<img src="${item.image}" alt="${item.name}" class="menu-card-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />` : ''}
+            <div class="card-visual-placeholder" style="${item.image ? 'display: none;' : ''}">
               <span class="card-emoji-visual">${item.icon || '🥗'}</span>
             </div>
             ${item.badge ? `<span class="card-badge">${item.badge}</span>` : ''}

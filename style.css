@@ -357,6 +357,8 @@ a {
   cursor: pointer;
   box-shadow: 0 4px 16px var(--primary-glow);
   transition: var(--transition);
+  white-space: nowrap;
+  max-width: 100%;
 }
 
 .btn-primary:hover {
@@ -377,6 +379,8 @@ a {
   border: 1px solid var(--border-light);
   cursor: pointer;
   transition: var(--transition);
+  white-space: nowrap;
+  max-width: 100%;
 }
 
 .btn-secondary:hover {
@@ -713,6 +717,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
 }
 
 /* Builder Live Summary Box */
