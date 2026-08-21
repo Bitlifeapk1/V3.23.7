@@ -220,7 +220,7 @@ class CavaApp {
     container.querySelectorAll('.category-pill').forEach(pill => {
       pill.addEventListener('click', () => {
         if (pill.dataset.cat === 'build-your-own') {
-          const buildSection = document.getElementById('build-your-own');
+          const buildSection = document.getElementById('builder-studio');
           if (buildSection) {
             buildSection.scrollIntoView({ behavior: 'smooth' });
           }
@@ -1098,8 +1098,11 @@ class CavaApp {
   // Modal Utilities
   // ========================================================================
   openModal(modalId) {
-    document.getElementById(modalId)?.classList.add('open');
-    document.body.style.overflow = 'hidden';
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
   }
 
   closeModal(modalId) {
