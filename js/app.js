@@ -298,9 +298,6 @@ class CavaApp {
               </div>
               <div class="card-btn-group">
                 <button class="btn-card-quickview" data-quickview-id="${item.id}">Nutrition</button>
-                <button class="btn-card-add" data-add-id="${item.id}">
-                  <span>+</span> Add
-                </button>
               </div>
             </div>
           </div>
@@ -309,13 +306,6 @@ class CavaApp {
     }).join('');
 
     // Attach card event listeners
-    grid.querySelectorAll('.btn-card-add').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const id = btn.dataset.addId;
-        const item = MENU_DATA.items.find(i => i.id === id);
-        if (item) this.addToCart(item);
-      });
-    });
 
     grid.querySelectorAll('.btn-card-quickview').forEach(btn => {
       btn.addEventListener('click', () => {
