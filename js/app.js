@@ -241,16 +241,24 @@ class CavaApp {
 
     let filtered = MENU_DATA.items.filter(item => {
       // Category filter
-      if (this.state.activeCategory !== 'all' && item.category !== this.state.activeCategory) {
-        return false;
+      if (this.state.activeCategory !== 'all') {
+        const itemCat = (item.category || '').toString().toLowerCase().trim();
+        const activeCat = (this.state.activeCategory || '').toString().toLowerCase().trim();
+        
+        // Handle potential singular/plural mismatches in data just in case
+        if (itemCat !== activeCat && itemCat + 's' !== activeCat && itemCat !== activeCat + 's') {
+          return false;
+        }
       }
 
       // Search query filter
       if (this.state.searchQuery) {
-        const query = this.state.searchQuery;
-        const nameMatch = item.name.toLowerCase().includes(query);
-        const descMatch = item.description.toLowerCase().includes(query);
-        const ingMatch = item.ingredients.some(ing => ing.toLowerCase().includes(query));
+        const query = this.state.searchQuery.toLowerCase().trim();
+        const nameMatch = (item.name || '').toLowerCase().includes(query);
+        const descMatch = (item.description || '').toLowerCase().includes(query);
+        const ingMatch = Array.isArray(item.ingredients) 
+            ? item.ingredients.some(ing => (ing || '').toLowerCase().includes(query)) 
+            : false;
         if (!nameMatch && !descMatch && !ingMatch) return false;
       }
 
