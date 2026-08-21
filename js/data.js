@@ -1,11 +1,11 @@
-// ==========================================================================
-// CAVA Menu 2026 â€“ Complete Dataset, Builder, Nutrition & Editorial Content
+﻿// ==========================================================================
+// CAVA Menu 2026 – Complete Dataset, Builder, Nutrition & Editorial Content
 // Verified against CAVA Group SEC Filings & Official Published Nutrition
 // ==========================================================================
 
 export const MENU_DATA = {
   meta: {
-    title: "CAVA Menu 2026 â€“ Prices, Calories & Full Mediterranean Food Guide",
+    title: "CAVA Menu 2026 – Prices, Calories & Full Mediterranean Food Guide",
     reviewDate: "April 2026",
     totalLocations: "459+",
     totalStates: "29 States + Washington, D.C.",
@@ -14,15 +14,15 @@ export const MENU_DATA = {
   },
 
   categories: [
-    { id: "all", label: "All Items", icon: "âœ¨" },
-    { id: "in-season", label: "In Season", icon: "ðŸŒ±" },
-    { id: "build-your-own", label: "Build Your Own", icon: "ðŸ¥—" },
-    { id: "bowls", label: "Bowls", icon: "ðŸ¥£" },
-    { id: "pitas", label: "Pita", icon: "ðŸ¥™" },
-    { id: "sides", label: "Sides", icon: "ðŸ§†" },
-    { id: "kids-meal", label: "Kids Meal", icon: "ðŸ§’" },
-    { id: "drinks", label: "Drinks", icon: "ðŸ‹" },
-    { id: "desserts", label: "Desserts", icon: "ðŸª" }
+    { id: "all", label: "All Items", icon: "✨" },
+    { id: "in-season", label: "In Season", icon: "🌱" },
+    { id: "build-your-own", label: "Build Your Own", icon: "🥗" },
+    { id: "bowls", label: "Bowls", icon: "🥣" },
+    { id: "pitas", label: "Pita", icon: "🥙" },
+    { id: "sides", label: "Sides", icon: "🧆" },
+    { id: "kids-meal", label: "Kids Meal", icon: "🧒" },
+    { id: "drinks", label: "Drinks", icon: "🍋" },
+    { id: "desserts", label: "Desserts", icon: "🍪" }
   ],
 
   items: [
@@ -43,7 +43,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Mix and match your favorite greens and grains to build a bowl just the way you like it.",
       ingredients: [],
-      image: "img/greens-grains-bowl.webp",
+      image: "public/img/greens-grains-bowl.webp",
       icon: "âœ¨"
     },
     {
@@ -63,7 +63,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Choose your grain bowl base: saffron basmati rice, brown basmati rice, or black lentils.",
       ingredients: [],
-      image: "img/grains-bowl.webp",
+      image: "public/img/grains-bowl.webp",
       icon: "âœ¨"
     },
     {
@@ -83,7 +83,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Choose your greens to start building your bowl: arugula, baby spinach, romaine, Super Greens, or Power Greens.",
       ingredients: [],
-      image: "img/salad-bowl.webp",
+      image: "public/img/salad-bowl.webp",
       icon: "âœ¨"
     },
     {
@@ -103,7 +103,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Grilled chicken, hummus, tzatziki, pickled onions, tomato + onion, cucumber, feta, arugula, brown rice, Greek vinaigrette",
       ingredients: [],
-      image: "img/chicken-rice.webp",
+      image: "public/img/chicken-rice.webp",
       icon: "âœ¨"
     },
     {
@@ -123,7 +123,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Harissa honey chicken, Crazy FetaÂ®, hummus, avocado, corn, cucumber, feta, pickled onions, basmati rice, Super Greens, harissa vinaigrette",
       ingredients: [],
-      image: "img/harissa-avocado.webp",
+      image: "public/img/harissa-avocado.webp",
       icon: "âœ¨"
     },
     {
@@ -143,7 +143,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Grilled steak, Crazy FetaÂ®, red pepper hummus, tomato + onion, cucumber, feta, sumac cabbage slaw, brown rice, Super Greens, harissa vinaigrette",
       ingredients: [],
-      image: "img/steak-harissa.webp",
+      image: "public/img/steak-harissa.webp",
       icon: "âœ¨"
     },
     {
@@ -163,7 +163,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Grilled chicken, tzatziki, hummus, feta, tomato + onion, cucumber, olives, romaine, arugula, Greek vinaigrette",
       ingredients: [],
-      image: "img/greek-salad.webp",
+      image: "public/img/greek-salad.webp",
       icon: "âœ¨"
     },
     {
@@ -183,7 +183,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Half falafel, half roasted veggies, hummus, Crazy FetaÂ®, cucumber, sumac cabbage slaw, romaine, pickled onions, tomato + onion, pita crisps, rice, lentils, skhug",
       ingredients: [],
-      image: "img/falafel-crunch.webp",
+      image: "public/img/falafel-crunch.webp",
       icon: "âœ¨"
     },
     {
@@ -203,7 +203,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Spicy lamb meatballs, avocado, Crazy FetaÂ®, red pepper hummus, pickled onions, cucumber, tomato + onion, Super Greens, lentils, lemon herb tahini",
       ingredients: [],
-      image: "img/spicy-lamb-avocado.webp",
+      image: "public/img/spicy-lamb-avocado.webp",
       icon: "âœ¨"
     },
     {
@@ -223,7 +223,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Grilled steak, traditional hummus, red pepper hummus, fire-roasted corn, pickled onions, feta, Power Greens, strawberry sesame dressing",
       ingredients: [],
-      image: "img/strawberry-steak-salad.webp",
+      image: "public/img/strawberry-steak-salad.webp",
       icon: "âœ¨"
     },
     {
@@ -243,7 +243,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Glazed salmon, tzatziki, red pepper hummus, cucumber, feta, tomato + onion, sumac slaw, brown rice, spinach, and strawberry sesame dressing",
       ingredients: [],
-      image: "img/salmon-strawberry-sesame.webp",
+      image: "public/img/salmon-strawberry-sesame.webp",
       icon: "âœ¨"
     },
     {
@@ -263,7 +263,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Glazed salmon, Crazy FetaÂ®, hummus, fire-roasted corn, tomato + onion, cucumber, rice, arugula, and yogurt dill dressing",
       ingredients: [],
-      image: "img/salmon-yogurt-dill.webp",
+      image: "public/img/salmon-yogurt-dill.webp",
       icon: "âœ¨"
     },
     {
@@ -283,7 +283,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Glazed salmon, Crazy FetaÂ®, hummus, avocado, pickled onions, tomato + cucumber, fiery broccoli, saffron basmati rice, Greek vinaigrette",
       ingredients: [],
-      image: "img/pomegranate-glazed-salmon.webp",
+      image: "public/img/pomegranate-glazed-salmon.webp",
       icon: "âœ¨"
     },
     {
@@ -303,7 +303,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Fill our fluffy and perfectly chewy pita with your unique combo of ingredients. Made with sprouted grains.",
       ingredients: [],
-      image: "img/pita.webp",
+      image: "public/img/pita.webp",
       icon: "âœ¨"
     },
     {
@@ -323,7 +323,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Grilled steak, Crazy FetaÂ®, red pepper hummus, pickled onions, feta, pickles, romaine, garlic dressing, Greek vinaigrette, pita",
       ingredients: [],
-      image: "img/steak-feta.webp",
+      image: "public/img/steak-feta.webp",
       icon: "âœ¨"
     },
     {
@@ -343,7 +343,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Grilled chicken, tzatziki, tomato + onion, olives, feta, romaine, yogurt dill dressing, pita",
       ingredients: [],
-      image: "img/greek-chicken.webp",
+      image: "public/img/greek-chicken.webp",
       icon: "âœ¨"
     },
     {
@@ -363,7 +363,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Harissa honey chicken, Crazy FetaÂ®, avocado, pickles, corn, feta, pickled onions, harissa vinaigrette, pita",
       ingredients: [],
-      image: "img/spicy-chicken-avocado.webp",
+      image: "public/img/spicy-chicken-avocado.webp",
       icon: "âœ¨"
     },
     {
@@ -383,7 +383,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Barbecue meets the Mediterranean. Our classic pita chips mixed with a kick of cayenne and a blend of spices. A little spicy, a little smoky, and a tiny bit sweet.",
       ingredients: [],
-      image: "img/harissa-bbq-pita-chips.webp",
+      image: "public/img/harissa-bbq-pita-chips.webp",
       icon: "âœ¨"
     },
     {
@@ -403,7 +403,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Made from our classic pitas. Cut, then fried for a deliciously dippable, chewy bite.",
       ingredients: [],
-      image: "img/classic-pita-chips.webp",
+      image: "public/img/classic-pita-chips.webp",
       icon: "âœ¨"
     },
     {
@@ -423,7 +423,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Our fluffy and perfectly chewy pita made with sprouted grains.",
       ingredients: [],
-      image: "img/side-pita.webp",
+      image: "public/img/side-pita.webp",
       icon: "âœ¨"
     },
     {
@@ -443,7 +443,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Feta whipped with jalapeÃ±o, onion, and olive oil for just that right level of spicy. A CAVA signature.",
       ingredients: [],
-      image: "img/side-crazy-feta.webp",
+      image: "public/img/side-crazy-feta.webp",
       icon: "âœ¨"
     },
     {
@@ -463,7 +463,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Chickpeas purÃ©ed with tahini, lemon juice, fresh garlic, salt. A guest favorite and CAVA classic.",
       ingredients: [],
-      image: "img/side-hummus.webp",
+      image: "public/img/side-hummus.webp",
       icon: "âœ¨"
     },
     {
@@ -483,7 +483,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Fiery, tomato-forward, and full of spices.",
       ingredients: [],
-      image: "img/side-harissa.webp",
+      image: "public/img/side-harissa.webp",
       icon: "âœ¨"
     },
     {
@@ -503,7 +503,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Made with Greek yogurt, shredded cucumber, and dill. Thick and creamy.",
       ingredients: [],
-      image: "img/side-tzatziki.webp",
+      image: "public/img/side-tzatziki.webp",
       icon: "âœ¨"
     },
     {
@@ -523,7 +523,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Roasted red peppers purÃ©ed with chickpeas, tahini, and garlic.",
       ingredients: [],
-      image: "img/side-red-pepper-hummus.webp",
+      image: "public/img/side-red-pepper-hummus.webp",
       icon: "âœ¨"
     },
     {
@@ -543,7 +543,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Roasted eggplant blended with lemon juice, parsley, onions, and garlic.",
       ingredients: [],
-      image: "img/side-roasted-eggplant.webp",
+      image: "public/img/side-roasted-eggplant.webp",
       icon: "âœ¨"
     },
     {
@@ -563,7 +563,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "A kid-sized, build-your-own meal with a half-serving of one main + grain, one dip, one dressing, and up to three toppings. Choose three classic pita chips or a side 1/4 pita, and small juice or milk.",
       ingredients: [],
-      image: "img/kids-meal.webp",
+      image: "public/img/kids-meal.webp",
       icon: "âœ¨"
     },
     {
@@ -583,7 +583,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "A strawberry + raspberry drink with a hint of lively ginger to keep things interesting.",
       ingredients: [],
-      image: "img/strawberry-ginger.webp",
+      image: "public/img/strawberry-ginger.webp",
       icon: "âœ¨"
     },
     {
@@ -603,7 +603,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Made in-house from a purÃ©e of blueberries and lavender.",
       ingredients: [],
-      image: "img/blueberry-lavender.webp",
+      image: "public/img/blueberry-lavender.webp",
       icon: "âœ¨"
     },
     {
@@ -623,7 +623,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Sweet and cooling, balanced out with fresh lime juice. Made in-house.",
       ingredients: [],
-      image: "img/cucumber-mint-lime.webp",
+      image: "public/img/cucumber-mint-lime.webp",
       icon: "âœ¨"
     },
     {
@@ -643,7 +643,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "A sweet and refreshing lemonade made in-house.",
       ingredients: [],
-      image: "img/classic-lemonade.webp",
+      image: "public/img/classic-lemonade.webp",
       icon: "âœ¨"
     },
     {
@@ -663,7 +663,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Unsweetened iced black tea with a balanced, smooth taste. Brewed in-house.",
       ingredients: [],
-      image: "img/unsweet-tea.webp",
+      image: "public/img/unsweet-tea.webp",
       icon: "âœ¨"
     },
     {
@@ -683,7 +683,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Sweetened black tea brewed in-house.",
       ingredients: [],
-      image: "img/sweet-tea.jpg",
+      image: "public/img/sweet-tea.jpg",
       icon: "âœ¨"
     },
     {
@@ -703,7 +703,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Choose from a selection of Maine Root fountain sodas.",
       ingredients: [],
-      image: "img/fountain-soda.webp",
+      image: "public/img/fountain-soda.webp",
       icon: "âœ¨"
     },
     {
@@ -723,7 +723,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Sparkling lemon water.",
       ingredients: [],
-      image: "img/spindrift-lemon.webp",
+      image: "public/img/spindrift-lemon.webp",
       icon: "âœ¨"
     },
     {
@@ -743,7 +743,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Sparkling half tea, half lemon water.",
       ingredients: [],
-      image: "img/spindrift-half-tea-half-lemon.webp",
+      image: "public/img/spindrift-half-tea-half-lemon.webp",
       icon: "âœ¨"
     },
     {
@@ -763,7 +763,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Open Water still water.",
       ingredients: [],
-      image: "img/open-water-still.webp",
+      image: "public/img/open-water-still.webp",
       icon: "âœ¨"
     },
     {
@@ -783,7 +783,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Open Water sparkling water.",
       ingredients: [],
-      image: "img/open-water-sparkling.webp",
+      image: "public/img/open-water-sparkling.webp",
       icon: "âœ¨"
     },
     {
@@ -803,7 +803,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Organic apple juice from Honest Kids. No sugar added.",
       ingredients: [],
-      image: "img/kids-apple-juice.jpg",
+      image: "public/img/kids-apple-juice.jpg",
       icon: "âœ¨"
     },
     {
@@ -823,7 +823,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Organic 1% milk.",
       ingredients: [],
-      image: "img/kids-milk.webp",
+      image: "public/img/kids-milk.webp",
       icon: "âœ¨"
     },
     {
@@ -843,7 +843,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "Organic 1% chocolate milk.",
       ingredients: [],
-      image: "img/kids-chocolate-milk.webp",
+      image: "public/img/kids-chocolate-milk.webp",
       icon: "âœ¨"
     },
     {
@@ -863,7 +863,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "If an oatmeal cookie and a salted chocolate chip cookie had a baby.",
       ingredients: [],
-      image: "img/salted-chocolate-oat-cookie.jpg",
+      image: "public/img/salted-chocolate-oat-cookie.jpg",
       icon: "âœ¨"
     },
     {
@@ -883,7 +883,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "A blondie with a super soft, almost gooey inside.",
       ingredients: [],
-      image: "img/greyston-blondie.webp",
+      image: "public/img/greyston-blondie.webp",
       icon: "âœ¨"
     },
     {
@@ -903,7 +903,7 @@ export const MENU_DATA = {
       allergens: [],
       description: "An intensely chocolatey brownie, with a fudgy, almost gooey inside.",
       ingredients: [],
-      image: "img/greyston-brownie.webp",
+      image: "public/img/greyston-brownie.webp",
       icon: "âœ¨"
     }
   ],
@@ -915,16 +915,16 @@ export const MENU_DATA = {
       {
         stepId: 1,
         title: "Step 1: Choose Your Base",
-        subtitle: "Pick up to 2 bases for your foundation (Calorie impact: 20 â€“ 310 cal)",
+        subtitle: "Pick up to 2 bases for your foundation (Calorie impact: 20 – 310 cal)",
         maxSelect: 2,
         required: true,
         options: [
-          { id: "supergreens", name: "SuperGreens (Kale, Spinach, Romaine)", calories: 25, protein: 2, carbs: 4, fat: 0, tags: ["vegan", "gluten-free", "low-cal"], icon: "ðŸ¥—" },
-          { id: "arugula-romaine", name: "Baby Arugula & Romaine", calories: 20, protein: 2, carbs: 3, fat: 0, tags: ["vegan", "gluten-free", "low-cal"], icon: "ðŸ¥¬" },
-          { id: "saffron-rice", name: "Saffron Basmati Rice", calories: 190, protein: 4, carbs: 40, fat: 2, tags: ["vegan", "gluten-free"], icon: "ðŸš" },
-          { id: "brown-rice", name: "Wild Brown Rice", calories: 170, protein: 4, carbs: 36, fat: 1.5, tags: ["vegan", "gluten-free"], icon: "ðŸŒ¾" },
-          { id: "black-lentils", name: "Black Lentils (+18g Protein, +15g Fiber)", calories: 180, protein: 18, carbs: 32, fat: 1, tags: ["vegan", "high-protein", "gluten-free"], icon: "ðŸ¥£" },
-          { id: "right-rice", name: "RightRiceâ„¢ (High Protein Veggie Rice)", calories: 160, protein: 10, carbs: 28, fat: 1, tags: ["vegan", "high-protein", "gluten-free"], icon: "ðŸŒ±" }
+          { id: "supergreens", name: "SuperGreens (Kale, Spinach, Romaine)", calories: 25, protein: 2, carbs: 4, fat: 0, tags: ["vegan", "gluten-free", "low-cal"], icon: "🥗" },
+          { id: "arugula-romaine", name: "Baby Arugula & Romaine", calories: 20, protein: 2, carbs: 3, fat: 0, tags: ["vegan", "gluten-free", "low-cal"], icon: "🥬" },
+          { id: "saffron-rice", name: "Saffron Basmati Rice", calories: 190, protein: 4, carbs: 40, fat: 2, tags: ["vegan", "gluten-free"], icon: "🍚" },
+          { id: "brown-rice", name: "Wild Brown Rice", calories: 170, protein: 4, carbs: 36, fat: 1.5, tags: ["vegan", "gluten-free"], icon: "🌾" },
+          { id: "black-lentils", name: "Black Lentils (+18g Protein, +15g Fiber)", calories: 180, protein: 18, carbs: 32, fat: 1, tags: ["vegan", "high-protein", "gluten-free"], icon: "🥣" },
+          { id: "right-rice", name: "RightRice™ (High Protein Veggie Rice)", calories: 160, protein: 10, carbs: 28, fat: 1, tags: ["vegan", "high-protein", "gluten-free"], icon: "🌱" }
         ]
       },
       {
@@ -934,14 +934,14 @@ export const MENU_DATA = {
         maxSelect: 1,
         required: true,
         options: [
-          { id: "grilled-chicken", name: "Grilled Chicken Breast (28-33g protein)", calories: 200, protein: 34, carbs: 0, fat: 6, extraCost: 0, tags: ["high-protein", "gluten-free"], icon: "ðŸ—" },
-          { id: "harissa-honey-chicken", name: "Harissa Honey Chicken (#1 Most Ordered)", calories: 240, protein: 32, carbs: 6, fat: 9, extraCost: 0, tags: ["high-protein"], icon: "ðŸ—" },
-          { id: "grilled-steak", name: "Grilled Marinated Steak", calories: 260, protein: 31, carbs: 1, fat: 14, extraCost: 1.50, tags: ["high-protein", "gluten-free"], icon: "ðŸ¥©" },
-          { id: "braised-lamb", name: "Slow-Roasted Braised Lamb", calories: 290, protein: 30, carbs: 2, fat: 18, extraCost: 1.50, tags: ["high-protein"], icon: "ðŸ¥©" },
-          { id: "spicy-lamb-meatballs", name: "Spicy Lamb Meatballs", calories: 270, protein: 28, carbs: 4, fat: 16, extraCost: 1.50, tags: ["high-protein"], icon: "ðŸ–" },
-          { id: "glazed-salmon", name: "Glazed Wild Salmon (2026 Special)", calories: 280, protein: 32, carbs: 4, fat: 15, extraCost: 3.25, tags: ["high-protein", "gluten-free"], icon: "ðŸŸ" },
-          { id: "golden-falafel", name: "Golden Crisp Falafel (Plant-Based)", calories: 220, protein: 9, carbs: 24, fat: 11, extraCost: 0, tags: ["vegan", "vegetarian"], allergen: "Sesame", icon: "ðŸ§†" },
-          { id: "roasted-veggies", name: "Roasted Medley Vegetables", calories: 110, protein: 4, carbs: 18, fat: 3, extraCost: 0, tags: ["vegan", "gluten-free"], icon: "ðŸ¥•" }
+          { id: "grilled-chicken", name: "Grilled Chicken Breast (28-33g protein)", calories: 200, protein: 34, carbs: 0, fat: 6, extraCost: 0, tags: ["high-protein", "gluten-free"], icon: "🍗" },
+          { id: "harissa-honey-chicken", name: "Harissa Honey Chicken (#1 Most Ordered)", calories: 240, protein: 32, carbs: 6, fat: 9, extraCost: 0, tags: ["high-protein"], icon: "🍗" },
+          { id: "grilled-steak", name: "Grilled Marinated Steak", calories: 260, protein: 31, carbs: 1, fat: 14, extraCost: 1.50, tags: ["high-protein", "gluten-free"], icon: "🥩" },
+          { id: "braised-lamb", name: "Slow-Roasted Braised Lamb", calories: 290, protein: 30, carbs: 2, fat: 18, extraCost: 1.50, tags: ["high-protein"], icon: "🥩" },
+          { id: "spicy-lamb-meatballs", name: "Spicy Lamb Meatballs", calories: 270, protein: 28, carbs: 4, fat: 16, extraCost: 1.50, tags: ["high-protein"], icon: "🍖" },
+          { id: "glazed-salmon", name: "Glazed Wild Salmon (2026 Special)", calories: 280, protein: 32, carbs: 4, fat: 15, extraCost: 3.25, tags: ["high-protein", "gluten-free"], icon: "🐟" },
+          { id: "golden-falafel", name: "Golden Crisp Falafel (Plant-Based)", calories: 220, protein: 9, carbs: 24, fat: 11, extraCost: 0, tags: ["vegan", "vegetarian"], allergen: "Sesame", icon: "🧆" },
+          { id: "roasted-veggies", name: "Roasted Medley Vegetables", calories: 110, protein: 4, carbs: 18, fat: 3, extraCost: 0, tags: ["vegan", "gluten-free"], icon: "🥕" }
         ]
       },
       {
@@ -951,12 +951,12 @@ export const MENU_DATA = {
         maxSelect: 3,
         required: true,
         options: [
-          { id: "crazy-feta", name: "Crazy FetaÂ® (Whipped Feta & JalapeÃ±o)", calories: 110, protein: 4, carbs: 2, fat: 9, tags: ["vegetarian"], allergen: "Dairy", icon: "ðŸ§€" },
-          { id: "traditional-hummus", name: "Traditional Silky Hummus", calories: 90, protein: 3, carbs: 9, fat: 5, tags: ["vegan", "gluten-free"], allergen: "Sesame", icon: "ðŸ§†" },
-          { id: "red-pepper-hummus", name: "Roasted Red Pepper Hummus", calories: 95, protein: 3, carbs: 10, fat: 5, tags: ["vegan", "gluten-free"], allergen: "Sesame", icon: "ðŸŒ¶ï¸" },
-          { id: "tzatziki", name: "Cucumber Dill Tzatziki", calories: 40, protein: 2, carbs: 2, fat: 2.5, tags: ["vegetarian", "gluten-free"], allergen: "Dairy", icon: "ðŸ¥’" },
-          { id: "roasted-eggplant", name: "Roasted Eggplant Dip", calories: 45, protein: 1, carbs: 5, fat: 2.5, tags: ["vegan", "gluten-free", "low-cal"], icon: "ðŸ†" },
-          { id: "harissa", name: "Fiery Harissa Paste", calories: 50, protein: 1, carbs: 3, fat: 4, tags: ["vegan", "gluten-free"], icon: "ðŸ”¥" }
+          { id: "crazy-feta", name: "Crazy Feta® (Whipped Feta & Jalapeño)", calories: 110, protein: 4, carbs: 2, fat: 9, tags: ["vegetarian"], allergen: "Dairy", icon: "🧀" },
+          { id: "traditional-hummus", name: "Traditional Silky Hummus", calories: 90, protein: 3, carbs: 9, fat: 5, tags: ["vegan", "gluten-free"], allergen: "Sesame", icon: "🧆" },
+          { id: "red-pepper-hummus", name: "Roasted Red Pepper Hummus", calories: 95, protein: 3, carbs: 10, fat: 5, tags: ["vegan", "gluten-free"], allergen: "Sesame", icon: "🌶️" },
+          { id: "tzatziki", name: "Cucumber Dill Tzatziki", calories: 40, protein: 2, carbs: 2, fat: 2.5, tags: ["vegetarian", "gluten-free"], allergen: "Dairy", icon: "🥒" },
+          { id: "roasted-eggplant", name: "Roasted Eggplant Dip", calories: 45, protein: 1, carbs: 5, fat: 2.5, tags: ["vegan", "gluten-free", "low-cal"], icon: "🍆" },
+          { id: "harissa", name: "Fiery Harissa Paste", calories: 50, protein: 1, carbs: 3, fat: 4, tags: ["vegan", "gluten-free"], icon: "🔥" }
         ]
       },
       {
@@ -966,15 +966,15 @@ export const MENU_DATA = {
         maxSelect: 7,
         required: false,
         options: [
-          { id: "fire-roasted-corn", name: "Fire-Roasted Corn", calories: 35, protein: 1, carbs: 7, fat: 0.5, tags: ["vegan"], icon: "ðŸŒ½" },
-          { id: "pickled-onions", name: "Pickled Red Onions", calories: 15, protein: 0, carbs: 3, fat: 0, tags: ["vegan"], icon: "ðŸ§…" },
-          { id: "crumbled-feta", name: "Greek Crumbled Feta", calories: 60, protein: 4, carbs: 1, fat: 5, tags: ["vegetarian"], allergen: "Dairy", icon: "ðŸ§€" },
-          { id: "kalamata-olives", name: "Kalamata Olives", calories: 50, protein: 0, carbs: 2, fat: 5, tags: ["vegan"], icon: "ðŸ«’" },
-          { id: "persian-cucumbers", name: "Diced Persian Cucumbers", calories: 10, protein: 0, carbs: 2, fat: 0, tags: ["vegan"], icon: "ðŸ¥’" },
-          { id: "tomato-cucumber", name: "Tomato + Cucumber Salad", calories: 20, protein: 1, carbs: 4, fat: 0, tags: ["vegan"], icon: "ðŸ¥—" },
-          { id: "fiery-broccoli", name: "Fiery Charred Broccoli", calories: 45, protein: 3, carbs: 6, fat: 1.5, tags: ["vegan"], icon: "ðŸ¥¦" },
-          { id: "pita-crisps", name: "House-Baked Pita Crisps", calories: 70, protein: 2, carbs: 12, fat: 2, tags: ["vegan"], allergen: "Wheat", icon: "ðŸ¥¨" },
-          { id: "fresh-avocado", name: "Fresh Sliced Avocado", calories: 120, protein: 2, carbs: 6, fat: 10, extraCost: 1.95, tags: ["vegan", "gluten-free"], icon: "ðŸ¥‘" }
+          { id: "fire-roasted-corn", name: "Fire-Roasted Corn", calories: 35, protein: 1, carbs: 7, fat: 0.5, tags: ["vegan"], icon: "🌽" },
+          { id: "pickled-onions", name: "Pickled Red Onions", calories: 15, protein: 0, carbs: 3, fat: 0, tags: ["vegan"], icon: "🧅" },
+          { id: "crumbled-feta", name: "Greek Crumbled Feta", calories: 60, protein: 4, carbs: 1, fat: 5, tags: ["vegetarian"], allergen: "Dairy", icon: "🧀" },
+          { id: "kalamata-olives", name: "Kalamata Olives", calories: 50, protein: 0, carbs: 2, fat: 5, tags: ["vegan"], icon: "🫒" },
+          { id: "persian-cucumbers", name: "Diced Persian Cucumbers", calories: 10, protein: 0, carbs: 2, fat: 0, tags: ["vegan"], icon: "🥒" },
+          { id: "tomato-cucumber", name: "Tomato + Cucumber Salad", calories: 20, protein: 1, carbs: 4, fat: 0, tags: ["vegan"], icon: "🥗" },
+          { id: "fiery-broccoli", name: "Fiery Charred Broccoli", calories: 45, protein: 3, carbs: 6, fat: 1.5, tags: ["vegan"], icon: "🥦" },
+          { id: "pita-crisps", name: "House-Baked Pita Crisps", calories: 70, protein: 2, carbs: 12, fat: 2, tags: ["vegan"], allergen: "Wheat", icon: "🥨" },
+          { id: "fresh-avocado", name: "Fresh Sliced Avocado", calories: 120, protein: 2, carbs: 6, fat: 10, extraCost: 1.95, tags: ["vegan", "gluten-free"], icon: "🥑" }
         ]
       },
       {
@@ -984,14 +984,14 @@ export const MENU_DATA = {
         maxSelect: 2,
         required: true,
         options: [
-          { id: "greek-vinaigrette", name: "Classic Greek Herb Vinaigrette", calories: 120, protein: 0, carbs: 2, fat: 12, tags: ["vegan"], icon: "ðŸŒ¿" },
-          { id: "lemon-herb-tahini", name: "Lemon Herb Tahini", calories: 100, protein: 2, carbs: 4, fat: 9, tags: ["vegan"], allergen: "Sesame", icon: "ðŸ‹" },
-          { id: "hot-harissa-vinaigrette", name: "Hot Harissa Vinaigrette", calories: 110, protein: 0, carbs: 4, fat: 10, tags: ["vegan"], icon: "ðŸŒ¶ï¸" },
-          { id: "yogurt-dill", name: "Yogurt Dill Dressing", calories: 70, protein: 2, carbs: 3, fat: 5, tags: ["vegetarian"], allergen: "Dairy", icon: "ðŸ¥£" },
-          { id: "skhug", name: "Skhug (Middle Eastern Herb & Chili)", calories: 80, protein: 1, carbs: 2, fat: 8, tags: ["vegan"], icon: "ðŸŒ¿" },
-          { id: "balsamic-date", name: "Balsamic Date Vinaigrette", calories: 130, protein: 0, carbs: 8, fat: 11, tags: ["vegan"], icon: "ðŸ‡" },
-          { id: "garlic-dressing", name: "Creamy Garlic Dressing", calories: 140, protein: 1, carbs: 2, fat: 15, tags: ["vegetarian"], icon: "ðŸ§„" },
-          { id: "tahini-caesar", name: "Sesame Tahini Caesar", calories: 130, protein: 2, carbs: 3, fat: 13, tags: ["vegetarian"], allergen: "Sesame", icon: "ðŸ¥£" }
+          { id: "greek-vinaigrette", name: "Classic Greek Herb Vinaigrette", calories: 120, protein: 0, carbs: 2, fat: 12, tags: ["vegan"], icon: "🌿" },
+          { id: "lemon-herb-tahini", name: "Lemon Herb Tahini", calories: 100, protein: 2, carbs: 4, fat: 9, tags: ["vegan"], allergen: "Sesame", icon: "🍋" },
+          { id: "hot-harissa-vinaigrette", name: "Hot Harissa Vinaigrette", calories: 110, protein: 0, carbs: 4, fat: 10, tags: ["vegan"], icon: "🌶️" },
+          { id: "yogurt-dill", name: "Yogurt Dill Dressing", calories: 70, protein: 2, carbs: 3, fat: 5, tags: ["vegetarian"], allergen: "Dairy", icon: "🥣" },
+          { id: "skhug", name: "Skhug (Middle Eastern Herb & Chili)", calories: 80, protein: 1, carbs: 2, fat: 8, tags: ["vegan"], icon: "🌿" },
+          { id: "balsamic-date", name: "Balsamic Date Vinaigrette", calories: 130, protein: 0, carbs: 8, fat: 11, tags: ["vegan"], icon: "🍇" },
+          { id: "garlic-dressing", name: "Creamy Garlic Dressing", calories: 140, protein: 1, carbs: 2, fat: 15, tags: ["vegetarian"], icon: "🧄" },
+          { id: "tahini-caesar", name: "Sesame Tahini Caesar", calories: 130, protein: 2, carbs: 3, fat: 13, tags: ["vegetarian"], allergen: "Sesame", icon: "🥣" }
         ]
       }
     ]
@@ -1000,22 +1000,22 @@ export const MENU_DATA = {
   // Calorie-ranked table from lowest to highest
   calorieRankings: [
     { rank: 1, name: "SuperGreens + Grilled Chicken Bowl", calories: "480 cal", protein: "33g", carbs: "18g", fat: "22g", category: "Bowl", note: "Lowest calorie count, highest protein density" },
-    { rank: 2, name: "Tahini Caesar Bowl", calories: "550 â€“ 660 cal", protein: "42g", carbs: "28g", fat: "34g", category: "Bowl", note: "Savory & low carb if pita crisps reduced" },
-    { rank: 3, name: "Greek Salad Bowl", calories: "585 â€“ 600 cal", protein: "34g", carbs: "26g", fat: "32g", category: "Bowl", note: "Light & refreshing classic" },
-    { rank: 4, name: "Garlicky Chicken Shawarma Bowl", calories: "600 â€“ 660 cal", protein: "39g", carbs: "44g", fat: "28g", category: "Bowl", note: "Robust garlic & herb notes" },
+    { rank: 2, name: "Tahini Caesar Bowl", calories: "550 – 660 cal", protein: "42g", carbs: "28g", fat: "34g", category: "Bowl", note: "Savory & low carb if pita crisps reduced" },
+    { rank: 3, name: "Greek Salad Bowl", calories: "585 – 600 cal", protein: "34g", carbs: "26g", fat: "32g", category: "Bowl", note: "Light & refreshing classic" },
+    { rank: 4, name: "Garlicky Chicken Shawarma Bowl", calories: "600 – 660 cal", protein: "39g", carbs: "44g", fat: "28g", category: "Bowl", note: "Robust garlic & herb notes" },
     { rank: 5, name: "Keto Greens + Steak Bowl", calories: "615 cal", protein: "40g", carbs: "14g", fat: "42g", category: "Bowl", note: "Clean keto macro ratio" },
     { rank: 6, name: "Steak + Harissa Bowl", calories: "615 cal", protein: "41g", carbs: "38g", fat: "32g", category: "Bowl", note: "High protein, spicy kick" },
     { rank: 7, name: "Crispy Falafel Pita Pocket", calories: "620 cal", protein: "22g", carbs: "78g", fat: "26g", category: "Pita", note: "100% vegetarian staple" },
     { rank: 8, name: "Lemon Herb Chicken Bowl", calories: "650 cal", protein: "38g", carbs: "50g", fat: "26g", category: "Bowl", note: "Zesty & balanced" },
     { rank: 9, name: "Salmon + Strawberry Sesame Bowl", calories: "700 cal", protein: "37g", carbs: "52g", fat: "36g", category: "Bowl", note: "2026 limited-time seafood item" },
     { rank: 10, name: "Salmon + Yogurt Dill Bowl", calories: "710 cal", protein: "38g", carbs: "48g", fat: "38g", category: "Bowl", note: "2026 chef curation with wild salmon" },
-    { rank: 11, name: "Chicken + Rice Bowl", calories: "710 â€“ 715 cal", protein: "42g", carbs: "64g", fat: "28g", category: "Bowl", note: "Safest pick for first-time visitors" },
+    { rank: 11, name: "Chicken + Rice Bowl", calories: "710 – 715 cal", protein: "42g", carbs: "64g", fat: "28g", category: "Bowl", note: "Safest pick for first-time visitors" },
     { rank: 12, name: "Greek Chicken Pita", calories: "720 cal", protein: "38g", carbs: "62g", fat: "32g", category: "Pita", note: "Portable Mediterranean wrap" },
-    { rank: 13, name: "Spicy Lamb + Avocado Bowl", calories: "780 â€“ 795 cal", protein: "44g", carbs: "54g", fat: "44g", category: "Bowl", note: "Hearty and rich spiced meatballs" },
-    { rank: 14, name: "Harissa Avocado Bowl", calories: "810 â€“ 885 cal", protein: "38g", carbs: "68g", fat: "42g", category: "Bowl", note: "#1 most popular item on menu" },
+    { rank: 13, name: "Spicy Lamb + Avocado Bowl", calories: "780 – 795 cal", protein: "44g", carbs: "54g", fat: "44g", category: "Bowl", note: "Hearty and rich spiced meatballs" },
+    { rank: 14, name: "Harissa Avocado Bowl", calories: "810 – 885 cal", protein: "38g", carbs: "68g", fat: "42g", category: "Bowl", note: "#1 most popular item on menu" },
     { rank: 15, name: "Steak + Feta Pita", calories: "810 cal", protein: "42g", carbs: "58g", fat: "38g", category: "Pita", note: "Hearty wrapped steak" },
     { rank: 16, name: "Falafel Crunch Bowl", calories: "860 cal", protein: "24g", carbs: "92g", fat: "38g", category: "Bowl", note: "High carb & high fiber plant bowl" },
-    { rank: 17, name: "Spicy Chicken + Avocado Pita", calories: "970 â€“ 1,030 cal", protein: "46g", carbs: "74g", fat: "48g", category: "Pita", note: "Loaded pita wrap, highest calorie build" }
+    { rank: 17, name: "Spicy Chicken + Avocado Pita", calories: "970 – 1,030 cal", protein: "46g", carbs: "74g", fat: "48g", category: "Pita", note: "Loaded pita wrap, highest calorie build" }
   ],
 
   // Full Allergen Matrix Table
@@ -1030,7 +1030,7 @@ export const MENU_DATA = {
     { item: "Tahini Caesar Bowl", allergens: "Dairy, Sesame, Wheat", dairy: true, sesame: true, wheat: true, soy: false, egg: false, fish: false },
     { item: "Pita Bread / Pita Chips", allergens: "Wheat", dairy: false, sesame: false, wheat: true, soy: false, egg: false, fish: false },
     { item: "Traditional Hummus", allergens: "Sesame", dairy: false, sesame: true, wheat: false, soy: false, egg: false, fish: false },
-    { item: "Crazy FetaÂ®", allergens: "Dairy", dairy: true, sesame: false, wheat: false, soy: false, egg: false, fish: false },
+    { item: "Crazy Feta®", allergens: "Dairy", dairy: true, sesame: false, wheat: false, soy: false, egg: false, fish: false },
     { item: "Cucumber Dill Tzatziki", allergens: "Dairy", dairy: true, sesame: false, wheat: false, soy: false, egg: false, fish: false }
   ],
 
@@ -1038,7 +1038,7 @@ export const MENU_DATA = {
   faqs: [
     {
       q: "What is the best menu item at CAVA?",
-      a: "The **Harissa Avocado Bowl** is CAVA's most consistently praised item, combining fiery harissa honey chicken, Crazy FetaÂ®, hummus, fresh avocado, and hot harissa vinaigrette. For a simpler first order, the **Chicken + Rice Bowl** is the safest, most commonly recommended baseline pick."
+      a: "The **Harissa Avocado Bowl** is CAVA's most consistently praised item, combining fiery harissa honey chicken, Crazy Feta®, hummus, fresh avocado, and hot harissa vinaigrette. For a simpler first order, the **Chicken + Rice Bowl** is the safest, most commonly recommended baseline pick."
     },
     {
       q: "Is CAVA basically Chipotle?",
@@ -1071,13 +1071,13 @@ export const MENU_DATA = {
     {
       id: "sauce-hot-harissa",
       name: "Hot Harissa Vinaigrette",
-      heat: "ðŸ”¥ðŸ”¥ðŸ”¥ Hot",
+      heat: "🔥🔥🔥 Hot",
       calories: 110,
       dietary: ["vegan", "gluten-free"],
       allergens: [],
       flavor: "Spicy, tangy, smoked red pepper with garlic kick",
       bestWith: "Harissa Honey Chicken, Steak, Brown Rice",
-      icon: "ðŸŒ¶ï¸"
+      icon: "🌶️"
     },
     {
       id: "sauce-lemon-tahini",
@@ -1088,7 +1088,7 @@ export const MENU_DATA = {
       allergens: ["Sesame"],
       flavor: "Nutty roasted sesame paste, fresh squeezed lemon, minced parsley",
       bestWith: "Falafel, SuperGreens, Black Lentils",
-      icon: "ðŸ‹"
+      icon: "🍋"
     },
     {
       id: "sauce-tahini-caesar",
@@ -1099,7 +1099,7 @@ export const MENU_DATA = {
       allergens: ["Sesame", "Dairy"],
       flavor: "Creamy parmesan, cracked black pepper, garlic & toasted sesame",
       bestWith: "Grilled Chicken, Romaine, Parmesan Crisps",
-      icon: "ðŸ¥£"
+      icon: "🥣"
     },
     {
       id: "sauce-tzatziki",
@@ -1110,18 +1110,18 @@ export const MENU_DATA = {
       allergens: ["Dairy"],
       flavor: "Strained Greek yogurt, grated Persian cucumber, garlic, dill",
       bestWith: "Braised Lamb, Warm Pitas, Saffron Rice",
-      icon: "ðŸ¥’"
+      icon: "🥒"
     },
     {
       id: "sauce-skhug",
       name: "Skhug (Chili Herb Sauce)",
-      heat: "ðŸ”¥ðŸ”¥ Medium-Hot",
+      heat: "🔥🔥 Medium-Hot",
       calories: 80,
       dietary: ["vegan", "gluten-free"],
       allergens: [],
       flavor: "Yemenite cilantro, serrano chilies, coriander, cardamom, EVOO",
-      bestWith: "Steak, Spicy Lamb Meatballs, RightRiceâ„¢",
-      icon: "ðŸŒ¿"
+      bestWith: "Steak, Spicy Lamb Meatballs, RightRice™",
+      icon: "🌿"
     },
     {
       id: "sauce-balsamic-date",
@@ -1132,7 +1132,7 @@ export const MENU_DATA = {
       allergens: [],
       flavor: "Pureed Medjool dates, aged balsamic vinegar, olive oil",
       bestWith: "Greek Salad, Baby Arugula, Roasted Veggies",
-      icon: "ðŸ‡"
+      icon: "🍇"
     },
     {
       id: "sauce-garlic",
@@ -1143,7 +1143,7 @@ export const MENU_DATA = {
       allergens: [],
       flavor: "Slow-emulsified roasted & fresh garlic, lemon, Mediterranean spices",
       bestWith: "Chicken Shawarma, Pitas, Roasted Sweet Potatoes",
-      icon: "ðŸ§„"
+      icon: "🧄"
     },
     {
       id: "sauce-greek-vinaigrette",
@@ -1154,7 +1154,7 @@ export const MENU_DATA = {
       allergens: [],
       flavor: "Red wine vinegar, Greek oregano, sumac, cold-pressed olive oil",
       bestWith: "SuperGreens + Grilled Chicken, Tomato Salad",
-      icon: "ðŸŒ¿"
+      icon: "🌿"
     }
   ],
 
@@ -1162,26 +1162,26 @@ export const MENU_DATA = {
   recipes: [
     {
       id: "recipe-crazy-feta",
-      title: "Copycat CAVA Crazy FetaÂ®",
+      title: "Copycat CAVA Crazy Feta®",
       prepTime: "10 mins",
       difficulty: "Easy",
       calories: "110 cal/serving",
-      description: "CAVA's signature whipped jalapeÃ±o feta dip that regulars obsess over.",
+      description: "CAVA's signature whipped jalapeño feta dip that regulars obsess over.",
       ingredients: [
         "8 oz high-quality block Greek Feta (in brine)",
-        "2 fresh jalapeÃ±o peppers (charred over open flame)",
+        "2 fresh jalapeño peppers (charred over open flame)",
         "2 cloves garlic, minced",
         "3 tbsp Extra Virgin Olive Oil",
         "1 tbsp fresh lemon juice",
         "Pinch of dried Greek oregano"
       ],
       steps: [
-        "Char the jalapeÃ±os over an open flame or broil until skins blister. Peel and deseed.",
-        "Add feta, charred jalapeÃ±os, garlic, lemon juice, and olive oil to food processor.",
-        "Pulse until creamy and fluffy with small green jalapeÃ±o specks.",
+        "Char the jalapeños over an open flame or broil until skins blister. Peel and deseed.",
+        "Add feta, charred jalapeños, garlic, lemon juice, and olive oil to food processor.",
+        "Pulse until creamy and fluffy with small green jalapeño specks.",
         "Chill for 30 minutes and serve with warm pita chips!"
       ],
-      icon: "ðŸ§€"
+      icon: "🧀"
     },
     {
       id: "recipe-harissa-chicken",
@@ -1204,7 +1204,7 @@ export const MENU_DATA = {
         "Grill in a cast-iron skillet or outdoor grill over medium-high heat for 6-8 mins per side.",
         "Rest 5 minutes, slice into bite-sized strips, and layer over grain bowls!"
       ],
-      icon: "ðŸ—"
+      icon: "🍗"
     },
     {
       id: "recipe-saffron-rice",
@@ -1226,7 +1226,7 @@ export const MENU_DATA = {
         "Pour in broth and saffron water. Bring to a boil, then cover and reduce to low heat.",
         "Simmer 15 minutes, remove from heat, let steam 5 minutes, and fluff with a fork."
       ],
-      icon: "ðŸš"
+      icon: "🍚"
     }
   ],
 
@@ -1238,10 +1238,9 @@ export const MENU_DATA = {
   },
 
   locations: [
-    { id: "loc-1", name: "CAVA — University Place", address: "University Place", distance: "0.8 miles", status: "Open Now", hours: "10:45 AM – 10:00 PM (7 Days)", readyIn: "15-20 min" },
-    { id: "loc-2", name: "CAVA Bethesda Original", address: "7800 Wisconsin Ave, Bethesda MD", distance: "Historic Flagship", status: "Open Now", hours: "10:45 AM â€“ 10:00 PM", readyIn: "10-15 min" },
-    { id: "loc-3", name: "CAVA Midtown Plaza", address: "780 Lexington Blvd", distance: "2.1 miles", status: "Open Now", hours: "10:45 AM â€“ 10:00 PM", readyIn: "20-25 min" }
+    { id: "loc-1", name: "CAVA â€” University Place", address: "University Place", distance: "0.8 miles", status: "Open Now", hours: "10:45 AM â€“ 10:00 PM (7 Days)", readyIn: "15-20 min" },
+    { id: "loc-2", name: "CAVA Bethesda Original", address: "7800 Wisconsin Ave, Bethesda MD", distance: "Historic Flagship", status: "Open Now", hours: "10:45 AM – 10:00 PM", readyIn: "10-15 min" },
+    { id: "loc-3", name: "CAVA Midtown Plaza", address: "780 Lexington Blvd", distance: "2.1 miles", status: "Open Now", hours: "10:45 AM – 10:00 PM", readyIn: "20-25 min" }
   ]
 };
-
 
