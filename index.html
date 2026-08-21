@@ -13,11 +13,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
   <style>
     .nav-dropdown-menu {
       display: none;
+    }
+    .sauces-grid, .recipes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -794,7 +799,24 @@
       </div>
 
       <div class="sauces-grid" id="saucesContainer">
-        <!-- Rendered by JS from MENU_DATA.sauces -->
+        <div class="spotlight-card">
+          <div class="spotlight-badge">Medium Heat 🔥</div>
+          <h3 class="spotlight-title">Hot Harissa Vinaigrette</h3>
+          <p class="spotlight-desc">Our signature spicy and slightly sweet vinaigrette with tomatoes, jalapeños, and Mediterranean herbs.</p>
+          <div class="spotlight-meta"><span>🔥 90 cal</span><span>💧 Vegan</span></div>
+        </div>
+        <div class="spotlight-card">
+          <div class="spotlight-badge">Mild</div>
+          <h3 class="spotlight-title">Yogurt Dill Dressing</h3>
+          <p class="spotlight-desc">A creamy, cooling yogurt-based dressing perfect for balancing spicy harissa or chicken.</p>
+          <div class="spotlight-meta"><span>🔥 50 cal</span><span>🥛 Contains Dairy</span></div>
+        </div>
+        <div class="spotlight-card">
+          <div class="spotlight-badge">Zesty</div>
+          <h3 class="spotlight-title">Tahini Caesar</h3>
+          <p class="spotlight-desc">A dairy-free twist on caesar using rich sesame tahini and lemon juice.</p>
+          <div class="spotlight-meta"><span>🔥 80 cal</span><span>💧 Vegan</span></div>
+        </div>
       </div>
     </div>
   </section>
@@ -811,7 +833,18 @@
       </div>
 
       <div class="recipes-grid" id="recipesContainer">
-        <!-- Rendered by JS from MENU_DATA.recipes -->
+        <div class="spotlight-card">
+          <div class="spotlight-badge">Fan Favorite ⭐</div>
+          <h3 class="spotlight-title">Crazy Feta® At Home</h3>
+          <p class="spotlight-desc">Whip together feta cheese, olive oil, jalapeños, and onion for a homemade version of CAVA's iconic dip.</p>
+          <div class="spotlight-meta"><span>🕒 10 Mins</span><span>🧀 Easy</span></div>
+        </div>
+        <div class="spotlight-card">
+          <div class="spotlight-badge">Protein Base</div>
+          <h3 class="spotlight-title">Harissa Honey Chicken</h3>
+          <p class="spotlight-desc">Marinate chicken thighs in harissa paste, honey, garlic, and lemon juice before grilling.</p>
+          <div class="spotlight-meta"><span>🕒 30 Mins</span><span>🍗 Medium</span></div>
+        </div>
       </div>
     </div>
   </section>
@@ -845,7 +878,36 @@
               </tr>
             </thead>
             <tbody id="calorieRankingsBody">
-              <!-- Rendered by JS from MENU_DATA.calorieRankings -->
+              <tr>
+                <td>1</td>
+                <td>Greek Salad Bowl</td>
+                <td>480</td>
+                <td>20g</td>
+                <td>40g</td>
+                <td>25g</td>
+                <td>Salad Base</td>
+                <td>Lightest option</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Harissa Avocado Bowl</td>
+                <td>710</td>
+                <td>42g</td>
+                <td>65g</td>
+                <td>35g</td>
+                <td>Grain Bowl</td>
+                <td>Balanced protein/fats</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Lemon Chicken Pita</td>
+                <td>840</td>
+                <td>38g</td>
+                <td>95g</td>
+                <td>30g</td>
+                <td>Pita Wrap</td>
+                <td>Higher carb</td>
+              </tr>
             </tbody>
           </table>
         </div>
