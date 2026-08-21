@@ -63,148 +63,16 @@
         </div>
       </div>
 
-      <!-- Main Desktop Navigation with Rich Dropdowns -->
-      <nav class="main-nav" aria-label="Main Navigation">
-        <!-- Dropdown 1: Menu & Food -->
-        <div class="nav-dropdown-item">
-          <button class="nav-dropdown-btn" type="button">
-            <span>Menu & Food</span>
-            <svg class="dropdown-chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="nav-dropdown-menu">
-            <a href="#menu-prices" class="dropdown-link" onclick="window.cavaAppInstance?.filterByCategory('curated-bowls')">
-              <span class="dropdown-icon">🥗</span>
-              <div>
-                <div class="dropdown-title">CAVA Bowls</div>
-                <div class="dropdown-desc">Curated & Build-Your-Own ($11–$19)</div>
-              </div>
-            </a>
-            <a href="#menu-prices" class="dropdown-link" onclick="window.cavaAppInstance?.filterByCategory('pitas')">
-              <span class="dropdown-icon">🥙</span>
-              <div>
-                <div class="dropdown-title">CAVA Pitas</div>
-                <div class="dropdown-desc">Damascus Bakery Sprouted Wraps</div>
-              </div>
-            </a>
-            <a href="#menu-prices" class="dropdown-link" onclick="window.cavaAppInstance?.filterByCategory('dips-spreads')">
-              <span class="dropdown-icon">🧆</span>
-              <div>
-                <div class="dropdown-title">CAVA Sides & Free Dips</div>
-                <div class="dropdown-desc">Crazy Feta®, Hummus & Pita Chips</div>
-              </div>
-            </a>
-            <a href="#menu-prices" class="dropdown-link" onclick="window.cavaAppInstance?.filterByCategory('drinks')">
-              <span class="dropdown-icon">🍋</span>
-              <div>
-                <div class="dropdown-title">CAVA Drinks & Juices</div>
-                <div class="dropdown-desc">Freshly Pressed Pineapple Mint & Teas</div>
-              </div>
-            </a>
-            <a href="#cava-sauces" class="dropdown-link">
-              <span class="dropdown-icon">🥣</span>
-              <div>
-                <div class="dropdown-title">CAVA Sauces & Dressings</div>
-                <div class="dropdown-desc">Tahini Caesar, Hot Harissa, Skhug</div>
-              </div>
-            </a>
-            <a href="#menu-prices" class="dropdown-link" onclick="window.cavaAppInstance?.filterByCategory('kids-catering')">
-              <span class="dropdown-icon">🧒</span>
-              <div>
-                <div class="dropdown-title">CAVA Kids Meals</div>
-                <div class="dropdown-desc">Mini Pita/Bowl + Drink ($7.15–$7.95)</div>
-              </div>
-            </a>
-            <a href="#cava-recipes" class="dropdown-link">
-              <span class="dropdown-icon">🍲</span>
-              <div>
-                <div class="dropdown-title">CAVA Copycat Recipes</div>
-                <div class="dropdown-desc">Make Crazy Feta & Harissa Bowl at home</div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <!-- Dropdown 2: Nutrition & Diet -->
-        <div class="nav-dropdown-item">
-          <button class="nav-dropdown-btn" type="button">
-            <span>Nutrition & Diet</span>
-            <svg class="dropdown-chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="nav-dropdown-menu">
-            <a href="#is-cava-healthy" class="dropdown-link">
-              <span class="dropdown-icon">📊</span>
-              <div>
-                <div class="dropdown-title">CAVA Nutrition Guide</div>
-                <div class="dropdown-desc">Macro Breakdown, Oils & Sourcing</div>
-              </div>
-            </a>
-            <a href="#quick-guide" class="dropdown-link">
-              <span class="dropdown-icon">🔥</span>
-              <div>
-                <div class="dropdown-title">CAVA Calories Ranked</div>
-                <div class="dropdown-desc">Ranked 480 cal to 1,030 cal</div>
-              </div>
-            </a>
-            <a href="#dietary-allergens" class="dropdown-link">
-              <span class="dropdown-icon">🌾</span>
-              <div>
-                <div class="dropdown-title">CAVA Gluten-Free Guide</div>
-                <div class="dropdown-desc">100% Gluten-Free Bowls Blueprint</div>
-              </div>
-            </a>
-            <a href="#dietary-allergens" class="dropdown-link">
-              <span class="dropdown-icon">🌿</span>
-              <div>
-                <div class="dropdown-title">CAVA Vegan & Plant-Based</div>
-                <div class="dropdown-desc">Falafel, Lentils, Veggie Rice & Dips</div>
-              </div>
-            </a>
-            <a href="#dietary-allergens" class="dropdown-link">
-              <span class="dropdown-icon">🛡️</span>
-              <div>
-                <div class="dropdown-title">Allergen Matrix Table</div>
-                <div class="dropdown-desc">Dairy, Sesame, Wheat & Fish breakdown</div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <!-- Dropdown 3: Locations & Hours -->
-        <div class="nav-dropdown-item">
-          <button class="nav-dropdown-btn" type="button">
-            <span>Locations & Hours</span>
-            <svg class="dropdown-chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-          </button>
-          <div class="nav-dropdown-menu">
-            <a href="#hours-locations" class="dropdown-link">
-              <span class="dropdown-icon">📍</span>
-              <div>
-                <div class="dropdown-title">CAVA Locations (459 Units)</div>
-                <div class="dropdown-desc">Across 29 States & Washington, D.C.</div>
-              </div>
-            </a>
-            <a href="javascript:void(0)" class="dropdown-link" onclick="window.cavaAppInstance?.openModal('locationModal')">
-              <span class="dropdown-icon">🗺️</span>
-              <div>
-                <div class="dropdown-title">CAVA Near Me Locator</div>
-                <div class="dropdown-desc">Find closest store & ready times</div>
-              </div>
-            </a>
-            <a href="#hours-locations" class="dropdown-link">
-              <span class="dropdown-icon">⏰</span>
-              <div>
-                <div class="dropdown-title">CAVA Hours & Holidays</div>
-                <div class="dropdown-desc">10:45 AM – 10:00 PM & Holiday Closures</div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <!-- Direct Links -->
-        <a href="#vs-competitors" class="nav-link">CAVA vs Chipotle</a>
-        <a href="#about-cava" class="nav-link">About Us</a>
-        <a href="#builder-studio" class="nav-link highlight">🥣 Bowl Studio</a>
-        <button class="nav-link-btn" id="navContactBtn" type="button">Contact Us</button>
+      <!-- Main Desktop Navigation -->
+      <nav class="main-nav" aria-label="Main Navigation" style="display: flex; gap: 1.5rem; align-items: center; font-weight: 600;">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#menu-prices" class="nav-link" onclick="window.cavaAppInstance?.filterByCategory('curated-bowls')">cava bowl</a>
+        <a href="#menu-prices" class="nav-link" onclick="window.cavaAppInstance?.filterByCategory('pitas')">cava pita</a>
+        <a href="#menu-prices" class="nav-link" onclick="window.cavaAppInstance?.filterByCategory('drinks')">Drink</a>
+        <a href="#menu-prices" class="nav-link" onclick="window.cavaAppInstance?.filterByCategory('kids-catering')">kids menu</a>
+        <a href="#menu-prices" class="nav-link" onclick="window.cavaAppInstance?.filterByCategory('dips-spreads')">cava sides</a>
+        <a href="#about-cava" class="nav-link">about us</a>
+        <a href="#contact-us" class="nav-link">contact us</a>
       </nav>
 
       <!-- Header Actions -->
