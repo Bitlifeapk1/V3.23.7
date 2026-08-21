@@ -28,6 +28,7 @@
       display: grid;
       grid-template-columns: 1fr;
       gap: 2rem;
+      align-items: start;
     }
     @media (min-width: 992px) {
       .builder-layout {
@@ -38,6 +39,12 @@
       display: flex;
       justify-content: space-between;
       margin-top: 1.5rem;
+      width: 100%;
+    }
+    .options-grid {
+      display: grid !important;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+      gap: 1rem !important;
     }
   </style>
 </head>
