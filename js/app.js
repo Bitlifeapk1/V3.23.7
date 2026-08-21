@@ -67,6 +67,11 @@ class CavaApp {
     }
   }
 
+  closeMobileMenu() {
+    document.getElementById('mobileMenuOverlay')?.classList.remove('open');
+    document.getElementById('mobileMenuDrawer')?.classList.remove('open');
+  }
+
   // ========================================================================
   // Theme Toggle
   // ========================================================================
@@ -101,6 +106,26 @@ class CavaApp {
     document.getElementById('brandLogoBtn')?.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+
+    // Mobile Menu
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+    const mobileMenuDrawer = document.getElementById('mobileMenuDrawer');
+    const mobileMenuCloseBtn = document.getElementById('mobileMenuCloseBtn');
+
+    if (mobileMenuBtn && mobileMenuOverlay && mobileMenuDrawer && mobileMenuCloseBtn) {
+      const openMenu = () => {
+        mobileMenuOverlay.classList.add('open');
+        mobileMenuDrawer.classList.add('open');
+      };
+      const closeMenu = () => {
+        mobileMenuOverlay.classList.remove('open');
+        mobileMenuDrawer.classList.remove('open');
+      };
+      mobileMenuBtn.addEventListener('click', openMenu);
+      mobileMenuCloseBtn.addEventListener('click', closeMenu);
+      mobileMenuOverlay.addEventListener('click', closeMenu);
+    }
 
     // Search Input
     const searchInput = document.getElementById('menuSearchInput');

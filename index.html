@@ -103,8 +103,37 @@
         <a href="#about-cava" class="toc-pill">About Us</a>
         <a href="#contact-us" class="toc-pill">Contact Us</a>
       </nav>
+
+      <!-- Hamburger Menu Button -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open mobile menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
     </div>
   </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <div class="mobile-menu-drawer" id="mobileMenuDrawer">
+    <div class="mobile-menu-header">
+      <span style="font-weight: 800; font-size: 1.2rem; color: var(--primary);">CAVA MENU</span>
+      <button class="mobile-menu-close" id="mobileMenuCloseBtn" aria-label="Close mobile menu">✕</button>
+    </div>
+    <div class="mobile-menu-links">
+      <a href="#" onclick="window.cavaAppInstance?.closeMobileMenu()">Home</a>
+      <a href="#menu-prices" onclick="window.cavaAppInstance?.filterByCategory('bowls'); window.cavaAppInstance?.closeMobileMenu()">CAVA Bowl</a>
+      <a href="#menu-prices" onclick="window.cavaAppInstance?.filterByCategory('pitas'); window.cavaAppInstance?.closeMobileMenu()">CAVA Pita</a>
+      <a href="#menu-prices" onclick="window.cavaAppInstance?.filterByCategory('drinks'); window.cavaAppInstance?.closeMobileMenu()">CAVA Drink</a>
+      <a href="#menu-prices" onclick="window.cavaAppInstance?.filterByCategory('kids-meal'); window.cavaAppInstance?.closeMobileMenu()">Kids Menu</a>
+      <a href="#menu-prices" onclick="window.cavaAppInstance?.filterByCategory('sides'); window.cavaAppInstance?.closeMobileMenu()">CAVA Sides</a>
+      <a href="#cava-sauces" onclick="window.cavaAppInstance?.closeMobileMenu()">Sauces & Dressings</a>
+      <a href="#about-cava" onclick="window.cavaAppInstance?.closeMobileMenu()">About Us</a>
+      <a href="#contact-us" onclick="window.cavaAppInstance?.closeMobileMenu()">Contact Us</a>
+    </div>
+  </div>
 
   <!-- ========================================================================
        Hero Section
