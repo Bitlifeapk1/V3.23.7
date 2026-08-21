@@ -32,7 +32,7 @@
   </div>
 
   <!-- ========================================================================
-       Header Navigation
+       Header Navigation with Dropdowns
        ======================================================================== -->
   <header class="header">
     <div class="container header-content">
@@ -44,15 +44,148 @@
         </div>
       </div>
 
-      <!-- Main Desktop Navigation -->
+      <!-- Main Desktop Navigation with Rich Dropdowns -->
       <nav class="main-nav" aria-label="Main Navigation">
-        <a href="#about-cava" class="nav-link">About CAVA</a>
-        <a href="#menu-prices" class="nav-link">Menu & Prices</a>
-        <a href="#builder-studio" class="nav-link highlight">🥣 Bowl Studio</a>
-        <a href="#nutrition-guide" class="nav-link">Calories & Macros</a>
-        <a href="#dietary-allergens" class="nav-link">Dietary & Allergens</a>
+        <!-- Dropdown 1: Menu & Food -->
+        <div class="nav-dropdown-item">
+          <button class="nav-dropdown-btn" type="button">
+            <span>Menu & Food</span>
+            <svg class="dropdown-chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="#menu-prices" class="dropdown-link" onclick="window.cavaAppInstance?.filterByCategory('curated-bowls')">
+              <span class="dropdown-icon">🥗</span>
+              <div>
+                <div class="dropdown-title">CAVA Bowls</div>
+                <div class="dropdown-desc">Curated & Build-Your-Own ($11–$19)</div>
+              </div>
+            </a>
+            <a href="#menu-prices" class="dropdown-link" onclick="window.cavaAppInstance?.filterByCategory('pitas')">
+              <span class="dropdown-icon">🥙</span>
+              <div>
+                <div class="dropdown-title">CAVA Pitas</div>
+                <div class="dropdown-desc">Damascus Bakery Sprouted Wraps</div>
+              </div>
+            </a>
+            <a href="#menu-prices" class="dropdown-link" onclick="window.cavaAppInstance?.filterByCategory('dips-spreads')">
+              <span class="dropdown-icon">🧆</span>
+              <div>
+                <div class="dropdown-title">CAVA Sides & Free Dips</div>
+                <div class="dropdown-desc">Crazy Feta®, Hummus & Pita Chips</div>
+              </div>
+            </a>
+            <a href="#menu-prices" class="dropdown-link" onclick="window.cavaAppInstance?.filterByCategory('drinks')">
+              <span class="dropdown-icon">🍋</span>
+              <div>
+                <div class="dropdown-title">CAVA Drinks & Juices</div>
+                <div class="dropdown-desc">Freshly Pressed Pineapple Mint & Teas</div>
+              </div>
+            </a>
+            <a href="#cava-sauces" class="dropdown-link">
+              <span class="dropdown-icon">🥣</span>
+              <div>
+                <div class="dropdown-title">CAVA Sauces & Dressings</div>
+                <div class="dropdown-desc">Tahini Caesar, Hot Harissa, Skhug</div>
+              </div>
+            </a>
+            <a href="#menu-prices" class="dropdown-link" onclick="window.cavaAppInstance?.filterByCategory('kids-catering')">
+              <span class="dropdown-icon">🧒</span>
+              <div>
+                <div class="dropdown-title">CAVA Kids Meals</div>
+                <div class="dropdown-desc">Mini Pita/Bowl + Drink ($7.15–$7.95)</div>
+              </div>
+            </a>
+            <a href="#cava-recipes" class="dropdown-link">
+              <span class="dropdown-icon">🍲</span>
+              <div>
+                <div class="dropdown-title">CAVA Copycat Recipes</div>
+                <div class="dropdown-desc">Make Crazy Feta & Harissa Bowl at home</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Dropdown 2: Nutrition & Diet -->
+        <div class="nav-dropdown-item">
+          <button class="nav-dropdown-btn" type="button">
+            <span>Nutrition & Diet</span>
+            <svg class="dropdown-chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="#is-cava-healthy" class="dropdown-link">
+              <span class="dropdown-icon">📊</span>
+              <div>
+                <div class="dropdown-title">CAVA Nutrition Guide</div>
+                <div class="dropdown-desc">Macro Breakdown, Oils & Sourcing</div>
+              </div>
+            </a>
+            <a href="#quick-guide" class="dropdown-link">
+              <span class="dropdown-icon">🔥</span>
+              <div>
+                <div class="dropdown-title">CAVA Calories Ranked</div>
+                <div class="dropdown-desc">Ranked 480 cal to 1,030 cal</div>
+              </div>
+            </a>
+            <a href="#dietary-allergens" class="dropdown-link">
+              <span class="dropdown-icon">🌾</span>
+              <div>
+                <div class="dropdown-title">CAVA Gluten-Free Guide</div>
+                <div class="dropdown-desc">100% Gluten-Free Bowls Blueprint</div>
+              </div>
+            </a>
+            <a href="#dietary-allergens" class="dropdown-link">
+              <span class="dropdown-icon">🌿</span>
+              <div>
+                <div class="dropdown-title">CAVA Vegan & Plant-Based</div>
+                <div class="dropdown-desc">Falafel, Lentils, Veggie Rice & Dips</div>
+              </div>
+            </a>
+            <a href="#dietary-allergens" class="dropdown-link">
+              <span class="dropdown-icon">🛡️</span>
+              <div>
+                <div class="dropdown-title">Allergen Matrix Table</div>
+                <div class="dropdown-desc">Dairy, Sesame, Wheat & Fish breakdown</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Dropdown 3: Locations & Hours -->
+        <div class="nav-dropdown-item">
+          <button class="nav-dropdown-btn" type="button">
+            <span>Locations & Hours</span>
+            <svg class="dropdown-chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="nav-dropdown-menu">
+            <a href="#hours-locations" class="dropdown-link">
+              <span class="dropdown-icon">📍</span>
+              <div>
+                <div class="dropdown-title">CAVA Locations (459 Units)</div>
+                <div class="dropdown-desc">Across 29 States & Washington, D.C.</div>
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="dropdown-link" onclick="window.cavaAppInstance?.openModal('locationModal')">
+              <span class="dropdown-icon">🗺️</span>
+              <div>
+                <div class="dropdown-title">CAVA Near Me Locator</div>
+                <div class="dropdown-desc">Find closest store & ready times</div>
+              </div>
+            </a>
+            <a href="#hours-locations" class="dropdown-link">
+              <span class="dropdown-icon">⏰</span>
+              <div>
+                <div class="dropdown-title">CAVA Hours & Holidays</div>
+                <div class="dropdown-desc">10:45 AM – 10:00 PM & Holiday Closures</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Direct Links -->
         <a href="#vs-competitors" class="nav-link">CAVA vs Chipotle</a>
-        <a href="#faqs" class="nav-link">FAQs</a>
+        <a href="#about-cava" class="nav-link">About Us</a>
+        <a href="#builder-studio" class="nav-link highlight">🥣 Bowl Studio</a>
+        <button class="nav-link-btn" id="navContactBtn" type="button">Contact Us</button>
       </nav>
 
       <!-- Header Actions -->
@@ -86,6 +219,8 @@
       <a href="#builder-studio" class="toc-pill">5-Step Bowl Studio</a>
       <a href="#signature-picks" class="toc-pill">Signatures & Pitas</a>
       <a href="#is-cava-healthy" class="toc-pill">Is CAVA Healthy?</a>
+      <a href="#cava-sauces" class="toc-pill">Sauces & Dressings</a>
+      <a href="#cava-recipes" class="toc-pill">Copycat Recipes</a>
       <a href="#nutrition-guide" class="toc-pill">Calorie Rankings</a>
       <a href="#dietary-allergens" class="toc-pill">Allergen Table</a>
       <a href="#seasonal-2026" class="toc-pill">2026 Seafood</a>
@@ -93,6 +228,7 @@
       <a href="#catering-orders" class="toc-pill">Catering & App</a>
       <a href="#hours-locations" class="toc-pill">Hours & Holidays</a>
       <a href="#faqs" class="toc-pill">FAQs</a>
+      <a href="#contact-us" class="toc-pill">Contact Us</a>
     </div>
   </div>
 
@@ -168,7 +304,7 @@
                 <strong style="font-size: 1.15rem;">Harissa Avocado Bowl</strong>
                 <div style="font-size: 0.85rem; color: var(--text-muted);">$15.00 – $19.89 Ballpark</div>
               </div>
-              <a href="#menu-prices" class="btn-card-add" style="text-decoration: none;">View Nutrition</a>
+              <button class="btn-table-action" onclick="window.cavaAppInstance?.openQuickView('harissa-avocado-bowl')">View Nutrition</button>
             </div>
           </div>
         </div>
@@ -187,6 +323,30 @@
             <div class="floating-badge-title">Damascus Sprouted Pita</div>
             <div class="floating-badge-subtitle">Baked Fresh Daily in Brooklyn</div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Gallery Section
+       ======================================================================== -->
+  <section class="gallery-section" id="cava-gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Freshness Captured</span>
+        <h2 class="section-title">The Mediterranean Experience</h2>
+        <p class="section-subtitle">Real food made from scratch. See our bowls, pitas, and dining experience.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="img/cava_bowl_fresh_1787312961108.jpg" alt="CAVA Fresh Bowl">
+        </div>
+        <div class="gallery-item">
+          <img src="img/cava_pita_wrap_1787312971655.jpg" alt="CAVA Pita Wrap">
+        </div>
+        <div class="gallery-item">
+          <img src="img/cava_restaurant_interior_1787312983515.jpg" alt="CAVA Restaurant Interior">
         </div>
       </div>
     </div>
@@ -267,7 +427,7 @@
 
       <!-- Quick Category Highlights Grid -->
       <div class="pricing-category-cards-grid">
-        <div class="price-cat-box">
+        <div class="price-cat-box" onclick="window.cavaAppInstance?.filterByCategory('curated-bowls')" style="cursor: pointer;">
           <div class="cat-box-header">
             <span class="cat-box-icon">🥗</span>
             <h4>CAVA Bowls</h4>
@@ -276,7 +436,7 @@
           <p class="cat-box-desc">Includes base, 1 protein, up to 3 dips, unlimited toppings, 1 dressing. 480 – 1,000+ cal.</p>
         </div>
 
-        <div class="price-cat-box">
+        <div class="price-cat-box" onclick="window.cavaAppInstance?.filterByCategory('pitas')" style="cursor: pointer;">
           <div class="cat-box-header">
             <span class="cat-box-icon">🥙</span>
             <h4>Warm Pitas</h4>
@@ -285,7 +445,7 @@
           <p class="cat-box-desc">Damascus Bakery sprouted flatbread (+230 cal). Concentrates flavors for eating on the go.</p>
         </div>
 
-        <div class="price-cat-box">
+        <div class="price-cat-box" onclick="window.cavaAppInstance?.filterByCategory('dips-spreads')" style="cursor: pointer;">
           <div class="cat-box-header">
             <span class="cat-box-icon">🫓</span>
             <h4>Sides & Dips</h4>
@@ -294,7 +454,7 @@
           <p class="cat-box-desc">Free with bowls, or $3.55–$4.35 individual 8oz tubs. Hummus Trio + Chips for $10.50.</p>
         </div>
 
-        <div class="price-cat-box">
+        <div class="price-cat-box" onclick="window.cavaAppInstance?.filterByCategory('drinks')" style="cursor: pointer;">
           <div class="cat-box-header">
             <span class="cat-box-icon">🍋</span>
             <h4>House Drinks</h4>
@@ -303,7 +463,7 @@
           <p class="cat-box-desc">Freshly pressed juices (Pineapple Mint, Blueberry Lavender) & 0-calorie brewed green teas.</p>
         </div>
 
-        <div class="price-cat-box">
+        <div class="price-cat-box" onclick="window.cavaAppInstance?.filterByCategory('desserts')" style="cursor: pointer;">
           <div class="cat-box-header">
             <span class="cat-box-icon">🍪</span>
             <h4>Desserts</h4>
@@ -312,7 +472,7 @@
           <p class="cat-box-desc">Salted chocolate oat cookie & Greyston Bakery B-Corp certified blondies and fudge brownies.</p>
         </div>
 
-        <div class="price-cat-box">
+        <div class="price-cat-box" onclick="window.cavaAppInstance?.filterByCategory('kids-catering')" style="cursor: pointer;">
           <div class="cat-box-header">
             <span class="cat-box-icon">🧒</span>
             <h4>Kids & Catering</h4>
@@ -626,6 +786,40 @@
             </p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 5B: CAVA Sauces & Dressings Spotlight
+       ======================================================================== -->
+  <section class="editorial-section bg-subtle-section" id="cava-sauces">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Signature Dressings & Sauces</span>
+        <h2 class="section-title">CAVA Sauces & Dressings Complete Guide</h2>
+        <p class="section-subtitle">Explore all 8 scratch-made vinaigrettes and dressings with heat ratings, calorie counts, and flavor pairings.</p>
+      </div>
+
+      <div class="sauces-grid" id="saucesContainer">
+        <!-- Rendered by JS from MENU_DATA.sauces -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 5C: CAVA Copycat Recipes at Home
+       ======================================================================== -->
+  <section class="editorial-section" id="cava-recipes">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Culinary Studio</span>
+        <h2 class="section-title">CAVA Copycat At-Home Recipes</h2>
+        <p class="section-subtitle">Recreate CAVA's legendary Crazy Feta®, Harissa Honey Chicken, and Saffron Rice in your own kitchen.</p>
+      </div>
+
+      <div class="recipes-grid" id="recipesContainer">
+        <!-- Rendered by JS from MENU_DATA.recipes -->
       </div>
     </div>
   </section>
@@ -966,6 +1160,80 @@
   </section>
 
   <!-- ========================================================================
+       SECTION 14: Contact Us & Inquiries
+       ======================================================================== -->
+  <section class="editorial-section bg-subtle-section" id="contact-us">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Contact Us & Editorial Inquiries</h2>
+        <p class="section-subtitle">Have questions regarding CAVA prices, catering bookings, dietary concerns, or editorial corrections?</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <h3>Direct Contact Channels</h3>
+          <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1.5rem;">Our culinary editorial team updates menu information regularly.</p>
+          
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <strong>Editorial & Inquiries:</strong>
+              <div>contact@cava-menu-guide.com</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Headquarters:</strong>
+              <div>CAVA Group, Inc. • Washington, D.C. & Bethesda, MD</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">⏰</span>
+            <div>
+              <strong>Response Time:</strong>
+              <div>Typically within 24–48 hours</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <h3>Send Us a Message</h3>
+          <form id="homeContactForm" onsubmit="event.preventDefault(); window.cavaAppInstance?.handleContactSubmit(this);">
+            <div class="form-group">
+              <label for="contactName">Your Name</label>
+              <input type="text" id="contactName" class="form-control" placeholder="Jane Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Your Email</label>
+              <input type="email" id="contactEmail" class="form-control" placeholder="jane@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Inquiry Topic</label>
+              <select id="contactSubject" class="form-control">
+                <option value="menu">Menu & Pricing Question</option>
+                <option value="nutrition">Dietary & Nutrition Inquiries</option>
+                <option value="catering">Group Catering Help</option>
+                <option value="feedback">General Feedback</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" rows="4" class="form-control" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+              <span>✉️</span> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
        Slide-Over Cart Drawer
        ======================================================================== -->
   <div class="drawer-backdrop" id="cartDrawerBackdrop"></div>
@@ -1076,7 +1344,66 @@
   </div>
 
   <!-- ========================================================================
-       Footer
+       Legal Modals (Privacy, Terms, Disclaimer)
+       ======================================================================== -->
+  <!-- Privacy Policy Modal -->
+  <div class="modal-overlay" id="privacyModal">
+    <div class="modal-card legal-modal-card">
+      <button class="modal-close-btn" onclick="window.cavaAppInstance?.closeModal('privacyModal')">✕</button>
+      <div class="legal-modal-body">
+        <span class="section-tag">Legal & Trust</span>
+        <h3>Privacy Policy</h3>
+        <p class="legal-meta">Last Updated: April 2026</p>
+        <div class="legal-text-content">
+          <h4>1. Information We Collect</h4>
+          <p>We do not sell your personal data. We collect order simulation inputs, local storage theme preferences (light/dark mode), and cart items stored securely in your browser.</p>
+          <h4>2. Analytics & Cookies</h4>
+          <p>We use standard performance metrics to provide responsive user interfaces and optimize nutritional calculator speeds.</p>
+          <h4>3. Third-Party Links</h4>
+          <p>This educational guide provides citations to public SEC Form 10-K filings, CAVA Group investor documents, and official nutritional databases.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terms of Service Modal -->
+  <div class="modal-overlay" id="termsModal">
+    <div class="modal-card legal-modal-card">
+      <button class="modal-close-btn" onclick="window.cavaAppInstance?.closeModal('termsModal')">✕</button>
+      <div class="legal-modal-body">
+        <span class="section-tag">Legal & Trust</span>
+        <h3>Terms of Service</h3>
+        <p class="legal-meta">Effective Date: April 2026</p>
+        <div class="legal-text-content">
+          <h4>1. Informational & Educational Use</h4>
+          <p>This portal is an independent Mediterranean culinary guide and interactive bowl builder. Menu pricing and calorie counts represent verified national averages and may vary slightly by individual franchise store locations.</p>
+          <h4>2. Trademark Notice</h4>
+          <p>CAVA®, Crazy Feta®, RightRice™, and related trademarks are registered trademarks of CAVA Group, Inc. This site operates as an editorial and nutritional informational guide.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Allergen & Medical Disclaimer Modal -->
+  <div class="modal-overlay" id="disclaimerModal">
+    <div class="modal-card legal-modal-card">
+      <button class="modal-close-btn" onclick="window.cavaAppInstance?.closeModal('disclaimerModal')">✕</button>
+      <div class="legal-modal-body">
+        <span class="section-tag">Health & Safety</span>
+        <h3>Allergen & Nutrition Disclaimer</h3>
+        <p class="legal-meta">Verified Nutritional Protocols (2026)</p>
+        <div class="legal-text-content">
+          <h4>Cross-Contact Notice</h4>
+          <p>CAVA restaurants operate open assembly lines where sesame, dairy, wheat, and tree nuts are present. While gluten-free and vegan ingredients are prepared with care, cross-contact is always possible in shared kitchen environments.</p>
+          <h4>Medical Advisory</h4>
+          <p>Individuals with severe celiac disease or anaphylactic allergies must inform in-store staff before food preparation begins.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Footer with Legal Pages & Compliance
        ======================================================================== -->
   <footer class="footer">
     <div class="container">
@@ -1095,34 +1422,47 @@
         </div>
 
         <div>
-          <h4 class="footer-col-title">Menu Sections</h4>
+          <h4 class="footer-col-title">Menu & Food</h4>
           <ul class="footer-links">
-            <li><a href="#menu-prices">Curated Bowls ($11–$19)</a></li>
-            <li><a href="#menu-prices">Warm Pitas (Damascus)</a></li>
-            <li><a href="#builder-studio">5-Step Bowl Studio</a></li>
-            <li><a href="#nutrition-guide">Ranked Calorie Table</a></li>
-            <li><a href="#dietary-allergens">Allergen Matrix</a></li>
+            <li><a href="#menu-prices" onclick="window.cavaAppInstance?.filterByCategory('curated-bowls')">CAVA Bowls ($11–$19)</a></li>
+            <li><a href="#menu-prices" onclick="window.cavaAppInstance?.filterByCategory('pitas')">CAVA Pitas (Damascus)</a></li>
+            <li><a href="#cava-sauces">CAVA Sauces & Dressings</a></li>
+            <li><a href="#cava-recipes">CAVA Copycat Recipes</a></li>
+            <li><a href="#menu-prices" onclick="window.cavaAppInstance?.filterByCategory('dips-spreads')">Free Dips & Sides</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-col-title">Guide Sections</h4>
+          <h4 class="footer-col-title">Nutrition & Diet</h4>
           <ul class="footer-links">
-            <li><a href="#about-cava">What is CAVA?</a></li>
             <li><a href="#is-cava-healthy">Is CAVA Healthy?</a></li>
-            <li><a href="#vs-competitors">CAVA vs Chipotle</a></li>
-            <li><a href="#catering-orders">Catering & App</a></li>
-            <li><a href="#hours-locations">Hours & Holidays</a></li>
+            <li><a href="#nutrition-guide">Ranked Calorie Table</a></li>
+            <li><a href="#dietary-allergens">Gluten-Free Blueprint</a></li>
+            <li><a href="#dietary-allergens">Vegan & Plant-Based</a></li>
+            <li><a href="#dietary-allergens">Allergen Matrix Table</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-col-title">Special Offers (2026)</h4>
+          <h4 class="footer-col-title">Locations & Brand</h4>
           <ul class="footer-links">
-            <li><strong style="color: var(--accent-gold);">FRESH20</strong> – 20% off $25+</li>
-            <li><strong style="color: var(--accent-gold);">CAVALOVER15</strong> – 15% off</li>
-            <li><strong style="color: var(--accent-gold);">STUDENT10</strong> – 10% off Student</li>
-            <li><strong style="color: var(--accent-gold);">TASTECAVA</strong> – $5 Welcome</li>
+            <li><a href="#about-cava">What is CAVA? (Bethesda 2011)</a></li>
+            <li><a href="#hours-locations">CAVA Locations (459 Stores)</a></li>
+            <li><a href="#hours-locations">Hours & Holiday Schedule</a></li>
+            <li><a href="#vs-competitors">CAVA vs Chipotle</a></li>
+            <li><a href="#catering-orders">Catering & Rewards</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Legal & Trust</h4>
+          <ul class="footer-links">
+            <li><a href="javascript:void(0)" onclick="window.cavaAppInstance?.openModal('privacyModal')">Privacy Policy</a></li>
+            <li><a href="javascript:void(0)" onclick="window.cavaAppInstance?.openModal('termsModal')">Terms of Service</a></li>
+            <li><a href="javascript:void(0)" onclick="window.cavaAppInstance?.openModal('disclaimerModal')">Allergen Disclaimer</a></li>
+            <li><a href="javascript:void(0)" onclick="window.cavaAppInstance?.openModal('privacyModal')">Cookie Preferences</a></li>
+            <li><a href="#about-cava">SEC Form 10-K (NYSE: CAVA)</a></li>
+            <li><a href="#contact-us">Editorial Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -1141,4 +1481,5 @@
   <script type="module" src="js/app.js"></script>
 </body>
 </html>
+
 

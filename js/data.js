@@ -15,13 +15,14 @@ export const MENU_DATA = {
 
   categories: [
     { id: "all", label: "All Items", icon: "✨" },
-    { id: "curated-bowls", label: "Curated Bowls", icon: "🥗" },
-    { id: "pitas", label: "Warm Pitas", icon: "🥙" },
-    { id: "greens-grains", label: "Greens & Grains", icon: "🌿" },
-    { id: "dips-spreads", label: "Sides & Free Dips", icon: "🧆" },
-    { id: "drinks", label: "House Drinks", icon: "🍋" },
-    { id: "desserts", label: "Bakery Desserts", icon: "🍪" },
-    { id: "kids-catering", label: "Kids & Catering", icon: "🍱" }
+    { id: "in-season", label: "In Season", icon: "🌱" },
+    { id: "build-your-own", label: "Build Your Own", icon: "🥗" },
+    { id: "bowls", label: "Bowls", icon: "🥣" },
+    { id: "pitas", label: "Pita", icon: "🥙" },
+    { id: "sides", label: "Sides", icon: "🧆" },
+    { id: "kids-meal", label: "Kids Meal", icon: "🧒" },
+    { id: "drinks", label: "Drinks", icon: "🍋" },
+    { id: "desserts", label: "Desserts", icon: "🍪" }
   ],
 
   items: [
@@ -29,7 +30,7 @@ export const MENU_DATA = {
     {
       id: "harissa-avocado-bowl",
       name: "Harissa Avocado Bowl",
-      category: "curated-bowls",
+      category: "bowls",
       price: 15.45,
       priceRange: "$15.00 – $19.89",
       calories: 845,
@@ -48,7 +49,7 @@ export const MENU_DATA = {
     {
       id: "chicken-rice-bowl",
       name: "Chicken + Rice Bowl",
-      category: "curated-bowls",
+      category: "bowls",
       price: 13.45,
       priceRange: "$12.85 – $13.96",
       calories: 712,
@@ -67,7 +68,7 @@ export const MENU_DATA = {
     {
       id: "falafel-crunch-bowl",
       name: "Falafel Crunch Bowl",
-      category: "curated-bowls",
+      category: "bowls",
       price: 13.75,
       priceRange: "$13.00 – $14.45",
       calories: 860,
@@ -86,7 +87,7 @@ export const MENU_DATA = {
     {
       id: "greek-salad-bowl",
       name: "Greek Salad Bowl",
-      category: "curated-bowls",
+      category: "bowls",
       price: 12.45,
       priceRange: "$11.55 – $12.85",
       calories: 590,
@@ -105,7 +106,7 @@ export const MENU_DATA = {
     {
       id: "steak-harissa-bowl",
       name: "Steak + Harissa Bowl",
-      category: "curated-bowls",
+      category: "bowls",
       price: 15.85,
       priceRange: "$15.05 – $16.55",
       calories: 615,
@@ -122,47 +123,47 @@ export const MENU_DATA = {
       icon: "🥩"
     },
     {
-      id: "salmon-strawberry-sesame-bowl",
-      name: "Salmon + Strawberry Sesame Bowl (2026)",
-      category: "curated-bowls",
-      price: 16.95,
-      priceRange: "$14.80 – $18.50",
-      calories: 700,
-      calorieRange: "700 cal",
+      id: "balsamic-date-chicken",
+      name: "Balsamic Date Chicken Bowl",
+      category: "in-season",
+      price: 14.25,
+      priceRange: "$14.25",
+      calories: 780,
+      calorieRange: "780 cal",
       protein: "37g",
       carbs: "52g",
       fat: "36g",
-      badge: "2026 Limited Seafood",
+      badge: "In Season",
       isTrending: true,
       dietary: ["high-protein", "gluten-free"],
-      allergens: ["Fish (Salmon)", "Sesame"],
-      description: "Seared glazed salmon over SuperGreens and wild brown rice, accompanied by sliced fresh strawberries, Persian cucumbers, pickled onions, traditional hummus, and toasted sesame tahini.",
-      ingredients: ["Glazed Salmon", "SuperGreens", "Brown Rice", "Fresh Strawberries", "Persian Cucumbers", "Traditional Hummus", "Sesame Tahini"],
-      icon: "🐟"
+      allergens: ["Sesame"],
+      description: "Grilled chicken, balsamic date vinaigrette, brown rice, supergreens.",
+      ingredients: ["Grilled Chicken", "SuperGreens", "Brown Rice", "Balsamic Date Vinaigrette", "Traditional Hummus", "Sesame Tahini"],
+      icon: "🥗"
     },
     {
-      id: "salmon-yogurt-dill-bowl",
-      name: "Salmon + Yogurt Dill Bowl (2026)",
-      category: "curated-bowls",
-      price: 16.95,
-      priceRange: "$14.80 – $18.50",
-      calories: 710,
-      calorieRange: "710 cal",
+      id: "lemon-herb-chicken",
+      name: "Lemon Herb Chicken",
+      category: "in-season",
+      price: 13.95,
+      priceRange: "$13.95",
+      calories: 650,
+      calorieRange: "650 cal",
       protein: "38g",
       carbs: "48g",
       fat: "38g",
-      badge: "2026 Chef Curation",
+      badge: "In Season",
       isTrending: true,
       dietary: ["high-protein", "gluten-free"],
-      allergens: ["Fish (Salmon)", "Dairy"],
-      description: "Glazed wild-caught salmon fillet atop saffron basmati rice and arugula, paired with cooling yogurt dill dressing, cucumber tzatziki, kalamata olives, and feta.",
-      ingredients: ["Glazed Salmon", "Saffron Basmati Rice", "Baby Arugula", "Tzatziki", "Yogurt Dill Dressing", "Kalamata Olives", "Crumbled Feta"],
-      icon: "🐟"
+      allergens: ["Dairy"],
+      description: "Lemon herb chicken with saffron basmati rice and arugula.",
+      ingredients: ["Lemon Herb Chicken", "Saffron Basmati Rice", "Baby Arugula", "Tzatziki", "Kalamata Olives", "Crumbled Feta"],
+      icon: "🍗"
     },
     {
       id: "supergreens-grilled-chicken-bowl",
       name: "SuperGreens + Grilled Chicken Bowl",
-      category: "greens-grains",
+      category: "build-your-own",
       price: 12.85,
       priceRange: "$12.50 – $13.50",
       calories: 480,
@@ -181,7 +182,7 @@ export const MENU_DATA = {
     {
       id: "tahini-caesar-bowl",
       name: "Tahini Caesar Chicken Bowl",
-      category: "curated-bowls",
+      category: "bowls",
       price: 13.45,
       priceRange: "$12.85 – $14.25",
       calories: 605,
@@ -200,7 +201,7 @@ export const MENU_DATA = {
     {
       id: "keto-greens-steak-bowl",
       name: "Keto Greens + Steak Bowl",
-      category: "greens-grains",
+      category: "build-your-own",
       price: 15.50,
       priceRange: "$15.00 – $16.50",
       calories: 615,
@@ -219,7 +220,7 @@ export const MENU_DATA = {
     {
       id: "spicy-lamb-avocado-bowl",
       name: "Spicy Lamb + Avocado Bowl",
-      category: "curated-bowls",
+      category: "bowls",
       price: 15.95,
       priceRange: "$15.25 – $17.50",
       calories: 785,
@@ -318,7 +319,7 @@ export const MENU_DATA = {
     {
       id: "hummus-trio-chips",
       name: "Hummus Trio + Pita Chips",
-      category: "dips-spreads",
+      category: "sides",
       price: 10.50,
       priceRange: "$10.00 – $11.50",
       calories: 680,
@@ -337,7 +338,7 @@ export const MENU_DATA = {
     {
       id: "crazy-feta-side",
       name: "Crazy Feta® (8oz Tub)",
-      category: "dips-spreads",
+      category: "sides",
       price: 4.35,
       priceRange: "$3.55 – $4.35",
       calories: 340,
@@ -356,7 +357,7 @@ export const MENU_DATA = {
     {
       id: "traditional-hummus-side",
       name: "Traditional Hummus (8oz Tub)",
-      category: "dips-spreads",
+      category: "sides",
       price: 3.95,
       priceRange: "$3.55 – $4.15",
       calories: 270,
@@ -375,7 +376,7 @@ export const MENU_DATA = {
     {
       id: "classic-pita-chips",
       name: "Classic Seasoned Pita Chips",
-      category: "dips-spreads",
+      category: "sides",
       price: 2.55,
       priceRange: "$2.55 – $3.25",
       calories: 240,
@@ -394,7 +395,7 @@ export const MENU_DATA = {
     {
       id: "cinnamon-sugar-pita-chips",
       name: "Cinnamon Sugar Pita Chips",
-      category: "dips-spreads",
+      category: "sides",
       price: 3.25,
       priceRange: "$3.00 – $3.75",
       calories: 290,
@@ -413,7 +414,7 @@ export const MENU_DATA = {
     {
       id: "plain-side-pita",
       name: "Warm Side Pita Round",
-      category: "dips-spreads",
+      category: "sides",
       price: 2.00,
       priceRange: "$2.00",
       calories: 230,
@@ -552,7 +553,7 @@ export const MENU_DATA = {
     {
       id: "kids-meal-cava",
       name: "CAVA Kids Pita / Bowl Meal",
-      category: "kids-catering",
+      category: "kids-meal",
       price: 7.45,
       priceRange: "$7.15 – $7.95",
       calories: 520,
@@ -571,7 +572,7 @@ export const MENU_DATA = {
     {
       id: "catering-bowl-bar",
       name: "Group Bowl Bar (Catering Station)",
-      category: "kids-catering",
+      category: "kids-meal",
       price: 175.00,
       priceRange: "$15.00 – $20.00 / person (10 min)",
       calories: 750,
@@ -590,7 +591,7 @@ export const MENU_DATA = {
     {
       id: "catering-pita-packs",
       name: "CAVA Pita Packs (10 Pitas)",
-      category: "kids-catering",
+      category: "kids-meal",
       price: 121.00,
       priceRange: "$121.00 per 10-pack",
       calories: 780,
@@ -763,6 +764,170 @@ export const MENU_DATA = {
     {
       q: "Does CAVA offer gluten-free options?",
       a: "Yes! Every single bowl is 100% gluten-free when built without pita bread or pita crisps. All bases, proteins, and dips are naturally gluten-free. Always notify staff if you have celiac disease due to shared counter preparation."
+    }
+  ],
+
+  // CAVA Signature Sauces & Dressings
+  sauces: [
+    {
+      id: "sauce-hot-harissa",
+      name: "Hot Harissa Vinaigrette",
+      heat: "🔥🔥🔥 Hot",
+      calories: 110,
+      dietary: ["vegan", "gluten-free"],
+      allergens: [],
+      flavor: "Spicy, tangy, smoked red pepper with garlic kick",
+      bestWith: "Harissa Honey Chicken, Steak, Brown Rice",
+      icon: "🌶️"
+    },
+    {
+      id: "sauce-lemon-tahini",
+      name: "Lemon Herb Tahini",
+      heat: "Mild & Creamy",
+      calories: 100,
+      dietary: ["vegan", "gluten-free"],
+      allergens: ["Sesame"],
+      flavor: "Nutty roasted sesame paste, fresh squeezed lemon, minced parsley",
+      bestWith: "Falafel, SuperGreens, Black Lentils",
+      icon: "🍋"
+    },
+    {
+      id: "sauce-tahini-caesar",
+      name: "Sesame Tahini Caesar",
+      heat: "Savory & Rich",
+      calories: 130,
+      dietary: ["vegetarian"],
+      allergens: ["Sesame", "Dairy"],
+      flavor: "Creamy parmesan, cracked black pepper, garlic & toasted sesame",
+      bestWith: "Grilled Chicken, Romaine, Parmesan Crisps",
+      icon: "🥣"
+    },
+    {
+      id: "sauce-tzatziki",
+      name: "Cucumber Dill Tzatziki",
+      heat: "Cooling & Fresh",
+      calories: 40,
+      dietary: ["vegetarian", "gluten-free"],
+      allergens: ["Dairy"],
+      flavor: "Strained Greek yogurt, grated Persian cucumber, garlic, dill",
+      bestWith: "Braised Lamb, Warm Pitas, Saffron Rice",
+      icon: "🥒"
+    },
+    {
+      id: "sauce-skhug",
+      name: "Skhug (Chili Herb Sauce)",
+      heat: "🔥🔥 Medium-Hot",
+      calories: 80,
+      dietary: ["vegan", "gluten-free"],
+      allergens: [],
+      flavor: "Yemenite cilantro, serrano chilies, coriander, cardamom, EVOO",
+      bestWith: "Steak, Spicy Lamb Meatballs, RightRice™",
+      icon: "🌿"
+    },
+    {
+      id: "sauce-balsamic-date",
+      name: "Balsamic Date Vinaigrette",
+      heat: "Sweet & Tangy",
+      calories: 130,
+      dietary: ["vegan", "gluten-free"],
+      allergens: [],
+      flavor: "Pureed Medjool dates, aged balsamic vinegar, olive oil",
+      bestWith: "Greek Salad, Baby Arugula, Roasted Veggies",
+      icon: "🍇"
+    },
+    {
+      id: "sauce-garlic",
+      name: "Creamy Garlic Dressing",
+      heat: "Savory & Punchy",
+      calories: 140,
+      dietary: ["vegetarian"],
+      allergens: [],
+      flavor: "Slow-emulsified roasted & fresh garlic, lemon, Mediterranean spices",
+      bestWith: "Chicken Shawarma, Pitas, Roasted Sweet Potatoes",
+      icon: "🧄"
+    },
+    {
+      id: "sauce-greek-vinaigrette",
+      name: "Classic Greek Herb Vinaigrette",
+      heat: "Zesty & Light",
+      calories: 120,
+      dietary: ["vegan", "gluten-free"],
+      allergens: [],
+      flavor: "Red wine vinegar, Greek oregano, sumac, cold-pressed olive oil",
+      bestWith: "SuperGreens + Grilled Chicken, Tomato Salad",
+      icon: "🌿"
+    }
+  ],
+
+  // CAVA Copycat At-Home Recipes
+  recipes: [
+    {
+      id: "recipe-crazy-feta",
+      title: "Copycat CAVA Crazy Feta®",
+      prepTime: "10 mins",
+      difficulty: "Easy",
+      calories: "110 cal/serving",
+      description: "CAVA's signature whipped jalapeño feta dip that regulars obsess over.",
+      ingredients: [
+        "8 oz high-quality block Greek Feta (in brine)",
+        "2 fresh jalapeño peppers (charred over open flame)",
+        "2 cloves garlic, minced",
+        "3 tbsp Extra Virgin Olive Oil",
+        "1 tbsp fresh lemon juice",
+        "Pinch of dried Greek oregano"
+      ],
+      steps: [
+        "Char the jalapeños over an open flame or broil until skins blister. Peel and deseed.",
+        "Add feta, charred jalapeños, garlic, lemon juice, and olive oil to food processor.",
+        "Pulse until creamy and fluffy with small green jalapeño specks.",
+        "Chill for 30 minutes and serve with warm pita chips!"
+      ],
+      icon: "🧀"
+    },
+    {
+      id: "recipe-harissa-chicken",
+      title: "Copycat Harissa Honey Chicken",
+      prepTime: "25 mins (Plus marinating)",
+      difficulty: "Medium",
+      calories: "240 cal/serving",
+      description: "CAVA's #1 most ordered protein: juicy flame-grilled chicken with sweet-heat harissa glaze.",
+      ingredients: [
+        "1.5 lbs boneless chicken thighs or breast cutlets",
+        "3 tbsp Mediterranean Harissa paste",
+        "2 tbsp pure honey or maple syrup",
+        "3 cloves garlic, crushed",
+        "2 tbsp olive oil + 1 tbsp lemon juice",
+        "1 tsp smoked paprika, 1 tsp cumin, sea salt"
+      ],
+      steps: [
+        "Whisk harissa, honey, olive oil, garlic, lemon juice, and spices in a bowl.",
+        "Coat chicken thoroughly and marinate in refrigerator for at least 2 hours.",
+        "Grill in a cast-iron skillet or outdoor grill over medium-high heat for 6-8 mins per side.",
+        "Rest 5 minutes, slice into bite-sized strips, and layer over grain bowls!"
+      ],
+      icon: "🍗"
+    },
+    {
+      id: "recipe-saffron-rice",
+      title: "Copycat Saffron Basmati Rice",
+      prepTime: "20 mins",
+      difficulty: "Easy",
+      calories: "190 cal/serving",
+      description: "Fluffy, aromatic golden basmati rice that serves as the foundation for CAVA bowls.",
+      ingredients: [
+        "1.5 cups long-grain white Basmati rice (rinsed)",
+        "2.5 cups vegetable or chicken broth",
+        "1 pinch saffron threads (steeped in 2 tbsp warm water)",
+        "1/2 tsp ground turmeric (for golden color)",
+        "1 tbsp olive oil or butter, sea salt"
+      ],
+      steps: [
+        "Rinse basmati rice until water runs clear.",
+        "In a saucepan, heat olive oil, toast turmeric and rinsed rice for 1 minute.",
+        "Pour in broth and saffron water. Bring to a boil, then cover and reduce to low heat.",
+        "Simmer 15 minutes, remove from heat, let steam 5 minutes, and fluff with a fork."
+      ],
+      icon: "🍚"
     }
   ],
 
