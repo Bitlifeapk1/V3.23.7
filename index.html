@@ -24,6 +24,21 @@
       gap: 2rem;
       margin-top: 2rem;
     }
+    .builder-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    @media (min-width: 992px) {
+      .builder-layout {
+        grid-template-columns: 2fr 1fr;
+      }
+    }
+    .builder-step-nav-btns {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+    }
   </style>
 </head>
 <body>
@@ -1213,79 +1228,6 @@
     </div>
   </section>
 
-  <!-- ========================================================================
-       SECTION 14: Contact Us & Inquiries
-       ======================================================================== -->
-  <section class="editorial-section bg-subtle-section" id="contact-us">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Get in Touch</span>
-        <h2 class="section-title">Contact Us & Editorial Inquiries</h2>
-        <p class="section-subtitle">Have questions regarding CAVA prices, catering bookings, dietary concerns, or editorial corrections?</p>
-      </div>
-
-      <div class="contact-grid">
-        <div class="contact-info-card">
-          <h3>Direct Contact Channels</h3>
-          <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1.5rem;">Our culinary editorial team updates menu information regularly.</p>
-          
-          <div class="contact-item">
-            <span class="contact-icon">📧</span>
-            <div>
-              <strong>Editorial & Inquiries:</strong>
-              <div>contact@cava-menu-guide.com</div>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <span class="contact-icon">📍</span>
-            <div>
-              <strong>Headquarters:</strong>
-              <div>CAVA Group, Inc. • Washington, D.C. & Bethesda, MD</div>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <span class="contact-icon">⏰</span>
-            <div>
-              <strong>Response Time:</strong>
-              <div>Typically within 24–48 hours</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-form-card">
-          <h3>Send Us a Message</h3>
-          <form id="homeContactForm" onsubmit="event.preventDefault(); window.cavaAppInstance?.handleContactSubmit(this);">
-            <div class="form-group">
-              <label for="contactName">Your Name</label>
-              <input type="text" id="contactName" class="form-control" placeholder="Jane Doe" required>
-            </div>
-            <div class="form-group">
-              <label for="contactEmail">Your Email</label>
-              <input type="email" id="contactEmail" class="form-control" placeholder="jane@example.com" required>
-            </div>
-            <div class="form-group">
-              <label for="contactSubject">Inquiry Topic</label>
-              <select id="contactSubject" class="form-control">
-                <option value="menu">Menu & Pricing Question</option>
-                <option value="nutrition">Dietary & Nutrition Inquiries</option>
-                <option value="catering">Group Catering Help</option>
-                <option value="feedback">General Feedback</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="contactMessage">Message</label>
-              <textarea id="contactMessage" rows="4" class="form-control" placeholder="Write your message here..." required></textarea>
-            </div>
-            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
-              <span>✉️</span> Send Message
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- ========================================================================
        Slide-Over Cart Drawer
