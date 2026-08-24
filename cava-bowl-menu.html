@@ -13,218 +13,289 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   
-  <!-- Core Styles -->
+  <!-- Core Styles (Matching Homepage 100%) -->
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="article-style.css" />
 </head>
 <body>
 
-  <!-- Minimal Header (Matching Homepage) -->
-  <header class="app-header" style="box-shadow: none; border-bottom: 1px solid var(--border-light);">
-    <div class="header-container" style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem;">
-      <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
-        <span style="font-size: 1.5rem; color: var(--primary);">🥙</span>
-        <span style="font-family: var(--font-heading); font-weight: 800; font-size: 1.5rem; color: var(--secondary); letter-spacing: -0.5px;">CAVA<span style="color: var(--primary);">Guide</span></span>
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🥙</span>
+        CAVA<span class="logo-accent">Guide</span>
       </a>
-      <a href="index.html" style="color: var(--secondary); font-weight: 600; text-decoration: none;">← Back to Home</a>
+      <nav class="main-nav">
+        <a href="index.html">← Back to Home</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode">
+        <span class="theme-icon-light">🌙</span>
+        <span class="theme-icon-dark">☀️</span>
+      </button>
     </div>
   </header>
 
-  <main>
-    <!-- Premium Hero Section -->
-    <header class="article-hero">
-      <div class="article-hero-content">
-        <span class="article-badge">Menu Guide</span>
-        <h1 class="article-title">CAVA Bowl Menu 2026: Prices, Calories & Signature Bowls</h1>
-        
-        <div class="article-meta">
-          <span>📅 Updated April 2026</span>
-          <span>⏱️ 5 Min Read</span>
-          <span>🥗 Comprehensive Guide</span>
-        </div>
-      </div>
-    </header>
-
-    <div class="article-container">
-      
-      <!-- Lead Paragraph -->
-      <p class="magazine-lead">
-        Staring at the CAVA menu and not sure what to order? You're not alone. CAVA lets you build your own bowl from scratch, and with dozens of possible combinations, that freedom can feel more confusing than helpful the first few times you visit.
-      </p>
-
-      <p class="article-p">
-        This guide gives you real CAVA prices, real calorie counts, every signature bowl on the current menu, and simple steps to build your own bowl the right way. We've cross-checked these details against official nutrition sources to give you the most accurate breakdown available.
-      </p>
-
-      <!-- Quick Summary Table -->
-      <h2 class="article-h2">Quick Summary: All Signature Bowls at a Glance</h2>
-      
-      <div class="premium-table-wrapper">
-        <table class="premium-table">
-          <thead>
-            <tr>
-              <th>Signature Bowl</th>
-              <th>Price Range*</th>
-              <th>Calories</th>
-              <th>Protein</th>
-              <th>Best For</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Chicken + Rice Bowl</strong></td>
-              <td>$11.55–$13.25</td>
-              <td>700–715</td>
-              <td>~33g</td>
-              <td>First-timers</td>
-            </tr>
-            <tr>
-              <td><strong>Harissa Avocado Bowl</strong></td>
-              <td>$12.75–$14.45</td>
-              <td>810–885</td>
-              <td>High</td>
-              <td>Bold flavors</td>
-            </tr>
-            <tr>
-              <td><strong>Spicy Lamb + Avocado</strong></td>
-              <td>$15.05–$16.75</td>
-              <td>~795</td>
-              <td>Mod-High</td>
-              <td>Spice lovers</td>
-            </tr>
-            <tr>
-              <td><strong>Falafel Crunch</strong></td>
-              <td>$11.55–$13.25</td>
-              <td>~860</td>
-              <td>Moderate</td>
-              <td>Vegetarians</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Reading Content -->
-      <h2 class="article-h2">How Much Does a CAVA Bowl Cost?</h2>
-      <p class="article-p">
-        A CAVA bowl costs between <strong>$10.97 and $19.89</strong>, depending on how you build it. Build-your-own orders sit at the lower end of that range, while signature bowls with premium proteins like steak, lamb, or salmon push closer to the top. Prices also shift by location, and big cities or airports usually charge 10 to 15 percent more than the national average.
-      </p>
-
-      <h2 class="article-h2">CAVA Bowl Calories: Nutrition Guide</h2>
-      <p class="article-p">
-        CAVA bowl calories usually fall between 400 and 900, and the number depends mostly on your base, protein, and how many dips or toppings you add. A light bowl made with greens, grilled chicken, and one dip can stay under 500 calories. A fully loaded signature bowl with rice, a second protein, and multiple dips can pass 850.
-      </p>
-
-      <!-- Pro Tip -->
-      <div class="pro-tip">
-        <div class="pro-tip-title">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg>
-          Here's something worth knowing
-        </div>
-        <p style="color: var(--text-main); font-size: 1.1rem; line-height: 1.6;">
-          Published nutrition numbers for the same item can vary between sources, sometimes by 50 to 80 calories for something as small as falafel. The most accurate numbers come straight from CAVA's own app, which calculates calories based on your exact build.
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-badge">Post / Guide</span>
+        <h1 class="hero-title">
+          CAVA Bowl Menu 2026: <span>Prices, Calories</span> & Signature Bowls
+        </h1>
+        <p class="hero-desc">
+          Staring at the CAVA menu and not sure what to order? You're not alone. CAVA lets you build your own bowl from scratch. This guide gives you real CAVA prices, real calorie counts, every signature bowl on the current menu, and simple steps to build your own bowl the right way.
         </p>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-val">5 Min</span>
+            <span class="stat-label">Read Time</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-val">April 2026</span>
+            <span class="stat-label">Last Updated</span>
+          </div>
+        </div>
       </div>
 
-      <!-- Standalone Menu Grid for Article -->
-      <h2 class="article-h2">The Complete CAVA Menu Grid</h2>
-      <p class="article-p">Below is a detailed look at the core signature bowls available at most locations across the United States.</p>
-      
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0;">
-        <!-- Card 1 -->
-        <article class="menu-card" style="margin: 0; box-shadow: var(--shadow-md);">
+      <div class="hero-media">
+        <div class="hero-image-wrapper">
+          <div class="hero-culinary-card">
+            <div class="culinary-card-header">
+              <span class="culinary-tag">#1 Most Popular CAVA Item</span>
+              <span class="culinary-cal">🔥 715 Cal | 33g Protein</span>
+            </div>
+            <div class="culinary-visual">
+              <img src="images/hero_bowl.jpg" alt="CAVA Bowl" style="width: 100%; max-width: 450px; object-fit: contain; margin: 0 auto; display: block; padding: 1rem;" />
+            </div>
+            <div class="culinary-card-footer">
+              <div>
+                <strong style="font-size: 1.15rem;">Chicken + Rice Bowl</strong>
+                <div style="font-size: 0.85rem; color: var(--text-muted);">$11.55 - $13.25 Ballpark</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Editorial Section -->
+  <section class="editorial-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Pricing & Nutrition</span>
+        <h2 class="section-title">How Much Does a CAVA Bowl Cost?</h2>
+        <p class="section-subtitle">Understanding the true cost and macros of your custom bowl.</p>
+      </div>
+
+      <div class="editorial-content-grid">
+        <div class="editorial-main-text">
+          <p class="lead-paragraph">
+            A CAVA bowl costs between <strong>$10.97 and $19.89</strong>, depending on how you build it. Build-your-own orders sit at the lower end of that range, while signature bowls with premium proteins like steak, lamb, or salmon push closer to the top. Prices also shift by location, and big cities or airports usually charge 10 to 15 percent more than the national average.
+          </p>
+
+          <div class="editorial-sub-block">
+            <h3 class="editorial-h3">CAVA Bowl Calories: Full Nutrition Guide</h3>
+            <p>
+              CAVA bowl calories usually fall between <strong>400 and 900</strong>, and the number depends mostly on your base, protein, and how many dips or toppings you add. A light bowl made with greens, grilled chicken, and one dip can stay under 500 calories. A fully loaded signature bowl with rice, a second protein, and multiple dips can pass 850.
+            </p>
+          </div>
+        </div>
+
+        <div class="editorial-sidebar-cards">
+          <div class="feature-card highlight-card">
+            <span class="feature-card-icon">💡</span>
+            <h4>Pro Tip: Accuracy</h4>
+            <p style="font-size: 0.9rem; color: var(--text-main); line-height: 1.6; margin-top: 0.5rem;">
+              Published nutrition numbers for the same item can vary between sources, sometimes by 50 to 80 calories. The most accurate numbers come straight from CAVA's own app, which calculates calories based on your exact build.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Grid Section -->
+  <section class="menu-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Signature Items</span>
+        <h2 class="section-title">Complete CAVA Bowl Menu (2026)</h2>
+        <p class="section-subtitle">Compare the full lineup of signature bowls to find your perfect flavor and macros.</p>
+      </div>
+
+      <div class="menu-grid" id="menu-grid-container">
+        
+        <!-- Bowl 1 -->
+        <article class="menu-card">
           <div class="card-image-wrap">
-            <img src="images/tahini_caesar.jpg" class="menu-card-img" alt="Spicy Lamb Bowl" />
+            <img src="images/tahini_caesar.jpg" alt="Spicy Lamb Bowl" class="menu-card-img" />
             <span class="card-badge">Spicy</span>
           </div>
           <div class="card-content">
             <h3 class="card-title">Spicy Lamb + Avocado</h3>
-            <p class="card-description">Seasoned lamb meatballs, avocado, Crazy Feta®, hummus, and lemon herb tahini dressing.</p>
-            <div class="card-meta"><span>🔥 ~795 cal</span></div>
+            <p class="card-description">Seasoned lamb meatballs, avocado, Crazy Feta®, hummus, and lemon herb tahini dressing. One of the boldest picks on the menu.</p>
+            <div class="card-meta">
+              <span>🔥 ~795 cal</span>
+              <span>💪 Mod-High protein</span>
+            </div>
+            <div class="card-footer">
+              <div>
+                <span class="card-price">$15.05–$16.75</span>
+              </div>
+            </div>
           </div>
         </article>
 
-        <!-- Card 2 -->
-        <article class="menu-card" style="margin: 0; box-shadow: var(--shadow-md);">
+        <!-- Bowl 2 -->
+        <article class="menu-card">
           <div class="card-image-wrap">
-            <img src="images/hero_bowl.jpg" class="menu-card-img" alt="Chicken Rice Bowl" />
-            <span class="card-badge">Top Seller</span>
+            <img src="images/hero_bowl.jpg" alt="Chicken Rice Bowl" class="menu-card-img" />
+            <span class="card-badge">Most Popular</span>
           </div>
           <div class="card-content">
             <h3 class="card-title">CAVA Chicken + Rice Bowl</h3>
-            <p class="card-description">Grilled chicken on saffron basmati rice with hummus, tzatziki, tomato & cucumber salad.</p>
-            <div class="card-meta"><span>🔥 700-715 cal</span></div>
+            <p class="card-description">Grilled chicken on saffron basmati rice with hummus, tzatziki, tomato and cucumber salad, and crumbled feta. The ultimate safe, balanced order.</p>
+            <div class="card-meta">
+              <span>🔥 700-715 cal</span>
+              <span>💪 ~33g protein</span>
+            </div>
+            <div class="card-footer">
+              <div>
+                <span class="card-price">$11.55–$13.25</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Bowl 3 -->
+        <article class="menu-card">
+          <div class="card-image-wrap">
+            <img src="images/harissa_avocado.jpg" alt="Harissa Avocado Bowl" class="menu-card-img" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Harissa Avocado Bowl</h3>
+            <p class="card-description">Hits sweet, spicy, creamy, and tangy flavors all at once. Made with harissa honey chicken, Crazy Feta®, hummus, avocado, and fire-roasted corn.</p>
+            <div class="card-meta">
+              <span>🔥 810-885 cal</span>
+              <span>💪 High protein</span>
+            </div>
+            <div class="card-footer">
+              <div>
+                <span class="card-price">$12.75–$14.45</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Bowl 4 -->
+        <article class="menu-card">
+          <div class="card-image-wrap">
+            <img src="images/pita_falafel.jpg" alt="Falafel Crunch Bowl" class="menu-card-img" />
+            <span class="card-badge">Vegetarian</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Falafel Crunch Bowl</h3>
+            <p class="card-description">Built from crispy falafel, a greens and grains base, hummus, roasted eggplant dip, pickled onions, pita crisps, and lemon herb tahini.</p>
+            <div class="card-meta">
+              <span>🔥 ~860 cal</span>
+              <span>💪 Moderate protein</span>
+            </div>
+            <div class="card-footer">
+              <div>
+                <span class="card-price">$11.55–$13.25</span>
+              </div>
+            </div>
           </div>
         </article>
       </div>
+    </div>
+  </section>
 
-      <!-- Timeline / Steps -->
-      <h2 class="article-h2">Build Your Own Bowl: Step-by-Step</h2>
-      <p class="article-p">A build your own bowl at CAVA follows five specific steps at the counter.</p>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-badge">1</div>
-          <div class="timeline-content">
-            <h4>Choose Your Base</h4>
-            <p class="article-p" style="font-size: 1.05rem;">Your base sets the calorie floor. Light options like SuperGreens run 30-50 calories, while heartier choices like saffron rice run 200-290 calories.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-badge">2</div>
-          <div class="timeline-content">
-            <h4>Choose Your Protein</h4>
-            <p class="article-p" style="font-size: 1.05rem;">Grilled chicken offers the best protein-to-calorie ratio on the menu (~33g protein for 250 cal).</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-badge">3</div>
-          <div class="timeline-content">
-            <h4>Choose Dips & Spreads</h4>
-            <p class="article-p" style="font-size: 1.05rem;">You get up to three free dips. Hummus and tzatziki form the base layer in most signature bowls. Crazy Feta® adds a spicy kick.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-badge">4</div>
-          <div class="timeline-content">
-            <h4>Add Toppings</h4>
-            <p class="article-p" style="font-size: 1.05rem;">Toppings are free and unlimited. Pickled onions add almost no calories while cutting through richer proteins.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-badge">5</div>
-          <div class="timeline-content">
-            <h4>Choose Dressing</h4>
-            <p class="article-p" style="font-size: 1.05rem;">One dressing comes free. Lemon herb tahini is generally considered the most popular dressing on the menu.</p>
-          </div>
-        </div>
+  <!-- Feature Grid Section -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Goal-Oriented Bowls</span>
+        <h2 class="section-title">Best CAVA Bowl for Every Goal</h2>
       </div>
 
-      <!-- FAQ Accordion -->
-      <h2 class="article-h2">Frequently Asked Questions</h2>
-      <div class="premium-accordion">
-        <details>
-          <summary>What is the most popular CAVA bowl?</summary>
-          <div class="accordion-body">The Chicken + Rice Bowl is widely regarded as the top seller, thanks to its balanced, low-risk flavor.</div>
-        </details>
-        <details>
-          <summary>What is the healthiest CAVA bowl?</summary>
-          <div class="accordion-body">The SuperGreens + Grilled Chicken combination, at around 480 calories with 33 grams of protein, offers the strongest balance of low calories and high protein.</div>
-        </details>
-        <details>
-          <summary>How much does a CAVA bowl cost?</summary>
-          <div class="accordion-body">Prices range from $10.97 for a basic build-your-own order up to $19.89 for premium signature bowls.</div>
-        </details>
+      <div class="pricing-category-cards-grid">
+        <div class="price-cat-box">
+          <div class="cat-box-header">
+            <span class="cat-box-icon">📉</span>
+            <h4>Lowest Calories</h4>
+          </div>
+          <p class="cat-box-desc">A romaine or SuperGreens base with grilled chicken, tzatziki, roasted eggplant dip, and yogurt dill dressing lands around 400 to 450 calories.</p>
+        </div>
+
+        <div class="price-cat-box">
+          <div class="cat-box-header">
+            <span class="cat-box-icon">💪</span>
+            <h4>Maximum Protein</h4>
+          </div>
+          <p class="cat-box-desc">Ordering a double protein, most commonly two servings of grilled chicken, pushes total protein toward 60 to 66 grams. Add black lentils for an extra 13-18g.</p>
+        </div>
+
+        <div class="price-cat-box">
+          <div class="cat-box-header">
+            <span class="cat-box-icon">🥑</span>
+            <h4>Keto / Low-Carb</h4>
+          </div>
+          <p class="cat-box-desc">Skip rice and grains entirely. Use romaine and arugula as your base, choose grilled chicken or braised lamb, add Crazy Feta®, tzatziki, and avocado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Editorial Section (Build Your Own) -->
+  <section class="editorial-section" style="padding-top: 0;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Build Your Own Bowl: Step-by-Step</h2>
+        <p class="section-subtitle">A build your own bowl at CAVA follows five steps.</p>
       </div>
 
+      <div class="editorial-content-grid">
+        <div class="editorial-main-text">
+          <ul class="bullet-checklist" style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 1rem; display: flex; gap: 1rem;">
+              <span style="background: var(--primary); color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: bold;">1</span>
+              <div>
+                <strong>Choose Your Base:</strong> Your base sets the calorie floor. Light options like SuperGreens run 30-50 calories, while heartier choices like saffron rice run 200-290 calories.
+              </div>
+            </li>
+            <li style="margin-bottom: 1rem; display: flex; gap: 1rem;">
+              <span style="background: var(--primary); color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: bold;">2</span>
+              <div>
+                <strong>Choose Your Protein:</strong> Grilled chicken offers the best protein-to-calorie ratio on the menu (~33g protein for 250 cal).
+              </div>
+            </li>
+            <li style="margin-bottom: 1rem; display: flex; gap: 1rem;">
+              <span style="background: var(--primary); color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: bold;">3</span>
+              <div>
+                <strong>Choose Dips & Spreads:</strong> You get up to three free dips. Hummus and tzatziki form the base layer in most signature bowls. Crazy Feta® adds a spicy kick.
+              </div>
+            </li>
+            <li style="margin-bottom: 1rem; display: flex; gap: 1rem;">
+              <span style="background: var(--primary); color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: bold;">4</span>
+              <div>
+                <strong>Add Toppings:</strong> Toppings are free and unlimited. Pickled onions add almost no calories while cutting through richer proteins.
+              </div>
+            </li>
+            <li style="display: flex; gap: 1rem;">
+              <span style="background: var(--primary); color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: bold;">5</span>
+              <div>
+                <strong>Choose Dressing:</strong> One dressing comes free. Lemon herb tahini is generally considered the most popular dressing on the menu.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Full-width CTA -->
-    <div class="article-cta">
-      <h2>Ready to create your perfect bowl?</h2>
-      <p>Building your own bowl with a lean protein, two well-chosen dips, and a lighter dressing remains the most reliable way to control your macros.</p>
-      <a href="index.html#builder-studio" class="btn-primary" style="display: inline-block; padding: 1rem 2rem; background: var(--primary); color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">Launch Bowl Builder</a>
-    </div>
-
-  </main>
 </body>
 </html>
