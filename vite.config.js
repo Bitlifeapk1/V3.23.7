@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite';
-import { resolve } from 'path';
 
 export default defineConfig({
   server: {
@@ -9,8 +8,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        post: resolve(__dirname, 'cava-bowl-menu.html')
+        main: 'index.html',
+        post: 'cava-bowl-menu.html'
       }
     }
   }
