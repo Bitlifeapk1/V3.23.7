@@ -11,176 +11,315 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   
+  <!-- Use homepage theme colors -->
   <link rel="stylesheet" href="style.css" />
+  
   <style>
-    /* Unique Article Layout using Theme Variables */
-    
-    .post-header {
-      background: var(--bg-card);
-      padding: 4rem 2rem;
-      border-bottom: 1px solid var(--border-light);
-      text-align: center;
-    }
+    /* =========================================================
+       HIGHLY VISUAL, INFOGRAPHIC-STYLE CSS 
+       Uses homepage theme colors (var(--primary), etc)
+       ========================================================= */
 
-    .post-title {
-      font-family: var(--font-serif);
-      font-size: 3rem;
-      color: var(--secondary);
-      margin: 1rem auto;
-      max-width: 900px;
-      line-height: 1.2;
-    }
-
-    .post-intro {
-      font-size: 1.25rem;
-      line-height: 1.8;
-      color: var(--text-muted);
-      max-width: 800px;
+    .visual-container {
+      max-width: 1000px;
       margin: 0 auto;
-    }
-
-    .post-container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 3rem 2rem;
-    }
-
-    .post-h2 {
-      font-family: var(--font-heading);
-      font-size: 2rem;
-      color: var(--secondary);
-      margin: 3rem 0 1.5rem;
-      border-bottom: 2px solid var(--primary-light);
-      padding-bottom: 0.5rem;
-    }
-
-    .post-text {
-      font-size: 1.15rem;
-      line-height: 1.8;
-      color: var(--text-main);
-      margin-bottom: 1.5rem;
-    }
-
-    /* Data Table using Theme Colors */
-    .post-table-wrap {
-      background: var(--bg-card);
-      border-radius: var(--radius-md);
-      box-shadow: var(--shadow-sm);
-      overflow: hidden;
-      margin: 2rem 0 3rem;
-      border: 1px solid var(--border-light);
-    }
-    
-    .post-table {
-      width: 100%;
-      border-collapse: collapse;
-      text-align: left;
-    }
-    
-    .post-table th {
-      background: var(--secondary);
-      color: white;
-      padding: 1.2rem;
-      font-family: var(--font-heading);
-      font-weight: 600;
-    }
-    
-    .post-table td {
-      padding: 1.2rem;
-      border-bottom: 1px solid var(--border-light);
-      color: var(--text-main);
-    }
-    
-    .post-table tr:hover {
-      background: var(--bg-subtle);
-    }
-
-    /* Pro Tip Block */
-    .post-tip {
-      background: var(--bg-subtle);
-      border-left: 5px solid var(--accent-gold);
       padding: 2rem;
-      border-radius: 0 var(--radius-md) var(--radius-md) 0;
-      margin: 2.5rem 0;
     }
 
-    .post-tip h4 {
-      color: var(--secondary);
-      font-family: var(--font-heading);
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    /* Compact Menu Grid for Article */
-    .post-menu-grid {
+    /* 1. Metric Cards (Small Boxes) */
+    .metrics-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-      gap: 2rem;
-      margin-bottom: 3rem;
-    }
-
-    /* Step-by-Step List */
-    .post-steps {
-      list-style: none;
-      padding: 0;
-      margin: 2rem 0;
-    }
-    .post-steps li {
-      display: flex;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 1.5rem;
-      margin-bottom: 1.5rem;
-      background: var(--bg-card);
-      padding: 1.5rem;
-      border-radius: var(--radius-md);
-      box-shadow: var(--shadow-sm);
-      border: 1px solid var(--border-light);
+      margin: 2rem 0 4rem;
     }
-    .step-number {
-      background: var(--primary);
-      color: white;
-      font-family: var(--font-heading);
-      font-weight: 800;
-      width: 40px;
-      height: 40px;
+    
+    .metric-box {
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    
+    .metric-box:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+    
+    .metric-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      background: var(--bg-subtle);
+      width: 60px;
+      height: 60px;
       display: flex;
       align-items: center;
       justify-content: center;
       border-radius: 50%;
-      flex-shrink: 0;
-      font-size: 1.2rem;
+    }
+    
+    .metric-value {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--secondary);
+      margin-bottom: 0.25rem;
+    }
+    
+    .metric-label {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
-    /* Accordion FAQ */
-    .post-faq details {
+    /* 2. High-End Comparison Table */
+    .visual-table-wrap {
       background: var(--bg-card);
-      border: 1px solid var(--border-light);
-      border-radius: var(--radius-sm);
-      margin-bottom: 1rem;
-      box-shadow: var(--shadow-sm);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      margin-bottom: 4rem;
     }
-    .post-faq summary {
-      padding: 1.5rem;
+
+    .visual-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    .visual-table th {
+      background: var(--secondary);
+      color: white;
+      padding: 1.5rem 1rem;
       font-family: var(--font-heading);
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: var(--secondary);
-      cursor: pointer;
-      list-style: none;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
-    .post-faq p {
-      padding: 0 1.5rem 1.5rem;
+
+    .visual-table td {
+      padding: 1.5rem 1rem;
+      border-bottom: 1px solid var(--border-light);
+      vertical-align: middle;
+    }
+    
+    .visual-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .table-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .table-item-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .table-item-name {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      color: var(--secondary);
+      font-weight: 700;
+    }
+    
+    .price-tag {
+      font-weight: 800;
+      color: var(--primary);
+      font-size: 1.1rem;
+    }
+
+    .badge-cal {
+      display: inline-block;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    
+    .cal-high { background: #fee2e2; color: #dc2626; }
+    .cal-med { background: #fef08a; color: #854d0e; }
+    .cal-low { background: #dcfce3; color: #166534; }
+
+    .protein-bar-wrap {
+      width: 100px;
+      background: var(--border-light);
+      height: 8px;
+      border-radius: 4px;
+      margin-top: 0.5rem;
+      overflow: hidden;
+    }
+    
+    .protein-bar-fill {
+      height: 100%;
+      background: var(--primary);
+    }
+
+    /* 3. Infographic Horizontal Flow (Steps) */
+    .infographic-flow {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 3rem 0 5rem;
+      position: relative;
+    }
+
+    /* Connecting line behind steps */
+    .infographic-flow::before {
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 5%;
+      right: 5%;
+      height: 4px;
+      background: var(--border-light);
+      z-index: 1;
+    }
+
+    .flow-step {
+      position: relative;
+      z-index: 2;
+      width: 18%;
+      text-align: center;
+    }
+
+    .flow-icon {
+      width: 80px;
+      height: 80px;
+      background: white;
+      border: 4px solid var(--secondary);
+      border-radius: 50%;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s;
+    }
+    
+    .flow-step:hover .flow-icon {
+      background: var(--secondary);
+      color: white;
+      transform: scale(1.1);
+    }
+
+    .flow-title {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      color: var(--secondary);
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .flow-desc {
+      font-size: 0.85rem;
       color: var(--text-muted);
-      line-height: 1.6;
+      line-height: 1.4;
+    }
+    
+    @media (max-width: 768px) {
+      .infographic-flow {
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .infographic-flow::before {
+        display: none;
+      }
+      .flow-step {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: 1.5rem;
+      }
+      .flow-icon {
+        margin: 0;
+        flex-shrink: 0;
+      }
+    }
+
+    /* 4. Goal Cards (Small Info Boxes) */
+    .goal-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+    
+    .goal-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      border: 1px solid var(--border-light);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    /* Top color bar */
+    .goal-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+    }
+    
+    .goal-green::before { background: #16a34a; }
+    .goal-orange::before { background: var(--primary); }
+    .goal-dark::before { background: var(--secondary); }
+
+    .goal-title {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      color: var(--secondary);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .goal-list {
+      list-style: none;
+      padding: 0;
+      margin: 1.5rem 0 0;
+    }
+    
+    .goal-list li {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+      border-bottom: 1px dashed var(--border-light);
+      padding-bottom: 0.5rem;
+    }
+
+    .section-title-visual {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      color: var(--secondary);
+      margin-bottom: 1rem;
+      text-align: center;
     }
   </style>
 </head>
-<body>
+<body style="background: var(--bg-main);">
 
-  <!-- App Header (Same as Homepage) -->
-  <header class="app-header">
+  <header class="app-header" style="background: white;">
     <div class="header-container">
       <a href="index.html" class="logo">
         <span class="logo-icon">🥙</span>
@@ -192,182 +331,192 @@
     </div>
   </header>
 
-  <!-- Unique Post Header using Theme Colors -->
-  <header class="post-header">
-    <span class="hero-badge" style="background: var(--primary-light); color: var(--primary);">Menu Guide</span>
-    <h1 class="post-title">CAVA Bowl Menu 2026: Prices, Calories & Signature Bowls</h1>
-    <p class="post-intro">
-      Staring at the CAVA menu and not sure what to order? You're not alone. CAVA lets you build your own bowl from scratch. This guide gives you real prices, real calorie counts, every signature bowl on the current menu, and simple steps to build your bowl right.
-    </p>
-  </header>
+  <div class="visual-container">
+    
+    <div style="text-align: center; margin: 3rem 0;">
+      <h1 style="font-family: var(--font-serif); font-size: 3.5rem; color: var(--secondary); margin-bottom: 1rem; line-height: 1.1;">
+        CAVA Bowl Menu 2026:<br><span style="color: var(--primary);">Data & Nutrition Guide</span>
+      </h1>
+      <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+        Stop guessing. We've compiled the real prices, exact macro breakdowns, and visual steps to build the perfect CAVA bowl.
+      </p>
+    </div>
 
-  <main class="post-container">
+    <!-- 1. METRICS GRID (Small Boxes) -->
+    <div class="metrics-grid">
+      <div class="metric-box">
+        <div class="metric-icon">⏱️</div>
+        <div class="metric-value">5 Minutes</div>
+        <div class="metric-label">Avg. Read Time</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-icon">💰</div>
+        <div class="metric-value">$10.97 - $19.89</div>
+        <div class="metric-label">Price Range</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-icon">🔥</div>
+        <div class="metric-value">400 - 900</div>
+        <div class="metric-label">Calorie Range</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-icon">🏆</div>
+        <div class="metric-value">Chicken + Rice</div>
+        <div class="metric-label">Top Pick</div>
+      </div>
+    </div>
 
-    <h2 class="post-h2">Quick Summary: Signature Bowls at a Glance</h2>
-    <div class="post-table-wrap">
-      <table class="post-table">
+    <!-- 2. HIGH-END COMPARISON TABLE -->
+    <h2 class="section-title-visual">Signature Bowls: The Macro Breakdown</h2>
+    <div class="visual-table-wrap">
+      <table class="visual-table">
         <thead>
           <tr>
-            <th>Signature Bowl</th>
-            <th>Typical Price*</th>
-            <th>Calories</th>
-            <th>Protein Level</th>
+            <th>Bowl Profile</th>
+            <th>Avg. Price</th>
+            <th>Calorie Load</th>
+            <th>Protein Score</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><strong>Chicken + Rice Bowl</strong></td>
-            <td>$11.55–$13.25</td>
-            <td>700–715</td>
-            <td>High (~33g)</td>
+            <td>
+              <div class="table-item">
+                <img src="images/hero_bowl.jpg" class="table-item-img" alt="Chicken Rice Bowl">
+                <div class="table-item-name">Chicken + Rice Bowl<br><span style="font-size: 0.85rem; font-weight: normal; color: var(--text-muted);">Balanced & Popular</span></div>
+              </div>
+            </td>
+            <td><span class="price-tag">$11.55</span></td>
+            <td><span class="badge-cal cal-med">715 Cal</span></td>
+            <td>
+              <strong>33g</strong>
+              <div class="protein-bar-wrap"><div class="protein-bar-fill" style="width: 66%;"></div></div>
+            </td>
           </tr>
           <tr>
-            <td><strong>Harissa Avocado Bowl</strong></td>
-            <td>$12.75–$14.45</td>
-            <td>810–885</td>
-            <td>High</td>
+            <td>
+              <div class="table-item">
+                <img src="images/harissa_avocado.jpg" class="table-item-img" alt="Harissa Avocado Bowl">
+                <div class="table-item-name">Harissa Avocado Bowl<br><span style="font-size: 0.85rem; font-weight: normal; color: var(--text-muted);">Bold & Creamy</span></div>
+              </div>
+            </td>
+            <td><span class="price-tag">$12.75</span></td>
+            <td><span class="badge-cal cal-high">885 Cal</span></td>
+            <td>
+              <strong>38g</strong>
+              <div class="protein-bar-wrap"><div class="protein-bar-fill" style="width: 76%;"></div></div>
+            </td>
           </tr>
           <tr>
-            <td><strong>Spicy Lamb + Avocado Bowl</strong></td>
-            <td>$15.05–$16.75</td>
-            <td>~795</td>
-            <td>Moderate-High</td>
+            <td>
+              <div class="table-item">
+                <img src="images/tahini_caesar.jpg" class="table-item-img" alt="Spicy Lamb Bowl">
+                <div class="table-item-name">Spicy Lamb + Avocado<br><span style="font-size: 0.85rem; font-weight: normal; color: var(--text-muted);">Spicy & Rich</span></div>
+              </div>
+            </td>
+            <td><span class="price-tag">$15.05</span></td>
+            <td><span class="badge-cal cal-med">795 Cal</span></td>
+            <td>
+              <strong>35g</strong>
+              <div class="protein-bar-wrap"><div class="protein-bar-fill" style="width: 70%;"></div></div>
+            </td>
           </tr>
           <tr>
-            <td><strong>Falafel Crunch</strong></td>
-            <td>$11.55–$13.25</td>
-            <td>~860</td>
-            <td>Moderate</td>
+            <td>
+              <div class="table-item">
+                <img src="images/pita_falafel.jpg" class="table-item-img" alt="Falafel Crunch Bowl">
+                <div class="table-item-name">Falafel Crunch Bowl<br><span style="font-size: 0.85rem; font-weight: normal; color: var(--text-muted);">Vegetarian Choice</span></div>
+              </div>
+            </td>
+            <td><span class="price-tag">$11.55</span></td>
+            <td><span class="badge-cal cal-high">860 Cal</span></td>
+            <td>
+              <strong>18g</strong>
+              <div class="protein-bar-wrap"><div class="protein-bar-fill" style="width: 36%;"></div></div>
+            </td>
           </tr>
         </tbody>
       </table>
     </div>
 
-    <h2 class="post-h2">How Much Does a CAVA Bowl Cost?</h2>
-    <p class="post-text">
-      A CAVA bowl costs between <strong>$10.97 and $19.89</strong>, depending on how you build it. Build-your-own orders sit at the lower end of that range, while signature bowls with premium proteins like steak, lamb, or salmon push closer to the top. Prices also shift by location, and big cities or airports usually charge 10 to 15 percent more than the national average.
-    </p>
-
-    <div class="post-tip">
-      <h4>💡 Pro Tip: Nutrition Accuracy</h4>
-      <p style="margin: 0; color: var(--text-main); font-size: 1.05rem;">
-        CAVA bowl calories usually fall between 400 and 900. Published nutrition numbers for the same item can vary between sources, sometimes by 50 to 80 calories. The most accurate numbers always come straight from CAVA's own app, which calculates calories based on your exact custom build.
-      </p>
+    <!-- 3. INFOGRAPHIC HORIZONTAL FLOW -->
+    <h2 class="section-title-visual" style="margin-top: 5rem;">Visual Workflow: Build Your Own</h2>
+    
+    <div class="infographic-flow">
+      <div class="flow-step">
+        <div class="flow-icon">🥗</div>
+        <div class="flow-title">1. Base</div>
+        <div class="flow-desc">Greens (30 cal) or Rice (200+ cal)</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-icon">🍗</div>
+        <div class="flow-title">2. Protein</div>
+        <div class="flow-desc">Chicken (highest protein ratio)</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-icon">🥣</div>
+        <div class="flow-title">3. Dips</div>
+        <div class="flow-desc">Pick 3 free. Hummus & Tzatziki are standard.</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-icon">🥒</div>
+        <div class="flow-title">4. Toppings</div>
+        <div class="flow-desc">Free & unlimited. Add crunch and acid.</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-icon">🍯</div>
+        <div class="flow-title">5. Dressing</div>
+        <div class="flow-desc">Lemon Herb Tahini finishes the bowl.</div>
+      </div>
     </div>
 
-    <h2 class="post-h2">Complete CAVA Bowl Menu (2026)</h2>
-    <p class="post-text">Compare the full lineup of signature bowls to find your perfect flavor and macros.</p>
-
-    <!-- Reuse existing theme menu-cards in a unique grid -->
-    <div class="post-menu-grid">
-      <article class="menu-card" style="margin:0;">
-        <div class="card-image-wrap">
-          <img src="images/tahini_caesar.jpg" alt="Spicy Lamb Bowl" class="menu-card-img" />
-          <span class="card-badge">Spicy</span>
-        </div>
-        <div class="card-content">
-          <h3 class="card-title">Spicy Lamb + Avocado</h3>
-          <p class="card-description">Seasoned lamb meatballs, avocado, Crazy Feta®, hummus, and lemon herb tahini dressing. One of the boldest picks on the menu.</p>
-          <div class="card-footer">
-            <span class="card-price">$15.05–$16.75</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="menu-card" style="margin:0;">
-        <div class="card-image-wrap">
-          <img src="images/hero_bowl.jpg" alt="Chicken Rice Bowl" class="menu-card-img" />
-          <span class="card-badge">Most Popular</span>
-        </div>
-        <div class="card-content">
-          <h3 class="card-title">CAVA Chicken + Rice Bowl</h3>
-          <p class="card-description">Grilled chicken on saffron basmati rice with hummus, tzatziki, tomato and cucumber salad, and crumbled feta. The ultimate safe, balanced order.</p>
-          <div class="card-footer">
-            <span class="card-price">$11.55–$13.25</span>
-          </div>
-        </div>
-      </article>
+    <!-- 4. MACRO CARDS (Small Goal Boxes) -->
+    <h2 class="section-title-visual" style="margin-top: 5rem;">Macro Goal Breakdowns</h2>
+    
+    <div class="goal-cards">
       
-      <article class="menu-card" style="margin:0;">
-        <div class="card-image-wrap">
-          <img src="images/harissa_avocado.jpg" alt="Harissa Avocado Bowl" class="menu-card-img" />
-        </div>
-        <div class="card-content">
-          <h3 class="card-title">Harissa Avocado Bowl</h3>
-          <p class="card-description">Hits sweet, spicy, creamy, and tangy flavors all at once. Made with harissa honey chicken, Crazy Feta®, hummus, avocado, and fire-roasted corn.</p>
-          <div class="card-footer">
-            <span class="card-price">$12.75–$14.45</span>
-          </div>
-        </div>
-      </article>
-      
-      <article class="menu-card" style="margin:0;">
-        <div class="card-image-wrap">
-          <img src="images/pita_falafel.jpg" alt="Falafel Crunch Bowl" class="menu-card-img" />
-          <span class="card-badge">Vegetarian</span>
-        </div>
-        <div class="card-content">
-          <h3 class="card-title">Falafel Crunch Bowl</h3>
-          <p class="card-description">Built from crispy falafel, a greens and grains base, hummus, roasted eggplant dip, pickled onions, pita crisps, and lemon herb tahini.</p>
-          <div class="card-footer">
-            <span class="card-price">$11.55–$13.25</span>
-          </div>
-        </div>
-      </article>
+      <div class="goal-card goal-green">
+        <div class="goal-title">📉 Weight Loss</div>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0;">Keep it light with greens and lean chicken.</p>
+        <ul class="goal-list">
+          <li><strong>Base</strong> <span>SuperGreens</span></li>
+          <li><strong>Protein</strong> <span>Grilled Chicken</span></li>
+          <li><strong>Dips</strong> <span>Tzatziki</span></li>
+          <li><strong>Dressing</strong> <span>Yogurt Dill</span></li>
+          <li style="border:none; color: #16a34a; font-weight: bold; font-size: 1.1rem; padding-top: 1rem;">Est. Calories: ~450</li>
+        </ul>
+      </div>
+
+      <div class="goal-card goal-orange">
+        <div class="goal-title">💪 Max Protein</div>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0;">Double meat and lentils for maximum gains.</p>
+        <ul class="goal-list">
+          <li><strong>Base</strong> <span>Brown Rice</span></li>
+          <li><strong>Protein</strong> <span>Double Chicken</span></li>
+          <li><strong>Toppings</strong> <span>Black Lentils</span></li>
+          <li><strong>Dressing</strong> <span>Tahini Caesar</span></li>
+          <li style="border:none; color: var(--primary); font-weight: bold; font-size: 1.1rem; padding-top: 1rem;">Est. Protein: ~66g</li>
+        </ul>
+      </div>
+
+      <div class="goal-card goal-dark">
+        <div class="goal-title">🥑 Low-Carb / Keto</div>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0;">Skip grains completely and load on healthy fats.</p>
+        <ul class="goal-list">
+          <li><strong>Base</strong> <span>Arugula</span></li>
+          <li><strong>Protein</strong> <span>Braised Lamb</span></li>
+          <li><strong>Dips</strong> <span>Crazy Feta®</span></li>
+          <li><strong>Toppings</strong> <span>Avocado</span></li>
+          <li style="border:none; color: var(--secondary); font-weight: bold; font-size: 1.1rem; padding-top: 1rem;">Est. Carbs: < 15g</li>
+        </ul>
+      </div>
+
     </div>
 
-    <h2 class="post-h2">Build Your Own Bowl: Step-by-Step</h2>
-    <ul class="post-steps">
-      <li>
-        <div class="step-number">1</div>
-        <div>
-          <h3 style="color: var(--secondary); margin-bottom: 0.5rem;">Choose Your Base</h3>
-          <p style="color: var(--text-muted); font-size: 1.05rem;">Your base sets the calorie floor. Light options like SuperGreens run 30-50 calories, while heartier choices like saffron rice run 200-290 calories.</p>
-        </div>
-      </li>
-      <li>
-        <div class="step-number">2</div>
-        <div>
-          <h3 style="color: var(--secondary); margin-bottom: 0.5rem;">Choose Your Protein</h3>
-          <p style="color: var(--text-muted); font-size: 1.05rem;">Grilled chicken offers the best protein-to-calorie ratio on the menu (~33g protein for 250 cal).</p>
-        </div>
-      </li>
-      <li>
-        <div class="step-number">3</div>
-        <div>
-          <h3 style="color: var(--secondary); margin-bottom: 0.5rem;">Choose Dips & Spreads</h3>
-          <p style="color: var(--text-muted); font-size: 1.05rem;">You get up to three free dips. Hummus and tzatziki form the base layer in most signature bowls. Crazy Feta® adds a spicy kick.</p>
-        </div>
-      </li>
-      <li>
-        <div class="step-number">4</div>
-        <div>
-          <h3 style="color: var(--secondary); margin-bottom: 0.5rem;">Add Toppings</h3>
-          <p style="color: var(--text-muted); font-size: 1.05rem;">Toppings are free and unlimited. Pickled onions add almost no calories while cutting through richer proteins.</p>
-        </div>
-      </li>
-    </ul>
+  </div>
 
-    <h2 class="post-h2">Frequently Asked Questions</h2>
-    <div class="post-faq">
-      <details>
-        <summary>What is the most popular CAVA bowl?</summary>
-        <p>The Chicken + Rice Bowl is widely regarded as the top seller, thanks to its balanced, low-risk flavor.</p>
-      </details>
-      <details>
-        <summary>What is the healthiest CAVA bowl?</summary>
-        <p>The SuperGreens + Grilled Chicken combination, at around 480 calories with 33 grams of protein, offers the strongest balance of low calories and high protein.</p>
-      </details>
-      <details>
-        <summary>How much does a CAVA bowl cost?</summary>
-        <p>Prices range from $10.97 for a basic build-your-own order up to $19.89 for premium signature bowls.</p>
-      </details>
-    </div>
-
-  </main>
-
-  <footer style="background: var(--secondary); padding: 3rem 0; text-align: center; color: white;">
-    <p style="color: #e8e0d5;">© 2026 CAVA Menu Guide. Pricing and nutrition information is estimated.</p>
+  <footer style="background: var(--secondary); padding: 3rem 0; text-align: center; color: white; margin-top: 4rem;">
+    <p style="color: #e8e0d5;">© 2026 CAVA Menu Guide. Nutrition information is estimated.</p>
   </footer>
 
 </body>
