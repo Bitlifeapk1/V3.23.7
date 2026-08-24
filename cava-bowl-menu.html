@@ -1,443 +1,230 @@
-﻿<!DOCTYPE html>
-<html lang="en" data-theme="light">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CAVA Menu 2026 â€“ Prices, Calories & Full Mediterranean Food Guide</title>
-  <meta name="description" content="Complete CAVA Menu 2026 guide with verified prices, calorie counts, allergen data, step-by-step 5-layer bowl builder, nutrition rankings, and catering guide across 459+ locations.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAVA Bowl Menu 2026: Prices, Calories & Signature Bowls</title>
   
-  <!-- Favicon / Brand Emoji -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>ðŸ¥—</text></svg>">
-
-  <!-- Google Fonts: Outfit, Plus Jakarta Sans, Playfair Display -->
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Complete guide to the CAVA bowl menu for 2026. Includes prices, calories, protein counts, and a step-by-step build your own bowl tutorial." />
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .nav-dropdown-menu {
-      display: none;
-    }
-    .sauces-grid, .recipes-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .builder-layout {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem;
-      align-items: start;
-    }
-    @media (min-width: 992px) {
-      .builder-layout {
-        grid-template-columns: 2fr 1fr;
-      }
-    }
-    .builder-step-nav-btns {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 1.5rem;
-      width: 100%;
-    }
-    .options-grid {
-      display: grid !important;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
-      gap: 1rem !important;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="article-style.css" />
 </head>
 <body>
 
-  <!-- ========================================================================
-       Header Navigation
-       ======================================================================== -->
-  <header class="header">
-    <!-- Top Bar -->
-    <div class="top-bar" style="background: var(--bg-card); border-bottom: 1px solid var(--border-light); padding: 0.8rem 0; font-size: 0.8rem; font-weight: 500;">
-      <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-        <div class="social-icons" style="display: flex; gap: 0.8rem; align-items: center;">
-          <a href="#" aria-label="Facebook" style="color: var(--text-muted); text-decoration: none; display: flex; align-items: center;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">
-            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
-          </a>
-          <a href="#" aria-label="Twitter" style="color: var(--text-muted); text-decoration: none; display: flex; align-items: center;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">
-            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
-          </a>
-          <a href="#" aria-label="Instagram" style="color: var(--text-muted); text-decoration: none; display: flex; align-items: center;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">
-            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-          </a>
-          <a href="#" aria-label="LinkedIn" style="color: var(--text-muted); text-decoration: none; display: flex; align-items: center;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">
-            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-          <a href="#" aria-label="Pinterest" style="color: var(--text-muted); text-decoration: none; display: flex; align-items: center;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">
-            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.367 18.624 0 12.017 0z"/></svg>
-          </a>
-        </div>
-        <div class="top-links" style="display: flex; gap: 1.2rem; align-items: center;">
-          <a href="#about-cava" style="color: var(--text-muted); text-decoration: none;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">About Us</a>
-          <a href="#contact-us" style="color: var(--text-muted); text-decoration: none;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Contact Us</a>
-          <a href="#privacy-policy" style="color: var(--text-muted); text-decoration: none;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Privacy Policy</a>
-          <a href="#disclaimer" style="color: var(--text-muted); text-decoration: none;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">Disclaimer</a>
-        </div>
-      </div>
-    </div>
-    <div class="container header-content" style="display: flex; align-items: center; justify-content: space-between; height: 4.2rem;">
-      <div class="brand-logo" id="brandLogoBtn" title="CAVA Menu Guide" style="display: flex; align-items: center; gap: 0.75rem;">
-        <div class="brand-icon" style="width: 40px; height: 40px; border-radius: 50%; transform: none; box-shadow: 0 4px 12px var(--primary-glow); border: 2px solid white; font-size: 1.3rem;">ðŸ¥—</div>
-        <div class="brand-text" style="display: flex; flex-direction: column; align-items: flex-start; line-height: 1;">
-          <span class="brand-title" style="font-size: 1.5rem; font-weight: 900; letter-spacing: -0.5px;">CAVA</span>
-          <span class="brand-subtitle" style="font-size: 0.7rem; color: var(--primary); font-weight: 700; margin-top: 2px;">MENU</span>
-        </div>
-      </div>
-
-      <!-- Main Desktop Navigation -->
-      <nav class="main-nav" aria-label="Main Navigation" style="display: flex; gap: 0.75rem; align-items: center; white-space: nowrap; margin-top: 0.4rem;">
-        <a href="#" class="toc-pill">Home</a>
-        <a href="#menu-prices" class="toc-pill" onclick="window.cavaAppInstance?.filterByCategory('bowls')">CAVA Bowl</a>
-        <a href="#menu-prices" class="toc-pill" onclick="window.cavaAppInstance?.filterByCategory('pitas')">CAVA Pita</a>
-        <a href="#menu-prices" class="toc-pill" onclick="window.cavaAppInstance?.filterByCategory('drinks')">CAVA Drink</a>
-        <a href="#menu-prices" class="toc-pill" onclick="window.cavaAppInstance?.filterByCategory('kids-meal')">Kids Menu</a>
-        <a href="#menu-prices" class="toc-pill" onclick="window.cavaAppInstance?.filterByCategory('sides')">CAVA Sides</a>
-        <a href="#cava-sauces" class="toc-pill">Sauces & Dressings</a>
-        <a href="#about-cava" class="toc-pill">About Us</a>
-        <a href="#contact-us" class="toc-pill">Contact Us</a>
-      </nav>
-
-      <!-- Hamburger Menu Button -->
-      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open mobile menu">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-      </button>
+  <!-- Minimal Header (Matching Homepage) -->
+  <header class="app-header" style="box-shadow: none; border-bottom: 1px solid var(--border-light);">
+    <div class="header-container" style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem;">
+      <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+        <span style="font-size: 1.5rem; color: var(--primary);">🥙</span>
+        <span style="font-family: var(--font-heading); font-weight: 800; font-size: 1.5rem; color: var(--secondary); letter-spacing: -0.5px;">CAVA<span style="color: var(--primary);">Guide</span></span>
+      </a>
+      <a href="index.html" style="color: var(--secondary); font-weight: 600; text-decoration: none;">← Back to Home</a>
     </div>
   </header>
 
-  <!-- Mobile Menu Drawer -->
-  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
-  <div class="mobile-menu-drawer" id="mobileMenuDrawer">
-    <div class="mobile-menu-header">
-      <span style="font-weight: 800; font-size: 1.2rem; color: var(--primary);">CAVA MENU</span>
-      <button class="mobile-menu-close" id="mobileMenuCloseBtn" aria-label="Close mobile menu">âœ•</button>
-    </div>
-    <div class="mobile-menu-links">
-      <a href="#" onclick="window.cavaAppInstance?.closeMobileMenu()">Home</a>
-      <a href="#menu-prices" onclick="window.cavaAppInstance?.filterByCategory('bowls'); window.cavaAppInstance?.closeMobileMenu()">CAVA Bowl</a>
-      <a href="#menu-prices" onclick="window.cavaAppInstance?.filterByCategory('pitas'); window.cavaAppInstance?.closeMobileMenu()">CAVA Pita</a>
-      <a href="#menu-prices" onclick="window.cavaAppInstance?.filterByCategory('drinks'); window.cavaAppInstance?.closeMobileMenu()">CAVA Drink</a>
-      <a href="#menu-prices" onclick="window.cavaAppInstance?.filterByCategory('kids-meal'); window.cavaAppInstance?.closeMobileMenu()">Kids Menu</a>
-      <a href="#menu-prices" onclick="window.cavaAppInstance?.filterByCategory('sides'); window.cavaAppInstance?.closeMobileMenu()">CAVA Sides</a>
-      <a href="#cava-sauces" onclick="window.cavaAppInstance?.closeMobileMenu()">Sauces & Dressings</a>
-      <a href="#about-cava" onclick="window.cavaAppInstance?.closeMobileMenu()">About Us</a>
-      <a href="#contact-us" onclick="window.cavaAppInstance?.closeMobileMenu()">Contact Us</a>
-    </div>
-  </div>
-
-  <!-- Temporary Preview Banner -->
-  <div style="background: var(--primary); color: white; padding: 20px; text-align: center; font-size: 20px; font-weight: bold; z-index: 9999; position: relative;">
-      <a href="/cava-bowl-menu.html" style="color: white; text-decoration: underline;">ðŸ‘‰ CLICK HERE TO PREVIEW THE NEW CAVA BOWL POST ðŸ‘ˆ</a>
-<main class='site-main'><div class='container editorial-section' style='padding: 4rem 0; max-width: 1000px; margin: 0 auto;'><header class='section-header' style='text-align: center; margin-bottom: 4rem;'><span class='section-tag' style='background: var(--primary-light); color: var(--primary); padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 700; font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase;'>Menu Guide</span><h1 class='section-title' style='font-size: 3.5rem; margin-top: 1.5rem; font-family: var(--font-serif); color: var(--secondary); line-height: 1.2;'>CAVA Bowl Menu 2026:<br>Prices, Calories & Nutrition</h1></header><div class='editorial-main-text'>
-<div class="editorial-intro" style="margin-bottom: 3rem;">
-  <p class="lead-paragraph">
-    Staring at the CAVA menu and not sure what to order? You're not alone. CAVA lets you build your own bowl from scratch, and with dozens of possible combinations, that freedom can feel more confusing than helpful the first few times you visit. This guide gives you real CAVA prices, real calorie counts, every signature bowl on the current menu, and simple steps to build your own bowl the right way.
-  </p>
-</div>
-
-<div class="section-header" style="text-align: left; margin-bottom: 2rem; align-items: flex-start;">
-  <span class="section-tag">Quick Summary</span>
-  <h2 class="section-title">All CAVA Signature Bowls at a Glance</h2>
-</div>
-
-<div class="table-responsive" style="margin-bottom: 3rem; background: var(--bg-card); border-radius: var(--radius-md); box-shadow: var(--shadow-sm); overflow: hidden;">
-  <table style="width: 100%; border-collapse: collapse; text-align: left;">
-    <thead style="background-color: var(--secondary); color: white;">
-      <tr>
-        <th style="padding: 1rem;">Signature Bowl</th>
-        <th style="padding: 1rem;">Typical Price*</th>
-        <th style="padding: 1rem;">Calories</th>
-        <th style="padding: 1rem;">Protein Level</th>
-        <th style="padding: 1rem;">Best For</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr style="border-bottom: 1px solid var(--border-light);">
-        <td style="padding: 1rem;"><strong>Chicken + Rice Bowl</strong></td>
-        <td style="padding: 1rem;">$11.55â€“$13.25</td>
-        <td style="padding: 1rem;">700â€“715</td>
-        <td style="padding: 1rem;">High (~33g)</td>
-        <td style="padding: 1rem;">First-timers, balanced meals</td>
-      </tr>
-      <tr style="border-bottom: 1px solid var(--border-light);">
-        <td style="padding: 1rem;"><strong>Harissa Avocado Bowl</strong></td>
-        <td style="padding: 1rem;">$12.75â€“$14.45</td>
-        <td style="padding: 1rem;">810â€“885</td>
-        <td style="padding: 1rem;">High</td>
-        <td style="padding: 1rem;">Bold, layered flavor</td>
-      </tr>
-      <tr style="border-bottom: 1px solid var(--border-light);">
-        <td style="padding: 1rem;"><strong>Spicy Lamb + Avocado Bowl</strong></td>
-        <td style="padding: 1rem;">$15.05â€“$16.75</td>
-        <td style="padding: 1rem;">~795</td>
-        <td style="padding: 1rem;">Moderate-High</td>
-        <td style="padding: 1rem;">Spice lovers</td>
-      </tr>
-      <tr style="border-bottom: 1px solid var(--border-light);">
-        <td style="padding: 1rem;"><strong>Falafel Crunch</strong></td>
-        <td style="padding: 1rem;">$11.55â€“$13.25</td>
-        <td style="padding: 1rem;">~860</td>
-        <td style="padding: 1rem;">Moderate</td>
-        <td style="padding: 1rem;">Best vegetarian pick</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-
-<div class="editorial-sub-block" style="max-width: 800px; margin: 0 auto 4rem auto;">
-  <h3 class="editorial-h3">How Much Does a CAVA Bowl Cost? (2026 Price Guide)</h3>
-  <p>
-    A CAVA bowl costs between $10.97 and $19.89, depending on how you build it. Build-your-own orders sit at the lower end of that range, while signature bowls with premium proteins like steak, lamb, or salmon push closer to the top. Prices also shift by location, and big cities or airports usually charge 10 to 15 percent more than the national average. Knowing this range ahead of time stops you from assuming every bowl costs the same.
-  </p>
-  
-  <h3 class="editorial-h3" style="margin-top: 2rem;">CAVA Bowl Calories: Full Nutrition Guide</h3>
-  <p>
-    CAVA bowl calories usually fall between 400 and 900, and the number depends mostly on your base, protein, and how many dips or toppings you add. A light bowl made with greens, grilled chicken, and one dip can stay under 500 calories. A fully loaded signature bowl with rice, a second protein, and multiple dips can pass 850.
-  </p>
-  
-  <div class="feature-card highlight-card" style="margin-top: 1.5rem;">
-    <span class="feature-card-icon">ðŸ’¡</span>
-    <h4>Here's something worth knowing:</h4>
-    <p style="margin-top: 0.5rem; font-size: 0.95rem;">
-      Published nutrition numbers for the same item can vary between sources, sometimes by 50 to 80 calories for something as small as falafel. This happens because recipes change over time. The most accurate numbers come straight from CAVA's own app, which calculates calories based on your exact build.
-    </p>
-  </div>
-</div>
-
-<div class="section-header" style="text-align: left; margin-bottom: 2rem; align-items: flex-start;">
-  <span class="section-tag">Signature Items</span>
-  <h2 class="section-title">Complete CAVA Bowl Menu (2026)</h2>
-</div>
-
-<div class="menu-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
-  
-  <article class="menu-card">
-    <div class="card-image-wrap">
-      <img src="images/tahini_caesar.jpg" class="menu-card-img" alt="Spicy Lamb Bowl" />
-      <span class="card-badge">Spicy</span>
-    </div>
-    <div class="card-content">
-      <h3 class="card-title">Spicy Lamb + Avocado</h3>
-      <p class="card-description">Seasoned lamb meatballs, avocado, Crazy FetaÂ®, hummus, and lemon herb tahini dressing. One of the boldest picks on the menu.</p>
-      <div class="card-meta">
-        <span>ðŸ”¥ ~795 cal</span>
-        <span>ðŸ’ª Mod-High protein</span>
-      </div>
-      <div class="card-footer">
-        <div>
-          <span class="card-price">$15.05â€“$16.75</span>
-          <span style="display: block; font-size: 0.75rem; color: var(--text-muted);">Avg. Starting Price</span>
+  <main>
+    <!-- Premium Hero Section -->
+    <header class="article-hero">
+      <div class="article-hero-content">
+        <span class="article-badge">Menu Guide</span>
+        <h1 class="article-title">CAVA Bowl Menu 2026: Prices, Calories & Signature Bowls</h1>
+        
+        <div class="article-meta">
+          <span>📅 Updated April 2026</span>
+          <span>⏱️ 5 Min Read</span>
+          <span>🥗 Comprehensive Guide</span>
         </div>
       </div>
-    </div>
-  </article>
+    </header>
 
-  <article class="menu-card">
-    <div class="card-image-wrap">
-      <img src="images/hero_bowl.jpg" class="menu-card-img" alt="Chicken Rice Bowl" />
-      <span class="card-badge">Most Popular</span>
-    </div>
-    <div class="card-content">
-      <h3 class="card-title">CAVA Chicken + Rice Bowl</h3>
-      <p class="card-description">Grilled chicken on saffron basmati rice with hummus, tzatziki, tomato and cucumber salad, and crumbled feta. The ultimate safe, balanced order.</p>
-      <div class="card-meta">
-        <span>ðŸ”¥ 700-715 cal</span>
-        <span>ðŸ’ª ~33g protein</span>
+    <div class="article-container">
+      
+      <!-- Lead Paragraph -->
+      <p class="magazine-lead">
+        Staring at the CAVA menu and not sure what to order? You're not alone. CAVA lets you build your own bowl from scratch, and with dozens of possible combinations, that freedom can feel more confusing than helpful the first few times you visit.
+      </p>
+
+      <p class="article-p">
+        This guide gives you real CAVA prices, real calorie counts, every signature bowl on the current menu, and simple steps to build your own bowl the right way. We've cross-checked these details against official nutrition sources to give you the most accurate breakdown available.
+      </p>
+
+      <!-- Quick Summary Table -->
+      <h2 class="article-h2">Quick Summary: All Signature Bowls at a Glance</h2>
+      
+      <div class="premium-table-wrapper">
+        <table class="premium-table">
+          <thead>
+            <tr>
+              <th>Signature Bowl</th>
+              <th>Price Range*</th>
+              <th>Calories</th>
+              <th>Protein</th>
+              <th>Best For</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Chicken + Rice Bowl</strong></td>
+              <td>$11.55–$13.25</td>
+              <td>700–715</td>
+              <td>~33g</td>
+              <td>First-timers</td>
+            </tr>
+            <tr>
+              <td><strong>Harissa Avocado Bowl</strong></td>
+              <td>$12.75–$14.45</td>
+              <td>810–885</td>
+              <td>High</td>
+              <td>Bold flavors</td>
+            </tr>
+            <tr>
+              <td><strong>Spicy Lamb + Avocado</strong></td>
+              <td>$15.05–$16.75</td>
+              <td>~795</td>
+              <td>Mod-High</td>
+              <td>Spice lovers</td>
+            </tr>
+            <tr>
+              <td><strong>Falafel Crunch</strong></td>
+              <td>$11.55–$13.25</td>
+              <td>~860</td>
+              <td>Moderate</td>
+              <td>Vegetarians</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="card-footer">
-        <div>
-          <span class="card-price">$11.55â€“$13.25</span>
-          <span style="display: block; font-size: 0.75rem; color: var(--text-muted);">Avg. Starting Price</span>
+
+      <!-- Reading Content -->
+      <h2 class="article-h2">How Much Does a CAVA Bowl Cost?</h2>
+      <p class="article-p">
+        A CAVA bowl costs between <strong>$10.97 and $19.89</strong>, depending on how you build it. Build-your-own orders sit at the lower end of that range, while signature bowls with premium proteins like steak, lamb, or salmon push closer to the top. Prices also shift by location, and big cities or airports usually charge 10 to 15 percent more than the national average.
+      </p>
+
+      <h2 class="article-h2">CAVA Bowl Calories: Nutrition Guide</h2>
+      <p class="article-p">
+        CAVA bowl calories usually fall between 400 and 900, and the number depends mostly on your base, protein, and how many dips or toppings you add. A light bowl made with greens, grilled chicken, and one dip can stay under 500 calories. A fully loaded signature bowl with rice, a second protein, and multiple dips can pass 850.
+      </p>
+
+      <!-- Pro Tip -->
+      <div class="pro-tip">
+        <div class="pro-tip-title">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg>
+          Here's something worth knowing
         </div>
+        <p style="color: var(--text-main); font-size: 1.1rem; line-height: 1.6;">
+          Published nutrition numbers for the same item can vary between sources, sometimes by 50 to 80 calories for something as small as falafel. The most accurate numbers come straight from CAVA's own app, which calculates calories based on your exact build.
+        </p>
       </div>
-    </div>
-  </article>
 
-  <article class="menu-card">
-    <div class="card-image-wrap">
-      <img src="images/harissa_avocado.jpg" class="menu-card-img" alt="Harissa Avocado Bowl" />
-    </div>
-    <div class="card-content">
-      <h3 class="card-title">Harissa Avocado Bowl</h3>
-      <p class="card-description">Hits sweet, spicy, creamy, and tangy flavors all at once. Made with harissa honey chicken, Crazy FetaÂ®, hummus, avocado, and fire-roasted corn.</p>
-      <div class="card-meta">
-        <span>ðŸ”¥ 810-885 cal</span>
-        <span>ðŸ’ª High protein</span>
-      </div>
-      <div class="card-footer">
-        <div>
-          <span class="card-price">$12.75â€“$14.45</span>
-          <span style="display: block; font-size: 0.75rem; color: var(--text-muted);">Avg. Starting Price</span>
-        </div>
-      </div>
-    </div>
-  </article>
-
-  <article class="menu-card">
-    <div class="card-image-wrap">
-      <img src="images/pita_falafel.jpg" class="menu-card-img" alt="Falafel Crunch Bowl" />
-      <span class="card-badge">Vegetarian</span>
-    </div>
-    <div class="card-content">
-      <h3 class="card-title">Falafel Crunch Bowl</h3>
-      <p class="card-description">Built from crispy falafel, a greens and grains base, hummus, roasted eggplant dip, pickled onions, pita crisps, and lemon herb tahini.</p>
-      <div class="card-meta">
-        <span>ðŸ”¥ ~860 cal</span>
-        <span>ðŸ’ª Moderate protein</span>
-      </div>
-      <div class="card-footer">
-        <div>
-          <span class="card-price">$11.55â€“$13.25</span>
-          <span style="display: block; font-size: 0.75rem; color: var(--text-muted);">Avg. Starting Price</span>
-        </div>
-      </div>
-    </div>
-  </article>
-
-</div>
-
-
-<div class="section-header" style="text-align: left; margin-bottom: 2rem; align-items: flex-start;">
-  <span class="section-tag">Custom Builder</span>
-  <h2 class="section-title">Build Your Own Bowl: Step-by-Step</h2>
-  <p class="section-subtitle" style="text-align: left;">A build your own bowl at CAVA follows five steps, and knowing what each one controls makes the process faster at the counter.</p>
-</div>
-
-<ul class="bullet-checklist" style="margin-bottom: 4rem;">
-  <li><strong>Step 1: Choose Your Base - </strong> Your base sets the calorie floor and texture of the whole bowl. Light options run 30 to 50 calories, while heartier choices like saffron rice run 200 to 290 calories.</li>
-  <li><strong>Step 2: Choose Your Protein - </strong> Your protein choice affects both calories and texture. Grilled chicken offers the best protein-to-calorie ratio on the menu.</li>
-  <li><strong>Step 3: Choose Your Dips & Spreads - </strong> You get up to three free dips with every bowl. Hummus and tzatziki form the base layer in most signature bowls.</li>
-  <li><strong>Step 4: Choose Your Toppings - </strong> All toppings are free and unlimited. Pickled onions add almost no calories while cutting through richer proteins.</li>
-  <li><strong>Step 5: Choose Your Dressing - </strong> One dressing comes free. Lemon herb tahini is generally considered the most popular dressing on the menu.</li>
-</ul>
-
-<div class="section-header" style="text-align: left; margin-bottom: 2rem; align-items: flex-start;">
-  <h2 class="section-title">Best CAVA Bowl for Every Goal</h2>
-</div>
-
-<div class="editorial-content-grid" style="margin-bottom: 4rem;">
-  <div class="feature-card highlight-card">
-    <span class="feature-card-icon">ðŸ“‰</span>
-    <h4>Lowest Calories</h4>
-    <p style="font-size: 0.95rem; margin-top: 0.5rem; line-height: 1.5;">
-      A romaine or SuperGreens base with grilled chicken, tzatziki, roasted eggplant dip, and yogurt dill dressing lands around 400 to 450 calories.
-    </p>
-  </div>
-  
-  <div class="feature-card">
-    <span class="feature-card-icon">ðŸ’ª</span>
-    <h4>Maximum Protein</h4>
-    <p style="font-size: 0.95rem; margin-top: 0.5rem; line-height: 1.5;">
-      Ordering a double protein, most commonly two servings of grilled chicken, pushes total protein toward 60 to 66 grams in one bowl. Add black lentils for an extra 13-18g.
-    </p>
-  </div>
-  
-  <div class="feature-card highlight-card">
-    <span class="feature-card-icon">ðŸ¥‘</span>
-    <h4>Keto / Low-Carb</h4>
-    <p style="font-size: 0.95rem; margin-top: 0.5rem; line-height: 1.5;">
-      Skip rice and grains entirely for this one. Use romaine and arugula as your base, choose grilled chicken or braised lamb, add Crazy FetaÂ®, tzatziki, and avocado.
-    </p>
-  </div>
-</div>
-
-<div class="hero-culinary-card" style="background: var(--secondary); color: white; margin-bottom: 4rem; max-width: 100%;">
-  <div style="padding: 3rem;">
-    <h2 style="font-family: var(--font-serif); font-size: 2.2rem; margin-bottom: 1.5rem;">Final Thoughts: Which CAVA Bowl Should You Order?</h2>
-    <p style="line-height: 1.8; font-size: 1.1rem; color: #e8e0d5;">
-      If you're new to CAVA, start with the Chicken + Rice Bowl. It shows you what the menu does well without asking you to make many decisions. Once you know the base flavors, try the Harissa Avocado Bowl and Spicy Lamb + Avocado Bowl next, and check out the newer sweet potato and salmon bowls if you haven't visited recently. Building your own bowl with a lean protein, two well-chosen dips, and a lighter dressing remains the most reliable way to control the outcome, no matter which combination you land on.
-    </p>
-  </div>
-</div>
-
-</div></div></main>
-
-  <!-- ========================================================================
-       Footer with Legal Pages & Compliance
-       ======================================================================== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="brand-logo">
-            <div class="brand-icon">C</div>
-            <div class="brand-text">
-              <span class="brand-title" style="color: #fff;">CAVA</span>
-              <span class="brand-subtitle" style="color: var(--accent-gold);">Menu Guide 2026</span>
-            </div>
+      <!-- Standalone Menu Grid for Article -->
+      <h2 class="article-h2">The Complete CAVA Menu Grid</h2>
+      <p class="article-p">Below is a detailed look at the core signature bowls available at most locations across the United States.</p>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0;">
+        <!-- Card 1 -->
+        <article class="menu-card" style="margin: 0; box-shadow: var(--shadow-md);">
+          <div class="card-image-wrap">
+            <img src="images/tahini_caesar.jpg" class="menu-card-img" alt="Spicy Lamb Bowl" />
+            <span class="card-badge">Spicy</span>
           </div>
-          <p>
-            Complete 2026 Mediterranean food guide, verified prices, calorie breakdowns, and interactive 5-step bowl builder across 459+ locations nationwide.
-          </p>
-        </div>
+          <div class="card-content">
+            <h3 class="card-title">Spicy Lamb + Avocado</h3>
+            <p class="card-description">Seasoned lamb meatballs, avocado, Crazy Feta®, hummus, and lemon herb tahini dressing.</p>
+            <div class="card-meta"><span>🔥 ~795 cal</span></div>
+          </div>
+        </article>
 
-        <div>
-          <h4 class="footer-col-title">Legal Pages</h4>
-          <ul class="footer-links">
-            <li><a href="#about-cava">About Us</a></li>
-            <li><a href="javascript:void(0)" onclick="window.cavaAppInstance?.openModal('privacyModal')">Privacy Policy</a></li>
-            <li><a href="javascript:void(0)" onclick="window.cavaAppInstance?.openModal('disclaimerModal')">Disclaimer</a></li>
-            <li><a href="javascript:void(0)" onclick="window.cavaAppInstance?.openModal('termsModal')">Terms & Conditions</a></li>
-            <li><a href="#contact-us">Contact Us</a></li>
-          </ul>
-        </div>
+        <!-- Card 2 -->
+        <article class="menu-card" style="margin: 0; box-shadow: var(--shadow-md);">
+          <div class="card-image-wrap">
+            <img src="images/hero_bowl.jpg" class="menu-card-img" alt="Chicken Rice Bowl" />
+            <span class="card-badge">Top Seller</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">CAVA Chicken + Rice Bowl</h3>
+            <p class="card-description">Grilled chicken on saffron basmati rice with hummus, tzatziki, tomato & cucumber salad.</p>
+            <div class="card-meta"><span>🔥 700-715 cal</span></div>
+          </div>
+        </article>
+      </div>
 
-        <div>
-          <h4 class="footer-col-title">Follow Us</h4>
-          <div style="display: flex; flex-direction: column; gap: 1.2rem; margin-top: 1.5rem;">
-            <a href="#" aria-label="Facebook" style="color: var(--text-muted); text-decoration: none; display: flex; align-items: center; gap: 0.6rem; font-weight: 500;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">
-              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
-              Facebook
-            </a>
-            <a href="#" aria-label="Twitter" style="color: var(--text-muted); text-decoration: none; display: flex; align-items: center; gap: 0.6rem; font-weight: 500;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">
-              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
-              Twitter
-            </a>
-            <a href="#" aria-label="Instagram" style="color: var(--text-muted); text-decoration: none; display: flex; align-items: center; gap: 0.6rem; font-weight: 500;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">
-              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-              Instagram
-            </a>
-            <a href="#" aria-label="Pinterest" style="color: var(--text-muted); text-decoration: none; display: flex; align-items: center; gap: 0.6rem; font-weight: 500;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text-muted)'">
-              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.367 18.624 0 12.017 0z"/></svg>
-              Pinterest
-            </a>
+      <!-- Timeline / Steps -->
+      <h2 class="article-h2">Build Your Own Bowl: Step-by-Step</h2>
+      <p class="article-p">A build your own bowl at CAVA follows five specific steps at the counter.</p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-badge">1</div>
+          <div class="timeline-content">
+            <h4>Choose Your Base</h4>
+            <p class="article-p" style="font-size: 1.05rem;">Your base sets the calorie floor. Light options like SuperGreens run 30-50 calories, while heartier choices like saffron rice run 200-290 calories.</p>
           </div>
         </div>
-
-        <div>
-          <h4 class="footer-col-title">Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="#menu-prices" onclick="window.cavaAppInstance?.filterByCategory('bowls')">CAVA Bowls</a></li>
-            <li><a href="#menu-prices" onclick="window.cavaAppInstance?.filterByCategory('pitas')">CAVA Pitas</a></li>
-            <li><a href="#menu-prices" onclick="window.cavaAppInstance?.filterByCategory('kids-meal')">Kids Menu</a></li>
-            <li><a href="#locations">Find a Location</a></li>
-            <li><a href="#nutrition-guide">Nutrition Guide</a></li>
-          </ul>
+        <div class="timeline-item">
+          <div class="timeline-badge">2</div>
+          <div class="timeline-content">
+            <h4>Choose Your Protein</h4>
+            <p class="article-p" style="font-size: 1.05rem;">Grilled chicken offers the best protein-to-calorie ratio on the menu (~33g protein for 250 cal).</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-badge">3</div>
+          <div class="timeline-content">
+            <h4>Choose Dips & Spreads</h4>
+            <p class="article-p" style="font-size: 1.05rem;">You get up to three free dips. Hummus and tzatziki form the base layer in most signature bowls. Crazy Feta® adds a spicy kick.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-badge">4</div>
+          <div class="timeline-content">
+            <h4>Add Toppings</h4>
+            <p class="article-p" style="font-size: 1.05rem;">Toppings are free and unlimited. Pickled onions add almost no calories while cutting through richer proteins.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-badge">5</div>
+          <div class="timeline-content">
+            <h4>Choose Dressing</h4>
+            <p class="article-p" style="font-size: 1.05rem;">One dressing comes free. Lemon herb tahini is generally considered the most popular dressing on the menu.</p>
+          </div>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <span>Â© 2026 CAVA Menu & Food Guide. Verified against SEC Form 10-K & Official Nutrition.</span>
-        <span>Built with â¤ï¸ & Fresh Mediterranean Olive Oil</span>
+      <!-- FAQ Accordion -->
+      <h2 class="article-h2">Frequently Asked Questions</h2>
+      <div class="premium-accordion">
+        <details>
+          <summary>What is the most popular CAVA bowl?</summary>
+          <div class="accordion-body">The Chicken + Rice Bowl is widely regarded as the top seller, thanks to its balanced, low-risk flavor.</div>
+        </details>
+        <details>
+          <summary>What is the healthiest CAVA bowl?</summary>
+          <div class="accordion-body">The SuperGreens + Grilled Chicken combination, at around 480 calories with 33 grams of protein, offers the strongest balance of low calories and high protein.</div>
+        </details>
+        <details>
+          <summary>How much does a CAVA bowl cost?</summary>
+          <div class="accordion-body">Prices range from $10.97 for a basic build-your-own order up to $19.89 for premium signature bowls.</div>
+        </details>
       </div>
+
     </div>
-  </footer>
 
-  <!-- Toast Notification System -->
-  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+    <!-- Full-width CTA -->
+    <div class="article-cta">
+      <h2>Ready to create your perfect bowl?</h2>
+      <p>Building your own bowl with a lean protein, two well-chosen dips, and a lighter dressing remains the most reliable way to control your macros.</p>
+      <a href="index.html#builder-studio" class="btn-primary" style="display: inline-block; padding: 1rem 2rem; background: var(--primary); color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">Launch Bowl Builder</a>
+    </div>
 
-  <!-- Main JavaScript App -->
-  <script type="module" src="/js/app.js"></script>
+  </main>
 </body>
 </html>

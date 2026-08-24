@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "mkdir -p dist && cp *.html style.css dist/ && cp -r js images img public dist/ 2>/dev/null || true",
+    "build": "mkdir -p dist && cp *.html *.css dist/ && cp -r js images img public dist/ 2>/dev/null || true",
     "preview": "vite preview"
   },
   "devDependencies": {
