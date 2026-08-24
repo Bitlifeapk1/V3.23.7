@@ -1,4 +1,9 @@
 import { defineConfig } from 'vite';
+import { fileURLToPath } from 'url';
+import { dirname, resolve } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export default defineConfig({
   server: {
@@ -8,8 +13,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: 'index.html',
-        post: 'cava-bowl-menu.html'
+        main: resolve(__dirname, 'index.html'),
+        post: resolve(__dirname, 'cava-bowl-menu.html')
       }
     }
   }
