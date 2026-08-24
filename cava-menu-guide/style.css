@@ -1,0 +1,15 @@
+/*
+Theme Name: CAVA Menu Guide
+Theme URI: https://v3-23-7.vercel.app/
+Description: A custom Kadence child theme for the CAVA Menu Guide, maintaining the interactive SPA experience.
+Author: Google Antigravity
+Author URI: 
+Template: kadence
+Version: 1.0.0
+Text Domain: cava-menu-guide
+*/
+
+/* 
+ * Note: The actual styles for the CAVA Menu Guide are located in assets/css/cava.css 
+ * and enqueued via functions.php to maintain clean separation.
+ */

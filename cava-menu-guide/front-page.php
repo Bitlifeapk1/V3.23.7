@@ -1,0 +1,1162 @@
+﻿<?php
+/**
+ * The front page template file
+ *
+ * @package cava-menu-guide
+ */
+
+get_header(); ?>
+<section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>🥗</span> Verified 2026 Mediterranean Food Guide
+        </div>
+        <h1 class="hero-title">
+          CAVA Menu 2026: <span>Prices, Calories</span> & Full Food Guide
+        </h1>
+        <p class="hero-desc">
+          Six free scratch-made dips. Eight fire-grilled proteins. A bowl that never tastes the same way twice. Cross-checked against CAVA Group's official SEC filings, published nutrition sources, and verified in-store pricing across 459+ locations nationwide.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#menu-prices" class="btn-primary">
+            <span>💲</span> Explore Menu & Prices
+          </a>
+          <a href="#builder-studio" class="btn-secondary">
+            <span>✨</span> Launch 5-Step Bowl Studio
+          </a>
+          <button class="btn-secondary" id="btnHeroPrint">
+            <span>🖨️</span> Print / PDF Guide
+          </button>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-val">459+</span>
+            <span class="stat-label">Locations in 29 States (NYSE: CAVA)</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-val">6 Free</span>
+            <span class="stat-label">Scratch-Made Dips with Every Bowl</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-val">30g–50g</span>
+            <span class="stat-label">Lean Protein per Standard Build</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-val">$11–$17</span>
+            <span class="stat-label">Real Price Ballpark</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <div class="hero-image-wrapper">
+          <div class="hero-culinary-card">
+            <div class="culinary-card-header">
+              <span class="culinary-tag">#1 Most Popular CAVA Item</span>
+              <span class="culinary-cal">🔥 845 Cal | 38g Protein</span>
+            </div>
+            <div class="culinary-visual">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/harissa-avocado.webp" alt="Harissa Avocado Bowl" style="width: 100%; max-width: 450px; object-fit: contain; margin: 0 auto; display: block; padding: 1rem;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+              <div class="bowl-emoji-art" style="display: none;">🥗</div>
+              <div class="culinary-ingredients-chips">
+                <span>Harissa Honey Chicken</span>
+                <span>Crazy Feta®</span>
+                <span>Traditional Hummus</span>
+                <span>Fresh Avocado</span>
+                <span>SuperGreens</span>
+                <span>Brown Rice</span>
+                <span>Hot Harissa Vinaigrette</span>
+              </div>
+            </div>
+            <div class="culinary-card-footer">
+              <div>
+                <strong style="font-size: 1.15rem;">Harissa Avocado Bowl</strong>
+                <div style="font-size: 0.85rem; color: var(--text-muted);">$15.00 – $19.89 Ballpark</div>
+              </div>
+              <button class="btn-table-action" onclick="window.cavaAppInstance?.openQuickView('harissa-avocado-bowl')">View Nutrition</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="floating-badge badge-top">
+          <span class="floating-badge-icon">🧀</span>
+          <div>
+            <div class="floating-badge-title">Crazy Feta® Included Free</div>
+            <div class="floating-badge-subtitle">Whipped Feta & Jalapeño</div>
+          </div>
+        </div>
+
+        <div class="floating-badge badge-bottom">
+          <span class="floating-badge-icon">🌾</span>
+          <div>
+            <div class="floating-badge-title">Damascus Sprouted Pita</div>
+            <div class="floating-badge-subtitle">Baked Fresh Daily in Brooklyn</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Gallery Section
+       ======================================================================== -->
+  <section class="gallery-section" id="cava-gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Freshness Captured</span>
+        <h2 class="section-title">The Mediterranean Experience</h2>
+        <p class="section-subtitle">Real food made from scratch. See our bowls, pitas, and dining experience.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/cava_bowl_fresh_1787312961108.jpg" alt="CAVA Fresh Bowl">
+        </div>
+        <div class="gallery-item">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/cava_pita_wrap_1787312971655.jpg" alt="CAVA Pita Wrap">
+        </div>
+        <div class="gallery-item">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/cava_restaurant_interior_1787312983515.jpg" alt="CAVA Restaurant Interior">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 1: What Is CAVA? A Fast-Casual Mediterranean Restaurant
+       ======================================================================== -->
+  <section class="editorial-section" id="about-cava">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Overview & Origins</span>
+        <h2 class="section-title">What Is CAVA? A Fast-Casual Mediterranean Restaurant</h2>
+        <p class="section-subtitle">Understanding the fast-casual brand redefining healthy customizable dining across the United States.</p>
+      </div>
+
+      <div class="editorial-content-grid">
+        <div class="editorial-main-text">
+          <p class="lead-paragraph">
+            <strong>CAVA</strong> is a fast-casual restaurant built around Mediterranean food. Guests build their own bowl or pita by picking a base, a protein, a few dips, unlimited toppings, and a dressing, all assembled at the counter. The chain started as one sit-down restaurant in <strong>Bethesda, Maryland, in 2011</strong>, and grew into a national brand from there.
+          </p>
+          <p>
+            As of April 2026, <strong>CAVA Group runs 459 restaurants across 29 states and Washington, D.C.</strong>, a figure confirmed in the company's own SEC filing. CAVA is also a public company, trading on the New York Stock Exchange under the ticker <strong>CAVA</strong> since 2023.
+          </p>
+
+          <div class="editorial-sub-block">
+            <h3 class="editorial-h3">The CAVA Mezze Concept Explained</h3>
+            <p>
+              <strong>CAVA mezze</strong> refers to the small-plate, shared-dip tradition found across Greek, Lebanese, and broader Mediterranean cooking. CAVA built its menu around this idea by offering <strong>six scratch-made dips</strong>, such as hummus, tzatziki, and harissa, <strong>free with every bowl or pita</strong>. Most fast-casual chains treat dips as a paid extra. CAVA treats them as the core of the meal, which is a large part of why regulars often say the dips, not the protein, are the real reason they keep coming back.
+            </p>
+          </div>
+
+          <div class="editorial-sub-block">
+            <h3 class="editorial-h3">How CAVA Compares to Typical Fast Food</h3>
+            <p>
+              CAVA is often called the Mediterranean answer to fast food, and the comparison holds up in a few specific ways. Fast food menus generally lean on fried items and heavy sauces built for shelf life. <strong>CAVA's proteins are grilled or roasted in-house</strong>, its dips are made fresh daily, and its bases include whole grains and greens. It is still a for-profit chain built around margins like any other restaurant, but the ingredient sourcing sits closer to a sit-down Mediterranean spot than a typical drive-through.
+            </p>
+          </div>
+        </div>
+
+        <div class="editorial-sidebar-cards">
+          <div class="feature-card highlight-card">
+            <span class="feature-card-icon">🏛️</span>
+            <h4>CAVA Group Fast Facts (2026)</h4>
+            <ul class="feature-list">
+              <li><strong>Founded:</strong> 2011 (Bethesda, MD)</li>
+              <li><strong>Total Restaurants:</strong> 459 Units</li>
+              <li><strong>Footprint:</strong> 29 States + Washington, D.C.</li>
+              <li><strong>Stock Exchange:</strong> NYSE: CAVA</li>
+              <li><strong>Signature Edge:</strong> 6 Free Dips Included</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-card-icon">🫒</span>
+            <h4>The Sourcing Difference</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+              Unlike drive-throughs using premade frozen patties and preserved dressings, CAVA whips its dips daily, roasts whole vegetables, and bakes sprouted grain pitas with Damascus Bakery in Brooklyn.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 2: CAVA Menu With Prices (2026 Full Breakdown)
+       ======================================================================== -->
+  <section class="menu-section" id="menu-prices">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">2026 Pricing Matrix</span>
+        <h2 class="section-title">CAVA Menu With Prices (2026 Full Breakdown)</h2>
+        <p class="section-subtitle">
+          CAVA menu prices typically fall between <strong>$11 and $17</strong> for a full bowl or pita. Pricing shifts with your chosen protein and location (10–15% higher in metro hubs & airports).
+        </p>
+      </div>
+
+      <!-- Quick Category Highlights Grid -->
+      <div class="pricing-category-cards-grid">
+        <div class="price-cat-box" onclick="window.cavaAppInstance?.filterByCategory('bowls')" style="cursor: pointer;">
+          <div class="cat-box-header">
+            <span class="cat-box-icon">🥗</span>
+            <h4>Bowls & Salads</h4>
+          </div>
+          <div class="cat-box-price">$11.75 – $17.05</div>
+          <p class="cat-box-desc">Fully customizable bowls starting at $11.75. Choose your base (Saffron Rice, SuperGreens, SplendidGreens).</p>
+        </div>
+
+        <div class="price-cat-box" onclick="window.cavaAppInstance?.filterByCategory('pitas')" style="cursor: pointer;">
+          <div class="cat-box-header">
+            <span class="cat-box-icon">🥙</span>
+            <h4>Pita Wraps</h4>
+          </div>
+          <div class="cat-box-price">$11.75 – $16.25</div>
+          <p class="cat-box-desc">Warm, fluffy Damascus Bakery pitas wrapped with your choice of savory proteins and creamy tzatziki.</p>
+        </div>
+
+        <div class="price-cat-box" onclick="window.cavaAppInstance?.filterByCategory('sides')" style="cursor: pointer;">
+          <div class="cat-box-header">
+            <span class="cat-box-icon">🫓</span>
+            <h4>Sides & Dips</h4>
+          </div>
+          <div class="cat-box-price">$2.00 – $10.50</div>
+          <p class="cat-box-desc">Free with bowls, or $3.55–$4.35 individual 8oz tubs. Hummus Trio + Chips for $10.50.</p>
+        </div>
+
+        <div class="price-cat-box" onclick="window.cavaAppInstance?.filterByCategory('drinks')" style="cursor: pointer;">
+          <div class="cat-box-header">
+            <span class="cat-box-icon">🍋</span>
+            <h4>House Drinks</h4>
+          </div>
+          <div class="cat-box-price">$2.55 – $3.75</div>
+          <p class="cat-box-desc">Freshly pressed juices (Pineapple Mint, Blueberry Lavender) & 0-calorie brewed green teas.</p>
+        </div>
+
+        <div class="price-cat-box" onclick="window.cavaAppInstance?.filterByCategory('desserts')" style="cursor: pointer;">
+          <div class="cat-box-header">
+            <span class="cat-box-icon">🍪</span>
+            <h4>Desserts</h4>
+          </div>
+          <div class="cat-box-price">$2.75 – $3.35</div>
+          <p class="cat-box-desc">Salted chocolate oat cookie & Greyston Bakery B-Corp certified blondies and fudge brownies.</p>
+        </div>
+
+        <div class="price-cat-box" onclick="window.cavaAppInstance?.filterByCategory('kids-meal')" style="cursor: pointer;">
+          <div class="cat-box-header">
+            <span class="cat-box-icon">🧒</span>
+            <h4>Kids & Catering</h4>
+          </div>
+          <div class="cat-box-price">$7.15 – $175.00</div>
+          <p class="cat-box-desc">Kids meals with mini pita/bowl ($7.15–$7.95). Group Bowl Bar ($15–$20/person, 10 min).</p>
+        </div>
+      </div>
+
+      <!-- Bowls Quick Comparison Table -->
+      <div class="table-card-wrapper" style="margin-top: 2rem;">
+        <h3 class="table-card-title">Core Bowls Price & Calorie Comparison (2026)</h3>
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Bowl Name</th>
+                <th>Price Range</th>
+                <th>Calories</th>
+                <th>Key Ingredients & Protein</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Build-Your-Own Bowl</strong></td>
+                <td><span class="price-pill">$11.75 – $17.05</span></td>
+                <td>480 – 1,000+ cal</td>
+                <td>Choice of base, protein, 3 free dips, unlimited toppings, dressing</td>
+                <td><a href="#builder-studio" class="btn-table-action">Configure →</a></td>
+              </tr>
+              <tr>
+                <td><strong>Chicken + Rice Bowl</strong></td>
+                <td><span class="price-pill">$11.75</span></td>
+                <td>710 – 715 cal</td>
+                <td>Grilled Chicken, Saffron Rice, Hummus, Tzatziki, Cucumbers (42g Protein)</td>
+                <td><button class="btn-table-action" onclick="window.cavaAppInstance?.openQuickView('chicken-rice-bowl')">Nutrition</button></td>
+              </tr>
+              <tr>
+                <td><strong>Falafel Crunch Bowl</strong></td>
+                <td><span class="price-pill">$11.75</span></td>
+                <td>860 cal</td>
+                <td>Golden Falafel, Black Lentils, Hummus, Eggplant Spread, Tahini (24g Protein)</td>
+                <td><button class="btn-table-action" onclick="window.cavaAppInstance?.openQuickView('falafel-crunch-bowl')">Nutrition</button></td>
+              </tr>
+              <tr>
+                <td><strong>Greek Salad Bowl</strong></td>
+                <td><span class="price-pill">$11.75</span></td>
+                <td>585 – 600 cal</td>
+                <td>Grilled Chicken, Romaine, Tomato Cucumber, Feta, Greek Dressing (34g Protein)</td>
+                <td><button class="btn-table-action" onclick="window.cavaAppInstance?.openQuickView('greek-salad')">Nutrition</button></td>
+              </tr>
+              <tr>
+                <td><strong>Harissa Avocado Bowl</strong></td>
+                <td><span class="price-pill">$16.25</span></td>
+                <td>810 – 885 cal</td>
+                <td>Harissa Honey Chicken, Crazy Feta®, Avocado, SuperGreens (38g Protein)</td>
+                <td><button class="btn-table-action" onclick="window.cavaAppInstance?.openQuickView('harissa-avocado')">Nutrition</button></td>
+              </tr>
+              <tr>
+                <td><strong>Steak + Harissa Bowl</strong></td>
+                <td><span class="price-pill">$15.45</span></td>
+                <td>615 cal</td>
+                <td>Grilled Steak, SuperGreens, Crazy Feta®, Harissa, Rice (41g Protein)</td>
+                <td><button class="btn-table-action" onclick="window.cavaAppInstance?.openQuickView('steak-harissa')">Nutrition</button></td>
+              </tr>
+              <tr>
+                <td><strong>Salmon + Strawberry Sesame Bowl</strong></td>
+                <td><span class="price-pill">$16.00</span></td>
+                <td>700 cal</td>
+                <td>Glazed Salmon, Strawberries, SuperGreens, Brown Rice, Tahini (37g Protein)</td>
+                <td><button class="btn-table-action" onclick="window.cavaAppInstance?.openQuickView('salmon-strawberry-sesame')">Nutrition</button></td>
+              </tr>
+              <tr>
+                <td><strong>Salmon + Yogurt Dill Bowl</strong></td>
+                <td><span class="price-pill">$14.80 – $18.50</span></td>
+                <td>710 cal</td>
+                <td>Glazed Salmon, Arugula, Saffron Rice, Tzatziki, Yogurt Dill (38g Protein)</td>
+                <td><button class="btn-table-action" onclick="window.cavaAppInstance?.openQuickView('salmon-yogurt-dill')">Nutrition</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Interactive Menu Explorer with Category Filters & Search -->
+      <div class="menu-controls" style="margin-top: 3.5rem;">
+        <div class="menu-controls-header">
+          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800;">Interactive Menu Item Explorer</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Filter dishes by category, dietary tags, or real-time keyword search.</p>
+        </div>
+
+        <div class="category-tabs" id="categoryTabs">
+          <!-- Rendered by JS -->
+        </div>
+
+        <div class="filter-search-row">
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="menuSearchInput" class="search-input" placeholder="Search bowls, dips, salmon, falafel, calories..." aria-label="Search Menu">
+          </div>
+
+          <div class="dietary-tags-list" id="dietaryFilters">
+            <button class="dietary-tag-chip" data-diet="high-protein">💪 High Protein</button>
+            <button class="dietary-tag-chip" data-diet="vegetarian">🌱 Vegetarian</button>
+            <button class="dietary-tag-chip" data-diet="vegan">🌿 Vegan</button>
+            <button class="dietary-tag-chip" data-diet="gluten-free">🌾 Gluten-Free</button>
+            <button class="dietary-tag-chip" data-diet="keto-friendly">🥑 Keto</button>
+            <button class="dietary-tag-chip" data-diet="favorites">❤️ Favorites</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Items Grid -->
+      <div class="menu-grid" id="menuGrid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 3: Build Your Own Bowl Studio (5 Steps)
+       ======================================================================== -->
+  <section class="studio-section" id="builder-studio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Interactive Bowl Studio</span>
+        <h2 class="section-title">CAVA Build Your Own Bowl: Step-by-Step Guide</h2>
+        <p class="section-subtitle">
+          Follow the five sequential steps used at the counter. Know your order ahead of time to build your customized macro powerhouse with zero stress.
+        </p>
+      </div>
+
+      <div class="builder-layout">
+        <!-- Step Navigation & Options -->
+        <div class="builder-controls-panel">
+          <div class="builder-steps-nav" id="builderStepsNav">
+            <!-- Rendered by JS -->
+          </div>
+
+          <div class="step-pane-header">
+            <div>
+              <h3 class="step-pane-title" id="currentStepTitle">Step 1: Choose Your Base</h3>
+              <p class="step-pane-desc" id="currentStepDesc">Greens, grains, or a mix of both. Biggest impact on total calories.</p>
+            </div>
+            <span class="step-pane-limit" id="currentStepLimit">Select up to 2</span>
+          </div>
+
+          <div class="options-grid" id="builderOptionsGrid">
+            <!-- Rendered by JS -->
+          </div>
+
+          <div class="builder-step-nav-btns">
+            <button class="btn-secondary" id="btnPrevStep" style="visibility: hidden;">← Previous Step</button>
+            <button class="btn-primary" id="btnNextStep">Next Step →</button>
+          </div>
+        </div>
+
+        <!-- Live Bowl Summary Box -->
+        <aside class="builder-summary-card">
+          <div class="summary-title">
+            <span>Live Macro Tracker</span>
+            <span class="summary-badge" id="customBowlStepBadge">Step 1 of 5</span>
+          </div>
+
+          <!-- Macros Grid -->
+          <div class="summary-macros-grid">
+            <div class="macro-box">
+              <span class="macro-num" id="builderTotalCal">0</span>
+              <span class="macro-name">Calories</span>
+            </div>
+            <div class="macro-box">
+              <span class="macro-num" id="builderTotalProtein">0g</span>
+              <span class="macro-name">Protein</span>
+            </div>
+            <div class="macro-box">
+              <span class="macro-num" id="builderTotalCarbs">0g</span>
+              <span class="macro-name">Carbs</span>
+            </div>
+            <div class="macro-box">
+              <span class="macro-num" id="builderTotalFat">0g</span>
+              <span class="macro-name">Fat</span>
+            </div>
+          </div>
+
+          <!-- Selected Ingredients List -->
+          <div class="summary-selection-list" id="builderSummaryList">
+            <!-- Rendered by JS -->
+          </div>
+
+            <div class="summary-price-row">
+              <span class="summary-total-label">Estimated Price</span>
+              <span class="summary-total-price" id="builderTotalPrice">$12.95</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 4: Chef-Curated Signature Bowls & Pitas Deep Dive
+       ======================================================================== -->
+  <section class="editorial-section bg-subtle-section" id="signature-picks">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Chef Curations & Pitas</span>
+        <h2 class="section-title">CAVA Restaurant Menu: Bowls & Signature Picks</h2>
+        <p class="section-subtitle">Pre-decided flavor harmonies designed by CAVA's culinary team for faster, stress-free ordering.</p>
+      </div>
+
+      <div class="signature-spotlights-grid">
+        <div class="spotlight-card featured">
+          <div class="spotlight-badge">🔥 #1 Most Popular Bowl Right Now</div>
+          <h3 class="spotlight-title">Harissa Avocado Bowl</h3>
+          <p class="spotlight-desc">
+            The Harissa Avocado Bowl is one of the most frequently ordered items on the CAVA menu, combining <strong>harissa honey chicken, Crazy Feta®, hummus, fresh avocado, and hot harissa vinaigrette</strong>. Harissa honey chicken is CAVA's most ordered protein system-wide: the subtle sweetness in the chicken glaze balances the heat in the vinaigrette instead of competing with it.
+          </p>
+          <div class="spotlight-meta">
+            <span>🔥 810–885 cal</span>
+            <span>💪 38g Protein</span>
+            <span>💲 $15.00–$19.89</span>
+          </div>
+        </div>
+
+        <div class="spotlight-card">
+          <div class="spotlight-badge">🌟 Best Bowl for First-Time Visitors</div>
+          <h3 class="spotlight-title">Chicken + Rice Bowl</h3>
+          <p class="spotlight-desc">
+            The Chicken and Rice Bowl is generally the safest first order, built with <strong>grilled chicken, saffron basmati rice, hummus, tzatziki, and a simple tomato and cucumber salad</strong>. It avoids strong spice and keeps flavors familiar, giving you a clear baseline for CAVA's proteins and dips before experimenting further.
+          </p>
+          <div class="spotlight-meta">
+            <span>🔥 710–715 cal</span>
+            <span>💪 42g Protein</span>
+            <span>💲 $12.85–$13.96</span>
+          </div>
+        </div>
+
+        <div class="spotlight-card">
+          <div class="spotlight-badge">🥙 Portable Sprouted Grain Wraps</div>
+          <h3 class="spotlight-title">CAVA Pitas Menu</h3>
+          <p class="spotlight-desc">
+            The CAVA pitas menu mirrors the bowls menu almost item for item, using the same proteins, dips, and toppings wrapped in warm sprouted grain flatbread from <strong>Damascus Bakery in Brooklyn</strong> (+230 cal). Wrapping ingredients concentrates flavors more than a bowl does, ideal for eating on the move.
+          </p>
+          <div class="spotlight-meta">
+            <span>🔥 620–1,030 cal</span>
+            <span>💪 38g–46g Protein</span>
+            <span>💲 $11.55–$20.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 5: Is CAVA Food Actually Healthy?
+       ======================================================================== -->
+  <section class="editorial-section" id="is-cava-healthy">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nutritional Deep Dive</span>
+        <h2 class="section-title">Is CAVA Food Actually Healthy?</h2>
+        <p class="section-subtitle">An honest, unbranded look at CAVA's nutritional macro distribution, cooking oils, and calorie traps.</p>
+      </div>
+
+      <div class="editorial-content-grid">
+        <div class="editorial-main-text">
+          <p class="lead-paragraph">
+            Most CAVA bowls fall between <strong>480 and 860 calories with 30 to 50 grams of protein</strong> and a high share of vegetables and whole grains, which puts CAVA comfortably ahead of most fast-casual competitors on paper.
+          </p>
+          <div class="health-callout-box">
+            <h4>💡 Cooking Oil Transparency</h4>
+            <p>
+              CAVA cooks with a <strong>blend of sunflower oil and olive oil</strong> across most of the menu, despite marketing that leans heavily on its olive oil and Mediterranean positioning.
+            </p>
+          </div>
+          <p>
+            Calories can also climb past 1,000 quickly if you add multiple dips, extra cheese, avocado, and a rich dressing on top of a grain-heavy base. <em>Whether CAVA is healthy for you personally depends far more on how you build your specific bowl than on the restaurant's overall branding.</em>
+          </p>
+
+          <h3 class="editorial-h3" style="margin-top: 1.5rem;">How to Keep a CAVA Bowl Under 600 Calories:</h3>
+          <ul class="bullet-checklist">
+            <li><strong>Pick a greens-only base:</strong> SuperGreens or arugula instead of rice saves 150–280 calories.</li>
+            <li><strong>Choose lean grilled chicken:</strong> Delivers 34g protein for only 200 calories.</li>
+            <li><strong>Stick to two dips:</strong> Combine one creamy dip (tzatziki at 40 cal) with one flavorful dip (hummus or roasted eggplant at 45 cal).</li>
+            <li><strong>Ask for dressing on the side:</strong> Using half a portion of Greek vinaigrette saves close to 70–100 calories.</li>
+          </ul>
+        </div>
+
+        <div class="editorial-sidebar-cards">
+          <div class="macro-health-gauge-card">
+            <h4>Average Macro Profile</h4>
+            <div class="gauge-bar-item">
+              <div class="gauge-label"><span>Protein (Lean & High)</span><strong>30g – 50g</strong></div>
+              <div class="gauge-track"><div class="gauge-fill" style="width: 85%; background: #10b981;"></div></div>
+            </div>
+            <div class="gauge-bar-item">
+              <div class="gauge-label"><span>Whole Grain Fiber</span><strong>12g – 20g</strong></div>
+              <div class="gauge-track"><div class="gauge-fill" style="width: 75%; background: #f59e0b;"></div></div>
+            </div>
+            <div class="gauge-bar-item">
+              <div class="gauge-label"><span>Healthy Mediterranean Fats</span><strong>22g – 42g</strong></div>
+              <div class="gauge-track"><div class="gauge-fill" style="width: 60%; background: #3b82f6;"></div></div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">
+              Data sourced from CAVA's published nutritional calculator (2026).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 5B: CAVA Sauces & Dressings Spotlight
+       ======================================================================== -->
+  <section class="editorial-section bg-subtle-section" id="cava-sauces">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Signature Dressings & Sauces</span>
+        <h2 class="section-title">CAVA Sauces & Dressings Complete Guide</h2>
+        <p class="section-subtitle">Explore all 8 scratch-made vinaigrettes and dressings with heat ratings, calorie counts, and flavor pairings.</p>
+      </div>
+
+      <div class="sauces-grid" id="saucesContainer">
+        <div class="spotlight-card">
+          <div class="spotlight-badge">Medium Heat 🔥</div>
+          <h3 class="spotlight-title">Hot Harissa Vinaigrette</h3>
+          <p class="spotlight-desc">Our signature spicy and slightly sweet vinaigrette with tomatoes, jalapeños, and Mediterranean herbs.</p>
+          <div class="spotlight-meta"><span>🔥 90 cal</span><span>💧 Vegan</span></div>
+        </div>
+        <div class="spotlight-card">
+          <div class="spotlight-badge">Mild</div>
+          <h3 class="spotlight-title">Yogurt Dill Dressing</h3>
+          <p class="spotlight-desc">A creamy, cooling yogurt-based dressing perfect for balancing spicy harissa or chicken.</p>
+          <div class="spotlight-meta"><span>🔥 50 cal</span><span>🥛 Contains Dairy</span></div>
+        </div>
+        <div class="spotlight-card">
+          <div class="spotlight-badge">Zesty</div>
+          <h3 class="spotlight-title">Tahini Caesar</h3>
+          <p class="spotlight-desc">A dairy-free twist on caesar using rich sesame tahini and lemon juice.</p>
+          <div class="spotlight-meta"><span>🔥 80 cal</span><span>💧 Vegan</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 5C: CAVA Copycat Recipes at Home
+       ======================================================================== -->
+  <section class="editorial-section" id="cava-recipes">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Culinary Studio</span>
+        <h2 class="section-title">CAVA Copycat At-Home Recipes</h2>
+        <p class="section-subtitle">Recreate CAVA's legendary Crazy Feta®, Harissa Honey Chicken, and Saffron Rice in your own kitchen.</p>
+      </div>
+
+      <div class="recipes-grid" id="recipesContainer">
+        <div class="spotlight-card">
+          <div class="spotlight-badge">Fan Favorite ⭐</div>
+          <h3 class="spotlight-title">Crazy Feta® At Home</h3>
+          <p class="spotlight-desc">Whip together feta cheese, olive oil, jalapeños, and onion for a homemade version of CAVA's iconic dip.</p>
+          <div class="spotlight-meta"><span>🕒 10 Mins</span><span>🧀 Easy</span></div>
+        </div>
+        <div class="spotlight-card">
+          <div class="spotlight-badge">Protein Base</div>
+          <h3 class="spotlight-title">Harissa Honey Chicken</h3>
+          <p class="spotlight-desc">Marinate chicken thighs in harissa paste, honey, garlic, and lemon juice before grilling.</p>
+          <div class="spotlight-meta"><span>🕒 30 Mins</span><span>🍗 Medium</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 6: CAVA Calorie & Nutrition Quick Guide (Ranked Table)
+       ======================================================================== -->
+  <section class="editorial-section bg-subtle-section" id="nutrition-guide">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" id="quick-guide">Calorie Rankings</span>
+        <h2 class="section-title">CAVA Calorie & Nutrition Quick Guide (Ranked Lowest to Highest)</h2>
+        <p class="section-subtitle">
+          Standard builds ranked from lowest to highest calorie counts, cross-checked against CAVA's published nutrition data.
+        </p>
+      </div>
+
+      <div class="table-card-wrapper">
+        <div class="table-responsive">
+          <table class="data-table ranking-table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Item Name</th>
+                <th>Calories</th>
+                <th>Protein</th>
+                <th>Carbs</th>
+                <th>Fat</th>
+                <th>Category</th>
+                <th>Nutritional Takeaway</th>
+              </tr>
+            </thead>
+            <tbody id="calorieRankingsBody">
+              <tr>
+                <td>1</td>
+                <td>Greek Salad Bowl</td>
+                <td>480</td>
+                <td>20g</td>
+                <td>40g</td>
+                <td>25g</td>
+                <td>Salad Base</td>
+                <td>Lightest option</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Harissa Avocado Bowl</td>
+                <td>710</td>
+                <td>42g</td>
+                <td>65g</td>
+                <td>35g</td>
+                <td>Grain Bowl</td>
+                <td>Balanced protein/fats</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Lemon Chicken Pita</td>
+                <td>840</td>
+                <td>38g</td>
+                <td>95g</td>
+                <td>30g</td>
+                <td>Pita Wrap</td>
+                <td>Higher carb</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 7: CAVA Dietary & Allergen Guide
+       ======================================================================== -->
+  <section class="editorial-section" id="dietary-allergens">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Dietary Protocols</span>
+        <h2 class="section-title">CAVA Dietary & Allergen Guide</h2>
+        <p class="section-subtitle">How to easily navigate Vegan, Vegetarian, Gluten-Free, Keto, and Allergen restrictions at the counter.</p>
+      </div>
+
+      <!-- Dietary Grid -->
+      <div class="dietary-cards-grid">
+        <div class="dietary-card">
+          <div class="dietary-card-header">
+            <span class="dietary-icon">🌿</span>
+            <h4>Vegan Options</h4>
+          </div>
+          <p>
+            <strong>Proteins:</strong> Golden falafel, roasted vegetables, white sweet potato.<br>
+            <strong>Dips:</strong> Hummus, red pepper hummus, harissa, roasted eggplant dip.<br>
+            <em>Skip:</em> Tzatziki, Crazy Feta®, garlic dressing, yogurt dill.
+          </p>
+        </div>
+
+        <div class="dietary-card">
+          <div class="dietary-card-header">
+            <span class="dietary-icon">🧀</span>
+            <h4>Vegetarian Options</h4>
+          </div>
+          <p>
+            Stack Crazy Feta®, cucumber dill tzatziki, crumbled feta, and yogurt dill dressing on top of all vegan bases and falafel for rich, satisfying Mediterranean flavors.
+          </p>
+        </div>
+
+        <div class="dietary-card">
+          <div class="dietary-card-header">
+            <span class="dietary-icon">🌾</span>
+            <h4>Gluten-Free Options</h4>
+          </div>
+          <p>
+            <strong>Every bowl is 100% gluten-free</strong> simply by skipping the pita bread and pita crisps! All bases, proteins, and dips are naturally gluten-free.
+          </p>
+        </div>
+
+        <div class="dietary-card">
+          <div class="dietary-card-header">
+            <span class="dietary-icon">🥩</span>
+            <h4>Keto / Low-Carb</h4>
+          </div>
+          <p>
+            Stick to SuperGreens or arugula base. Pick grilled chicken, steak, or braised lamb. Pair with Crazy Feta® and tzatziki for optimal low-carb macros.
+          </p>
+        </div>
+
+        <div class="dietary-card">
+          <div class="dietary-card-header">
+            <span class="dietary-icon">💪</span>
+            <h4>High-Protein Picks</h4>
+          </div>
+          <p>
+            Grilled chicken delivers 28–33g protein. Add black lentils for +18g protein. Double protein pushes total protein past <strong>53g–66g per bowl</strong>.
+          </p>
+        </div>
+      </div>
+
+      <!-- Full Allergen Table -->
+      <div class="table-card-wrapper" style="margin-top: 2.5rem;">
+        <h3 class="table-card-title">Full CAVA Allergen Matrix (2026)</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+          Cross-contact is always possible in a shared kitchen. Guests with severe allergies should speak directly with store staff.
+        </p>
+        <div class="table-responsive">
+          <table class="data-table allergen-table">
+            <thead>
+              <tr>
+                <th>Menu Item</th>
+                <th>Dairy / Milk</th>
+                <th>Sesame</th>
+                <th>Wheat / Gluten</th>
+                <th>Fish</th>
+                <th>Summary Allergens</th>
+              </tr>
+            </thead>
+            <tbody id="allergenTableBody">
+              <!-- Rendered by JS from MENU_DATA.allergensTable -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 8: CAVA Seasonal & Limited-Time Menu (2026)
+       ======================================================================== -->
+  <section class="editorial-section bg-subtle-section" id="seasonal-2026">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">2026 Rotations</span>
+        <h2 class="section-title">CAVA Seasonal & Limited-Time Menu (2026)</h2>
+        <p class="section-subtitle">Seafood Chef Curations, athlete collaboration bowls, and seasonal fruit juices.</p>
+      </div>
+
+      <div class="seasonal-grid">
+        <div class="seasonal-card">
+          <span class="seasonal-badge">2026 Seafood Debut</span>
+          <h3>Salmon + Strawberry Sesame Bowl</h3>
+          <p>
+            CAVA's breakthrough seafood curation featuring glazed wild salmon, fresh sliced strawberries, Persian cucumbers, pickled red onions, and toasted sesame tahini over SuperGreens and wild brown rice (700 cal).
+          </p>
+          <div class="seasonal-price">$14.80 – $18.50</div>
+        </div>
+
+        <div class="seasonal-card">
+          <span class="seasonal-badge">Chef Collaboration</span>
+          <h3>Salmon + Yogurt Dill Bowl</h3>
+          <p>
+            Seared salmon fillet atop saffron basmati rice and wild baby arugula, finished with cooling cucumber dill tzatziki, Greek feta crumbles, kalamata olives, and yogurt dill dressing (710 cal).
+          </p>
+          <div class="seasonal-price">$14.80 – $18.50</div>
+        </div>
+
+        <div class="seasonal-card">
+          <span class="seasonal-badge">Cold-Pressed Juice</span>
+          <h3>Pineapple Mint & Blueberry Lavender</h3>
+          <p>
+            Rotational house juices pressed in-house daily with fresh fruit purees, mint herbs, and floral infusions rather than poured from artificial concentrates (85–110 cal).
+          </p>
+          <div class="seasonal-price">$3.50 – $4.25</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 9: CAVA vs Other Fast-Casual Chains (Chipotle & Sweetgreen)
+       ======================================================================== -->
+  <section class="editorial-section" id="vs-competitors">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Fast-Casual Face-Off</span>
+        <h2 class="section-title">CAVA vs Other Fast-Casual Chains</h2>
+        <p class="section-subtitle">How CAVA stacks up against Chipotle and Sweetgreen on pricing, included dips, and value.</p>
+      </div>
+
+      <div class="comparison-cards-grid">
+        <div class="comparison-card">
+          <div class="comparison-header">
+            <h3>CAVA vs Chipotle</h3>
+            <span class="comp-tag">Mezze vs Mexican</span>
+          </div>
+          <p>
+            CAVA is often called the <em>Mediterranean version of Chipotle</em> because both use an assembly-line build-your-own model.
+          </p>
+          <ul class="comp-comparison-list">
+            <li><strong>Free Dips:</strong> CAVA includes <strong>6 scratch-made dips free</strong>. Chipotle charges $2.50+ extra for Guacamole or Queso.</li>
+            <li><strong>Price:</strong> CAVA ($12–$16) runs slightly higher than Chipotle ($10–$13), but the free dips close the gap.</li>
+            <li><strong>Nutrition:</strong> CAVA offers whole grains (RightRice, Black Lentils) and fresh greens with higher protein diversity.</li>
+          </ul>
+        </div>
+
+        <div class="comparison-card">
+          <div class="comparison-header">
+            <h3>CAVA vs Sweetgreen</h3>
+            <span class="comp-tag">Mediterranean vs Salad Lab</span>
+          </div>
+          <p>
+            Sweetgreen focuses on warm grain bowls and seasonal produce with similar plant-based offerings.
+          </p>
+          <ul class="comp-comparison-list">
+            <li><strong>Dip & Dressing Policy:</strong> Sweetgreen includes dressing only; CAVA includes <strong>both 3 dips and dressings free</strong>.</li>
+            <li><strong>Pricing:</strong> Sweetgreen bowls run $13–$17, roughly in line with CAVA, but CAVA offers heavier portions per dollar.</li>
+            <li><strong>Flavor Density:</strong> CAVA's whipped feta and spicy harissa deliver a bolder Mediterranean profile.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 10: CAVA Catering, Ordering App & Rewards
+       ======================================================================== -->
+  <section class="editorial-section bg-subtle-section" id="catering-orders">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Catering & Rewards</span>
+        <h2 class="section-title">Catering Menu, Ordering Online & CAVA Rewards</h2>
+        <p class="section-subtitle">Maximize savings with student discounts, skip the line with the app, and feed groups with catering stations.</p>
+      </div>
+
+      <div class="app-catering-grid">
+        <div class="app-card">
+          <div class="app-card-badge">📱 CAVA App & Delivery Advisory</div>
+          <h3>Why Order Directly via CAVA App?</h3>
+          <p>
+            Ordering ahead on the free <strong>CAVA App</strong> lets you skip the in-store line, earn CAVA Rewards points on every dollar, and access the <strong>Live Nutrition Macro Tracker</strong>.
+          </p>
+          <div class="markup-warning">
+            <strong>💡 Delivery Platform Price Notice:</strong>
+            <p>Uber Eats and DoorDash add platform fees and up to 15–20% menu markup. Ordering directly for pickup or through CAVA's direct delivery is almost always cheaper.</p>
+          </div>
+          <div class="student-discount-box">
+            <span>🎓 <strong>10% Student Discount:</strong> Monday through Thursday with verified .edu email on the CAVA app.</span>
+          </div>
+        </div>
+
+        <div class="app-card">
+          <div class="app-card-badge">🍱 Group Catering Solutions</div>
+          <h3>CAVA Catering Menu (Min. 10 Servings)</h3>
+          <div class="catering-option-item">
+            <h4>Group Bowl Bar ($15–$20 / person)</h4>
+            <p>CAVA's most popular buffet station: 2 bases, 2 proteins, 3 dips, unlimited toppings, 2 dressings, and pita packs. Perfect for mixed dietary needs.</p>
+          </div>
+          <div class="catering-option-item">
+            <h4>CAVA Pita Packs ($121 per 10 Pitas)</h4>
+            <p>Pre-assembled, individually wrapped pitas (Assorted Chicken, Steak, and Falafel) ready for office lunches and board meetings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 11: Operating Hours & Holiday Schedule (2026)
+       ======================================================================== -->
+  <section class="editorial-section" id="hours-locations">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Hours & Locations</span>
+        <h2 class="section-title">CAVA Operating Hours & Holiday Schedule 2026</h2>
+        <p class="section-subtitle">Standard store hours across all 459+ locations and official holiday closures.</p>
+      </div>
+
+      <div class="hours-grid">
+        <div class="hours-box">
+          <span class="hours-icon">⏰</span>
+          <h3>Standard Store Hours</h3>
+          <p class="hours-highlight">10:45 AM – 10:00 PM</p>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">7 Days a Week across most standard national locations.</p>
+        </div>
+
+        <div class="hours-box">
+          <span class="hours-icon">🎄</span>
+          <h3>Official Holiday Schedule</h3>
+          <ul class="holiday-list">
+            <li><strong>Thanksgiving Day:</strong> ❌ Closed</li>
+            <li><strong>Christmas Day:</strong> ❌ Closed</li>
+            <li><strong>Christmas Eve:</strong> 🕒 Early Close (5:00–6:00 PM)</li>
+            <li><strong>New Year's Day, Memorial Day, Labor Day:</strong> ✅ Regular Operating Hours</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 12: Frequently Asked Questions (Interactive Accordion)
+       ======================================================================== -->
+  <section class="editorial-section bg-subtle-section" id="faqs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Expert Answers</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Real answers to the most common questions about CAVA ordering, prices, and health facts.</p>
+      </div>
+
+      <div class="faq-accordion" id="faqAccordion">
+        <!-- Rendered by JS from MENU_DATA.faqs -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 13: Final Verdict & Editorial Verification
+       ======================================================================== -->
+  <section class="editorial-section">
+    <div class="container">
+      <div class="verdict-card">
+        <span class="section-tag">Editorial Summary</span>
+        <h2 style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 800; margin: 0.5rem 0 1rem;">Final Verdict on the CAVA Menu</h2>
+        <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-main); margin-bottom: 1.25rem;">
+          The CAVA menu works because the ordering system is simple even though the ingredients behind it are not. Six free scratch-made dips, eight proteins, nine bases, and eight dressings mean every bowl is genuinely different from the last, even though the ordering process itself never changes from visit to visit.
+        </p>
+        <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;">
+          Whether you are managing a dietary restriction, training for athletic performance, or deciding between the Harissa Avocado Bowl and a build-your-own steak pita, the core value of CAVA comes down to complete control over what actually ends up in your meal.
+        </p>
+      </div>
+
+      <div class="about-guide-box">
+        <h4>📋 About This Guide & Editorial Verification</h4>
+        <p>
+          This guide is maintained by a menu content specialist and reviewed against CAVA's official nutrition calculator, published pricing data, and CAVA Group's own public financial filings (SEC Form 10-K) for company facts like location counts (459 restaurants across 29 states) and founding history. Prices and calories are national averages and will vary slightly by location. Last reviewed and updated for <strong>April 2026</strong>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       Slide-Over Cart Drawer
+       ======================================================================== -->
+  <div class="drawer-backdrop" id="cartDrawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Bag">
+    <div class="cart-header">
+      <h3 class="cart-title">
+        <span>🛍️</span> Your Mediterranean Bag
+      </h3>
+      <button class="cart-close-btn" id="closeCartDrawerBtn" aria-label="Close Bag">✕</button>
+    </div>
+
+    <!-- Fulfillment Method -->
+    <div class="fulfillment-selector">
+      <button class="fulfillment-btn active" data-type="pickup">🏃 Pickup</button>
+      <button class="fulfillment-btn" data-type="delivery">🚗 Delivery</button>
+      <button class="fulfillment-btn" data-type="dine-in">🍽️ Dine-In</button>
+    </div>
+
+    <!-- Cart Item List -->
+    <div class="cart-items-list" id="cartItemsList">
+      <!-- Rendered by JS -->
+    </div>
+
+    <!-- Cart Footer / Promo & Totals -->
+    <div class="cart-footer">
+      <div class="promo-input-group">
+        <input type="text" id="promoCodeInput" class="promo-input" placeholder="Promo code (e.g. FRESH20, CAVALOVER15, STUDENT10)" aria-label="Promo code">
+        <button class="btn-apply-promo" id="btnApplyPromo">Apply</button>
+      </div>
+
+      <div id="promoBadgeContainer"></div>
+
+      <div class="cart-totals-breakdown">
+        <div class="totals-row">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">$0.00</span>
+        </div>
+        <div class="totals-row discount" id="cartDiscountRow" style="display: none;">
+          <span>Promo Discount</span>
+          <span id="cartDiscountAmount">-$0.00</span>
+        </div>
+        <div class="totals-row">
+          <span>Estimated Tax (8%)</span>
+          <span id="cartTax">$0.00</span>
+        </div>
+        <div class="totals-row final">
+          <span>Total</span>
+          <span id="cartTotal">$0.00</span>
+        </div>
+      </div>
+
+      <button class="btn-checkout" id="btnProceedCheckout" disabled>
+        Proceed to Simulated Checkout
+      </button>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       Quick View / Nutrition Modal
+       ======================================================================== -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeQuickViewBtn">✕</button>
+      <div class="quickview-body" id="quickViewContent">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Checkout Confirmation Receipt Modal
+       ======================================================================== -->
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="modal-card" style="max-width: 520px;">
+      <button class="modal-close-btn" id="closeCheckoutModalBtn">✕</button>
+      <div class="receipt-header">
+        <div class="receipt-icon">✓</div>
+        <h3 class="receipt-title">Order Confirmed!</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">Thank you for ordering with CAVA</p>
+      </div>
+
+      <div class="receipt-body">
+        <div class="receipt-box" id="receiptSummaryBox">
+          <!-- Rendered by JS -->
+        </div>
+        <button class="btn-primary" id="btnReceiptDone" style="width: 100%; justify-content: center;">
+          Done / Start New Order
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Store Location Picker Modal
+       ======================================================================== -->
+  <div class="modal-overlay" id="locationModal">
+    <div class="modal-card" style="max-width: 500px;">
+      <button class="modal-close-btn" id="closeLocationModalBtn">✕</button>
+      <div style="padding: 2rem;">
+        <h3 style="font-family: var(--font-heading); font-size: 1.4rem; font-weight: 800; margin-bottom: 0.5rem;">Select CAVA Location</h3>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.5rem;">459 restaurants across 29 states and Washington, D.C.</p>
+        
+        <div style="display: flex; flex-direction: column; gap: 0.85rem;" id="locationListContainer">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Legal Modals (Privacy, Terms, Disclaimer)
+       ======================================================================== -->
+  <!-- Privacy Policy Modal -->
+  <div class="modal-overlay" id="privacyModal">
+    <div class="modal-card legal-modal-card">
+      <button class="modal-close-btn" onclick="window.cavaAppInstance?.closeModal('privacyModal')">✕</button>
+      <div class="legal-modal-body">
+        <span class="section-tag">Legal & Trust</span>
+        <h3>Privacy Policy</h3>
+        <p class="legal-meta">Last Updated: April 2026</p>
+        <div class="legal-text-content">
+          <h4>1. Information We Collect</h4>
+          <p>We do not sell your personal data. We collect order simulation inputs, local storage theme preferences (light/dark mode), and cart items stored securely in your browser.</p>
+          <h4>2. Analytics & Cookies</h4>
+          <p>We use standard performance metrics to provide responsive user interfaces and optimize nutritional calculator speeds.</p>
+          <h4>3. Third-Party Links</h4>
+          <p>This educational guide provides citations to public SEC Form 10-K filings, CAVA Group investor documents, and official nutritional databases.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terms of Service Modal -->
+  <div class="modal-overlay" id="termsModal">
+    <div class="modal-card legal-modal-card">
+      <button class="modal-close-btn" onclick="window.cavaAppInstance?.closeModal('termsModal')">✕</button>
+      <div class="legal-modal-body">
+        <span class="section-tag">Legal & Trust</span>
+        <h3>Terms of Service</h3>
+        <p class="legal-meta">Effective Date: April 2026</p>
+        <div class="legal-text-content">
+          <h4>1. Informational & Educational Use</h4>
+          <p>This portal is an independent Mediterranean culinary guide and interactive bowl builder. Menu pricing and calorie counts represent verified national averages and may vary slightly by individual franchise store locations.</p>
+          <h4>2. Trademark Notice</h4>
+          <p>CAVA®, Crazy Feta®, RightRice™, and related trademarks are registered trademarks of CAVA Group, Inc. This site operates as an editorial and nutritional informational guide.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Allergen & Medical Disclaimer Modal -->
+  <div class="modal-overlay" id="disclaimerModal">
+    <div class="modal-card legal-modal-card">
+      <button class="modal-close-btn" onclick="window.cavaAppInstance?.closeModal('disclaimerModal')">✕</button>
+      <div class="legal-modal-body">
+        <span class="section-tag">Health & Safety</span>
+        <h3>Allergen & Nutrition Disclaimer</h3>
+        <p class="legal-meta">Verified Nutritional Protocols (2026)</p>
+        <div class="legal-text-content">
+          <h4>Cross-Contact Notice</h4>
+          <p>CAVA restaurants operate open assembly lines where sesame, dairy, wheat, and tree nuts are present. While gluten-free and vegan ingredients are prepared with care, cross-contact is always possible in shared kitchen environments.</p>
+          <h4>Medical Advisory</h4>
+          <p>Individuals with severe celiac disease or anaphylactic allergies must inform in-store staff before food preparation begins.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Footer with Legal Pages & Compliance
+       ======================================================================== -->
+  
+<?php
+get_footer();
