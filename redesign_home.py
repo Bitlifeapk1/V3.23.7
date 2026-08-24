@@ -1,0 +1,139 @@
+new_post_html = """
+<div class="editorial-intro" style="margin-bottom: 3rem;">
+  <p class="lead-paragraph" style="font-size: 1.15rem; line-height: 1.8; color: var(--text-main);">
+    Staring at the CAVA menu and not sure what to order? You're not alone. CAVA lets you build your own bowl from scratch, and with dozens of possible combinations, that freedom can feel more confusing than helpful the first few times you visit. This guide gives you real CAVA prices, real calorie counts, every signature bowl on the current menu, and simple steps to build your own bowl the right way.
+  </p>
+</div>
+
+<h2 style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--secondary); margin-bottom: 1rem;">Complete CAVA Signature Bowls (2026)</h2>
+<p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem;">Compare the full lineup of signature bowls to find your perfect flavor and macros.</p>
+
+<div class="menu-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+  
+  <!-- Bowl 1 -->
+  <article class="menu-card">
+    <div class="card-image-wrap">
+      <div class="card-visual-placeholder" style="background: var(--bg-subtle); height: 180px; display: flex; align-items: center; justify-content: center; font-size: 4rem;">
+        🥗
+      </div>
+      <span class="card-badge" style="background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700; position: absolute; top: 1rem; left: 1rem;">Most Popular</span>
+    </div>
+    <div class="card-content">
+      <h3 class="card-title" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--secondary);">Chicken + Rice Bowl</h3>
+      <p class="card-description" style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem;">
+        Grilled chicken on saffron basmati rice with hummus, tzatziki, tomato and cucumber salad, and crumbled feta. The ultimate safe, balanced order.
+      </p>
+      
+      <div class="card-meta" style="display: flex; gap: 1rem; font-size: 0.9rem; font-weight: 600; color: var(--text-main); margin-bottom: 1rem;">
+        <span>🔥 700-715 cal</span>
+        <span>💪 ~33g protein</span>
+      </div>
+
+      <div class="card-footer" style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-light); padding-top: 1rem;">
+        <div>
+          <span class="card-price" style="font-weight: 800; font-size: 1.25rem; color: var(--text-main);">$11.55</span>
+          <span style="display: block; font-size: 0.75rem; color: var(--text-muted);">Avg. Starting Price</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Bowl 2 -->
+  <article class="menu-card">
+    <div class="card-image-wrap">
+      <div class="card-visual-placeholder" style="background: var(--bg-subtle); height: 180px; display: flex; align-items: center; justify-content: center; font-size: 4rem;">
+        🥑
+      </div>
+    </div>
+    <div class="card-content">
+      <h3 class="card-title" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--secondary);">Harissa Avocado Bowl</h3>
+      <p class="card-description" style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem;">
+        Hits sweet, spicy, creamy, and tangy flavors all at once. Made with harissa honey chicken, Crazy Feta®, hummus, avocado, and fire-roasted corn.
+      </p>
+      
+      <div class="card-meta" style="display: flex; gap: 1rem; font-size: 0.9rem; font-weight: 600; color: var(--text-main); margin-bottom: 1rem;">
+        <span>🔥 810-885 cal</span>
+        <span>💪 High protein</span>
+      </div>
+
+      <div class="card-footer" style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-light); padding-top: 1rem;">
+        <div>
+          <span class="card-price" style="font-weight: 800; font-size: 1.25rem; color: var(--text-main);">$12.75</span>
+          <span style="display: block; font-size: 0.75rem; color: var(--text-muted);">Avg. Starting Price</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Bowl 3 -->
+  <article class="menu-card">
+    <div class="card-image-wrap">
+      <div class="card-visual-placeholder" style="background: var(--bg-subtle); height: 180px; display: flex; align-items: center; justify-content: center; font-size: 4rem;">
+        🌶️
+      </div>
+      <span class="card-badge" style="background: #ef4444; color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700; position: absolute; top: 1rem; left: 1rem;">Spicy</span>
+    </div>
+    <div class="card-content">
+      <h3 class="card-title" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--secondary);">Spicy Lamb + Avocado</h3>
+      <p class="card-description" style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1rem;">
+        Seasoned lamb meatballs, avocado, Crazy Feta®, hummus, and lemon herb tahini dressing. One of the boldest picks on the menu.
+      </p>
+      
+      <div class="card-meta" style="display: flex; gap: 1rem; font-size: 0.9rem; font-weight: 600; color: var(--text-main); margin-bottom: 1rem;">
+        <span>🔥 ~795 cal</span>
+        <span>💪 Mod-High protein</span>
+      </div>
+
+      <div class="card-footer" style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-light); padding-top: 1rem;">
+        <div>
+          <span class="card-price" style="font-weight: 800; font-size: 1.25rem; color: var(--text-main);">$15.05</span>
+          <span style="display: block; font-size: 0.75rem; color: var(--text-muted);">Avg. Starting Price</span>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="info-banner" style="background: var(--primary-light); border-radius: var(--radius-lg); padding: 2.5rem; text-align: center; margin-bottom: 4rem;">
+  <h3 style="font-family: var(--font-serif); font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">How Much Does a CAVA Bowl Cost?</h3>
+  <p style="font-size: 1.1rem; line-height: 1.7; color: var(--primary-hover); max-width: 800px; margin: 0 auto;">
+    A typical CAVA bowl ranges from <strong>$10.97 to $19.89</strong>. Build-your-own bowls with standard proteins sit at the lower end, while premium proteins (like steak or lamb) push the price higher. <em>Note: Prices vary by location.</em>
+  </p>
+</div>
+
+<h2 style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--secondary); margin-bottom: 2rem;">Build Your Own Bowl: Step-by-Step</h2>
+
+<div class="builder-steps-list" style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 4rem;">
+  
+  <div class="step-card" style="display: flex; gap: 1.5rem; background: var(--bg-card); padding: 2rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-left: 4px solid var(--primary);">
+    <div class="step-num" style="background: var(--primary); color: white; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; flex-shrink: 0; font-family: var(--font-heading);">1</div>
+    <div>
+      <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--secondary); margin-bottom: 0.5rem;">Choose Your Base</h3>
+      <p style="color: var(--text-muted); line-height: 1.6;">Light options like SuperGreens run 30-50 calories, while heartier choices like saffron rice or brown rice run 200-290 calories. The Greens + Grains mix (~132 cal) stays the most popular pick.</p>
+    </div>
+  </div>
+
+  <div class="step-card" style="display: flex; gap: 1.5rem; background: var(--bg-card); padding: 2rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-left: 4px solid var(--primary);">
+    <div class="step-num" style="background: var(--primary); color: white; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; flex-shrink: 0; font-family: var(--font-heading);">2</div>
+    <div>
+      <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--secondary); margin-bottom: 0.5rem;">Choose Your Protein</h3>
+      <p style="color: var(--text-muted); line-height: 1.6;">Grilled chicken offers the best protein-to-calorie ratio (~33g protein for 250 cal). Falafel, glazed salmon, spicy lamb meatballs, and braised lamb each bring different fat and carb levels.</p>
+    </div>
+  </div>
+
+  <div class="step-card" style="display: flex; gap: 1.5rem; background: var(--bg-card); padding: 2rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border-left: 4px solid var(--primary);">
+    <div class="step-num" style="background: var(--primary); color: white; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; flex-shrink: 0; font-family: var(--font-heading);">3</div>
+    <div>
+      <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--secondary); margin-bottom: 0.5rem;">Choose Dips & Spreads</h3>
+      <p style="color: var(--text-muted); line-height: 1.6;">Hummus and tzatziki form the base layer in most signature bowls. Crazy Feta® and harissa add sharper, spicier notes. Don't skip the roasted eggplant dip for a deep, smoky flavor.</p>
+    </div>
+  </div>
+
+</div>
+
+"""
+
+with open('cava-bowl-menu-post.html', 'w', encoding='utf-8') as f:
+    f.write(new_post_html)
+
+print("Created post structure with home page design template.")
