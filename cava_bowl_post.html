@@ -1,0 +1,930 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cava Bowl Menu 2026: Prices, Calories & Signature Bowls</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Variables based on CAVA Palette */
+        :root {
+            --cava-green: #1B3B2B;
+            --cava-orange: #F06522;
+            --cava-cream: #F8F6F0;
+            --cava-dark-grey: #2D2D2D;
+            --cava-light-grey: #6B7280;
+            --white: #FFFFFF;
+            --border-color: #E2DFD5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--cava-cream);
+            color: var(--cava-dark-grey);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, .brand-font {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            background-color: var(--cava-green);
+            color: var(--cava-cream);
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 6px solid var(--cava-orange);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(240, 101, 34, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background-color: rgba(240, 101, 34, 0.2);
+            color: var(--cava-orange);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            color: var(--white);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: rgba(248, 246, 240, 0.85);
+            font-weight: 300;
+        }
+
+        /* Hero Image */
+        .hero-image-container {
+            max-width: 900px;
+            margin: -40px auto 40px auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+            border: 5px solid var(--white);
+        }
+
+        /* --- General Section Styling --- */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--cava-green);
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: var(--cava-orange);
+            border-radius: 2px;
+        }
+
+        .section-desc {
+            font-size: 1.15rem;
+            color: var(--cava-light-grey);
+            max-width: 800px;
+            margin-bottom: 40px;
+        }
+
+        /* --- Content Blocks (Standard Text) --- */
+        .content-box {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+            margin-bottom: 40px;
+            border: 1px solid var(--border-color);
+        }
+
+        .content-box p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .content-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .content-box strong {
+            color: var(--cava-green);
+        }
+
+        /* --- Modern Table --- */
+        .table-wrapper {
+            background: var(--white);
+            border-radius: 20px;
+            overflow-x: auto;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            min-width: 700px;
+        }
+
+        th, td {
+            padding: 20px 25px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--cava-cream);
+            color: var(--cava-green);
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tbody tr {
+            transition: background 0.2s;
+        }
+
+        tbody tr:hover {
+            background-color: rgba(248, 246, 240, 0.5);
+        }
+
+        td {
+            font-size: 1.05rem;
+        }
+
+        td:first-child {
+            font-weight: 600;
+            color: var(--cava-green);
+        }
+
+        .price-badge {
+            background: rgba(240, 101, 34, 0.1);
+            color: var(--cava-orange);
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            white-space: nowrap;
+        }
+
+        /* --- Signature Bowls Grid --- */
+        .bowls-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .bowl-card {
+            background: var(--white);
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bowl-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--cava-orange);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+            z-index: 2;
+        }
+
+        .bowl-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            border-color: transparent;
+        }
+
+        .bowl-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .bowl-card-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .bowl-card-content {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .bowl-card h3 {
+            font-size: 1.6rem;
+            color: var(--cava-green);
+            margin-bottom: 15px;
+        }
+
+        .bowl-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .stat-pill {
+            background: var(--cava-cream);
+            color: var(--cava-dark-grey);
+            padding: 6px 12px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid var(--border-color);
+        }
+        
+        .stat-pill.stat-price {
+            background: var(--cava-green);
+            color: var(--white);
+            border-color: var(--cava-green);
+        }
+
+        .bowl-card p {
+            color: var(--cava-light-grey);
+            font-size: 1.05rem;
+            margin-top: auto;
+        }
+
+        .best-for {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px dashed var(--border-color);
+            font-size: 0.95rem;
+            color: var(--cava-orange);
+            font-weight: 600;
+        }
+
+        /* --- Steps Layout --- */
+        .steps-wrapper {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border-color);
+        }
+
+        .step-row {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+
+        .step-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-number {
+            flex-shrink: 0;
+            width: 60px;
+            height: 60px;
+            background: var(--cava-orange);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 800;
+            font-family: 'Outfit', sans-serif;
+            margin-right: 30px;
+            box-shadow: 0 5px 15px rgba(240, 101, 34, 0.3);
+        }
+
+        .step-content h3 {
+            font-size: 1.5rem;
+            color: var(--cava-green);
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .step-content p {
+            color: var(--cava-light-grey);
+            font-size: 1.1rem;
+        }
+
+        .pro-tip {
+            background: var(--cava-cream);
+            border-left: 4px solid var(--cava-green);
+            padding: 20px;
+            border-radius: 0 12px 12px 0;
+            margin-top: 40px;
+        }
+        
+        .pro-tip h4 {
+            color: var(--cava-green);
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        /* --- Goal Cards (Featured) --- */
+        .goals-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .goal-card {
+            background: var(--cava-green);
+            color: var(--white);
+            padding: 30px;
+            border-radius: 16px;
+            transition: transform 0.3s;
+        }
+        
+        .goal-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .goal-card h3 {
+            color: var(--cava-orange);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .goal-card p {
+            color: rgba(255,255,255,0.85);
+            font-size: 1rem;
+        }
+
+        /* --- FAQ Accordion --- */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            background: var(--white);
+            margin-bottom: 15px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        details[open] {
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-color: var(--cava-orange);
+        }
+
+        summary {
+            padding: 25px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: var(--cava-green);
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            color: var(--cava-orange);
+            font-size: 1.8rem;
+            font-weight: 300;
+            transition: transform 0.3s ease;
+        }
+
+        details[open] summary::after {
+            content: 'âˆ’';
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 25px 25px 25px;
+            color: var(--cava-light-grey);
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: var(--cava-green);
+            padding: 80px 20px 40px;
+            margin-top: 80px;
+            color: var(--white);
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            color: var(--white);
+        }
+
+        .footer-content p {
+            font-size: 1.15rem;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 40px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero { padding: 60px 20px; }
+            .section-title { font-size: 2rem; }
+            .content-box { padding: 25px; }
+            .steps-wrapper { padding: 30px 20px; }
+            .step-row { flex-direction: column; }
+            .step-number { margin-bottom: 20px; }
+            .hero-image-container { margin-top: -20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="container">
+            <span class="hero-badge">Menu Guide 2026</span>
+            <h1>Cava Bowl Menu: Prices, Calories, Nutrition & Signature Bowls</h1>
+            <p>Staring at the Cava menu and not sure what to order? You're not alone. This guide gives you real Cava prices, real calorie counts, every signature bowl on the current menu, and simple steps to build your own bowl the right way.</p>
+        </div>
+    </header>
+    
+    <!-- Hero Image Added here -->
+    <div class="hero-image-container">
+        <img src="images/chicken_bowl.jpg" alt="Cava Chicken Rice Bowl" class="hero-image">
+    </div>
+
+    <div class="container">
+        
+        <!-- QUICK SUMMARY SECTION -->
+        <section class="section" style="padding-top: 40px;">
+            <h2 class="section-title">All Signature Bowls at a Glance</h2>
+            <p class="section-desc">Short on time? Here's the full Cava menu lineup side by side, so you can compare price, calories, and protein before reading further.</p>
+            
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Signature Bowl</th>
+                            <th>Typical Price*</th>
+                            <th>Calories</th>
+                            <th>Protein Level</th>
+                            <th>Best For</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Chicken + Rice Bowl</td>
+                            <td><span class="price-badge">$11.55â€“$13.25</span></td>
+                            <td>700â€“715</td>
+                            <td>High (~33g)</td>
+                            <td>First-timers, balanced meals</td>
+                        </tr>
+                        <tr>
+                            <td>Harissa Avocado Bowl</td>
+                            <td><span class="price-badge">$12.75â€“$14.45</span></td>
+                            <td>810â€“885</td>
+                            <td>High</td>
+                            <td>Bold, layered flavor</td>
+                        </tr>
+                        <tr>
+                            <td>Spicy Lamb + Avocado Bowl</td>
+                            <td><span class="price-badge">$15.05â€“$16.75</span></td>
+                            <td>~795</td>
+                            <td>Moderate-High</td>
+                            <td>Spice lovers</td>
+                        </tr>
+                        <tr>
+                            <td>Salmon, Yogurt Dill</td>
+                            <td><span class="price-badge">$15.75â€“$17.45</span></td>
+                            <td>~710</td>
+                            <td>Very High (~35g)</td>
+                            <td>Highest-protein salmon option</td>
+                        </tr>
+                        <tr>
+                            <td>Salmon, Strawberry Sesame</td>
+                            <td><span class="price-badge">$15.75â€“$17.45</span></td>
+                            <td>~700</td>
+                            <td>High</td>
+                            <td>First-time salmon orders</td>
+                        </tr>
+                        <tr>
+                            <td>Falafel Crunch</td>
+                            <td><span class="price-badge">$11.55â€“$13.25</span></td>
+                            <td>~860</td>
+                            <td>Moderate (plant-based)</td>
+                            <td>Best vegetarian pick</td>
+                        </tr>
+                        <tr>
+                            <td>Steak + Harissa</td>
+                            <td><span class="price-badge">$15.05â€“$16.75</span></td>
+                            <td>~615</td>
+                            <td>High</td>
+                            <td>Leaner red-meat option</td>
+                        </tr>
+                        <tr>
+                            <td>Greek Salad Bowl</td>
+                            <td><span class="price-badge">$11.95â€“$13.65</span></td>
+                            <td>~585</td>
+                            <td>High (~33g)</td>
+                            <td>No-carb, low-calorie meal</td>
+                        </tr>
+                        <tr>
+                            <td>Harissa Chicken Power Bowl</td>
+                            <td><span class="price-badge">$12.75â€“$14.45</span></td>
+                            <td>N/A**</td>
+                            <td>High</td>
+                            <td>Sweet potato fans</td>
+                        </tr>
+                        <tr>
+                            <td>Spicy Lamb + Sweet Potato</td>
+                            <td><span class="price-badge">$15.05â€“$16.75</span></td>
+                            <td>N/A**</td>
+                            <td>Moderate-High</td>
+                            <td>Heartier lamb option</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--cava-light-grey); font-style: italic;">*Prices are typical ranges based on protein tier and vary by location. **Calorie data for 2026's newest additions was not yet published at the time of writing; check the Cava app for the exact figure on your build.</p>
+        </section>
+
+        <!-- PRICING & CALORIES -->
+        <section class="section" style="padding-top: 0;">
+            <div class="content-box">
+                <h2 class="section-title">How Much Does a Cava Bowl Cost? (2026 Price Guide)</h2>
+                <p>A Cava bowl costs between <strong>$10.97 and $19.89</strong>, depending on how you build it. Build-your-own orders sit at the lower end of that range, while signature bowls with premium proteins like steak, lamb, or salmon push closer to the top. Prices also shift by location, and big cities or airports usually charge 10 to 15 percent more than the national average. Knowing this range ahead of time stops you from assuming every bowl costs the same.</p>
+                <p>One thing most people miss: Cava gives you <strong>up to three dips free</strong> with every order, something a lot of competing chains charge extra for. A signature bowl with a standard protein, like chicken or falafel, usually costs between $11.55 and $14.45. Premium proteins raise that to $15.05 or more, and adding glazed salmon as an extra protein typically adds $3.95 to $4.95 on top of your base order. If you're watching your budget, a build-your-own bowl with a standard protein is almost always cheaper than a signature bowl with the same ingredients.</p>
+            </div>
+
+            <div class="content-box">
+                <h2 class="section-title">Cava Bowl Calories: Full Nutrition Guide</h2>
+                <p>Cava bowl calories usually fall between <strong>400 and 900</strong>, and the number depends mostly on your base, protein, and how many dips or toppings you add. A light bowl made with greens, grilled chicken, and one dip can stay under 500 calories. A fully loaded signature bowl with rice, a second protein, and multiple dips can pass 850. This wide range is actually a good thing, since it means the menu works for very different calorie goals.</p>
+                <p>Here's something worth knowing: published nutrition numbers for the same item can vary between sources, sometimes by 50 to 80 calories for something as small as falafel. This happens because recipes change over time, and outside nutrition databases don't always update on the same schedule as the restaurant. The most accurate numbers come straight from Cava's own app, which calculates calories based on your exact build. Use the ranges in this guide as a solid starting point, then confirm your specific order in the app before checkout.</p>
+            </div>
+        </section>
+
+        <!-- SIGNATURE BOWLS -->
+        <section class="section" style="padding-top: 0;">
+            <h2 class="section-title">Complete Cava Bowl Menu (2026)</h2>
+            <p class="section-desc">The Cava menu splits into two categories: signature bowls created by the culinary team, and build-your-own orders where you pick every ingredient. The signature bowls below make up the current lineup, including several added throughout 2026. Knowing what makes each one work will help you pick the right one for what you actually want to eat.</p>
+
+            <div class="bowls-grid">
+                
+                <div class="bowl-card">
+                    <!-- Added lamb image -->
+                    <img src="images/lamb_bowl.jpg" alt="Spicy Lamb Avocado Bowl" class="bowl-card-image">
+                    <div class="bowl-card-content">
+                        <h3>Spicy Lamb + Avocado Bowl</h3>
+                        <div class="bowl-stats">
+                            <span class="stat-pill stat-price">$15.05â€“$16.75</span>
+                            <span class="stat-pill">~795 Cal</span>
+                            <span class="stat-pill">Moderate-high Protein</span>
+                        </div>
+                        <p>The Spicy Lamb + Avocado Bowl is one of the boldest picks on the menu, made with seasoned lamb meatballs, avocado, Crazy Feta, hummus, and a lemon herb tahini dressing. The lamb brings real heat from cumin, coriander, and chili, and the avocado cools that heat down.</p>
+                        <div class="best-for">Best For: Spice lovers ready to move past the basics</div>
+                    </div>
+                </div>
+
+                <div class="bowl-card">
+                    <div class="bowl-card-content">
+                        <h3>Cava Chicken + Rice Bowl</h3>
+                        <div class="bowl-stats">
+                            <span class="stat-pill stat-price">$11.55â€“$13.25</span>
+                            <span class="stat-pill">700â€“715 Cal</span>
+                            <span class="stat-pill">High (~33g)</span>
+                        </div>
+                        <p>The Cava Chicken + Rice Bowl is widely considered one of the most popular items on the menu, and it earns that reputation through balance rather than flash. Grilled chicken sits on saffron basmati rice with hummus, tzatziki, a tomato and cucumber salad, and crumbled feta. The chicken alone delivers about 33 grams of protein with very few carbs.</p>
+                        <div class="best-for">Best For: First-time visitors who want a safe, balanced order</div>
+                    </div>
+                </div>
+
+                <div class="bowl-card">
+                    <div class="bowl-card-content">
+                        <h3>Cava Harissa Avocado Bowl</h3>
+                        <div class="bowl-stats">
+                            <span class="stat-pill stat-price">$12.75â€“$14.45</span>
+                            <span class="stat-pill">810â€“885 Cal</span>
+                            <span class="stat-pill">High Protein</span>
+                        </div>
+                        <p>The Harissa Avocado Bowl combines harissa honey chicken, Crazy Feta, hummus, avocado, fire-roasted corn, pickled onions, and hot harissa vinaigrette. What makes it work is that it hits sweet, spicy, creamy, and tangy flavors all at once instead of leaning on just one.</p>
+                        <div class="best-for">Best For: Diners who want bold, layered flavor in one bowl</div>
+                    </div>
+                </div>
+
+                <div class="bowl-card">
+                    <!-- Added salmon image -->
+                    <img src="images/salmon_bowl.jpg" alt="Salmon Bowl" class="bowl-card-image">
+                    <div class="bowl-card-content">
+                        <h3>Cava Salmon Bowl (Strawberry Sesame & Yogurt Dill)</h3>
+                        <div class="bowl-stats">
+                            <span class="stat-pill stat-price">$15.75â€“$17.45</span>
+                            <span class="stat-pill">700-710 Cal</span>
+                            <span class="stat-pill">High to Very High (up to ~35g)</span>
+                        </div>
+                        <p>Cava salmon bowls arrived in April 2026, when Cava added glazed salmon as its first seafood protein, marinated in a house-made pomegranate glaze and roasted until it caramelizes. The Strawberry Sesame Bowl pairs the salmon with brown rice, spinach, roasted red pepper hummus, and a strawberry sesame dressing. The Yogurt Dill Bowl uses arugula and saffron basmati rice with a lighter dressing.</p>
+                        <div class="best-for">Best For: Seafood lovers and first-time salmon orders</div>
+                    </div>
+                </div>
+
+                <div class="bowl-card">
+                    <div class="bowl-card-content">
+                        <h3>Cava Grain Bowl (Grains & Greens+Grains)</h3>
+                        <div class="bowl-stats">
+                            <span class="stat-pill stat-price">Base</span>
+                            <span class="stat-pill">132â€“290 Cal</span>
+                        </div>
+                        <p>A Cava grain bowl gives you a heartier base than plain greens without going all the way to rice. Saffron basmati rice and brown basmati rice each run about 240 calories on their own, while the Greens + Grains mix splits the difference at roughly 132 calories. This is the most commonly chosen base at Cava.</p>
+                        <div class="best-for">Best For: Anyone who wants a heartier base without going full rice</div>
+                    </div>
+                </div>
+
+                <div class="bowl-card">
+                    <!-- Added falafel image -->
+                    <img src="images/falafel_bowl.jpg" alt="Falafel Crunch Bowl" class="bowl-card-image">
+                    <div class="bowl-card-content">
+                        <h3>Cava Falafel Bowl (Falafel Crunch)</h3>
+                        <div class="bowl-stats">
+                            <span class="stat-pill stat-price">$11.55â€“$13.25</span>
+                            <span class="stat-pill">~860 Cal</span>
+                            <span class="stat-pill">Moderate (plant-based)</span>
+                        </div>
+                        <p>The Cava Falafel Bowl, called Falafel Crunch, is built from crispy falafel, a greens and grains base, hummus, roasted eggplant dip, pickled onions, pita crisps, and lemon herb tahini. The roasted eggplant dip brings a smoky depth that most fast-casual chains don't even attempt on a vegetarian item.</p>
+                        <div class="best-for">Best For: Vegetarians who still want a filling, high-fiber meal</div>
+                    </div>
+                </div>
+                
+                <div class="bowl-card">
+                    <div class="bowl-card-content">
+                        <h3>Cava Steak Bowl (Steak + Harissa)</h3>
+                        <div class="bowl-stats">
+                            <span class="stat-pill stat-price">$15.05â€“$16.75</span>
+                            <span class="stat-pill">~615 Cal</span>
+                            <span class="stat-pill">High Protein</span>
+                        </div>
+                        <p>The Cava Steak Bowl, listed as Steak + Harissa, features thin-sliced, Mediterranean-seasoned steak over greens and grains with harissa, tzatziki, a tomato and cucumber salad, kalamata olives, and hot harissa vinaigrette. At roughly 615 calories, it's one of the leaner steak options in fast-casual dining.</p>
+                        <div class="best-for">Best For: Red-meat fans who still want a leaner bowl</div>
+                    </div>
+                </div>
+                
+                <div class="bowl-card">
+                    <div class="bowl-card-content">
+                        <h3>Greek Salad Bowl</h3>
+                        <div class="bowl-stats">
+                            <span class="stat-pill stat-price">$11.95â€“$13.65</span>
+                            <span class="stat-pill">~585 Cal</span>
+                            <span class="stat-pill">High (~33g)</span>
+                        </div>
+                        <p>The Greek Salad Bowl strips things back to grilled chicken, romaine, hummus, tzatziki, a tomato and onion salad, kalamata olives, crumbled feta, and Greek vinaigrette, with no rice or grains at all. Coming in around 585 calories with 33 grams of protein, it offers the cleanest macros of any meat-based bowl on the menu.</p>
+                        <div class="best-for">Best For: No-grain, vegetable-forward meals</div>
+                    </div>
+                </div>
+
+                <div class="bowl-card">
+                    <div class="bowl-card-content">
+                        <h3>New for 2026: Power & Sweet Potato Bowls</h3>
+                        <div class="bowl-stats">
+                            <span class="stat-pill stat-price">$12.75â€“$16.75</span>
+                            <span class="stat-pill">Check App</span>
+                        </div>
+                        <p>Cava's biggest menu update in years launched on January 5, 2026, bringing back white sweet potatoes after a five-year absence. The Harissa Chicken Power Bowl pairs harissa honey chicken with roasted white sweet potato, Power Greens, Crazy Feta, hummus, sumac slaw, and yogurt dill dressing. The Spicy Lamb + Sweet Potato Bowl goes heartier.</p>
+                        <div class="best-for">Best For: Sweet potato and lamb fans wanting the newest options</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- STEP BY STEP GUIDE -->
+        <section class="section" style="padding-top: 0;">
+            <h2 class="section-title">Cava Build Your Own Bowl: Step-by-Step Guide</h2>
+            <p class="section-desc">A build your own bowl at Cava follows five steps, and knowing what each one controls makes the process faster at the counter.</p>
+
+            <div class="steps-wrapper">
+                <div class="step-row">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Choose Your Base</h3>
+                        <p>Your base sets the calorie floor and texture of the whole bowl. Light options like SuperGreens and Power Greens run 30 to 50 calories, arugula and romaine offer a crisp, neutral crunch, and heartier choices like saffron rice, brown rice, or black lentils run 200 to 290 calories. The Greens + Grains mix, at about 132 calories, stays the most popular pick because it balances lightness with enough substance for a full protein.</p>
+                    </div>
+                </div>
+                
+                <div class="step-row">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Choose Your Protein</h3>
+                        <p>Your protein choice affects both calories and texture. Grilled chicken offers the best protein-to-calorie ratio on the menu, at roughly 33 grams of protein for 250 calories, making it the default pick if protein matters most to you. Falafel, glazed salmon, spicy lamb meatballs, and braised lamb each bring different fat and carb levels.</p>
+                    </div>
+                </div>
+
+                <div class="step-row">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Choose Your Dips & Spreads</h3>
+                        <p>You get up to three free dips with every bowl, and this is where most of the flavor really comes from. Hummus and tzatziki form the base layer in most signature bowls, while Crazy Feta and harissa add sharper, spicier notes. The roasted eggplant dip is often skipped by first-time visitors, even though it brings more distinct flavor than either hummus option.</p>
+                    </div>
+                </div>
+
+                <div class="step-row">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Choose Your Toppings</h3>
+                        <p>All toppings are free and unlimited, so there's little reason to hold back. Pickled onions add almost no calories while cutting through richer proteins like braised lamb better than most other toppings. Fire-roasted corn, kalamata olives, and the newer sumac slaw each bring their own texture, which matters more than people expect in a bowl.</p>
+                    </div>
+                </div>
+
+                <div class="step-row">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Choose Your Dressing</h3>
+                        <p>One dressing comes free, and most locations will add a second one at no extra charge if you ask. Lemon herb tahini is generally considered the most popular dressing on the menu and works with nearly every base and protein combination. Heavier dressings like garlic sauce or Greek vinaigrette pair better with lighter greens, while yogurt dill works well against spicier proteins that need something cooling.</p>
+                    </div>
+                </div>
+
+                <div class="pro-tip">
+                    <h4>Most Popular Bowl Combination</h4>
+                    <p style="color: var(--cava-dark-grey); font-size: 1.05rem; margin-top: 5px;">Based on visible ordering trends and the components used in Cava's top signature bowls, the most common build starts with Greens + Grains, grilled chicken or harissa honey chicken, hummus and tzatziki, a tomato and cucumber salad, and lemon herb tahini dressing. This combination closely mirrors the Chicken + Rice signature bowl.</p>
+                </div>
+                
+                <div class="pro-tip" style="margin-top: 20px;">
+                    <h4>Healthy Bowl Combination</h4>
+                    <p style="color: var(--cava-dark-grey); font-size: 1.05rem; margin-top: 5px;">For the lowest realistic calorie count while still getting solid protein, start with a romaine or SuperGreens base, add grilled chicken, include tzatziki and roasted eggplant dip, and finish with yogurt dill dressing. This build typically lands between 400 and 450 calories while still delivering around 33 grams of protein. Skipping rice entirely is the single biggest way to cut calories without losing protein.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GOALS SECTION -->
+        <section class="section" style="padding-top: 0;">
+            <h2 class="section-title">Best Cava Bowl for Every Goal</h2>
+            <p class="section-desc">Different goals call for different builds, and the menu is flexible enough to support most of them without unusual substitutions.</p>
+            
+            <div class="goals-container" style="margin-top: 30px;">
+                <div class="goal-card">
+                    <h3>Best Cava Bowl for Lowest Calories</h3>
+                    <p>A romaine or SuperGreens base with grilled chicken, tzatziki, roasted eggplant dip, and yogurt dill dressing lands around 400 to 450 calories. This build avoids both rice and heavier dressings, the two ingredients most likely to push a bowl above 600 calories without you noticing.</p>
+                </div>
+                <div class="goal-card">
+                    <h3>Best Cava Bowl for Maximum Protein</h3>
+                    <p>Ordering a double protein, most commonly two servings of grilled chicken, pushes total protein toward 60 to 66 grams in one bowl. Adding black lentils as part of your base adds another 13 to 18 grams of plant protein on top of that. This build costs extra for the second protein, but it delivers a total that few fast-casual meals can match.</p>
+                </div>
+                <div class="goal-card">
+                    <h3>Best Cava Bowl for Keto / Low-Carb</h3>
+                    <p>Skip rice and grains entirely for this one. Use romaine and arugula as your base, choose grilled chicken or braised lamb, add Crazy Feta, tzatziki, and avocado, then finish with Greek vinaigrette. This build keeps net carbs under 10 grams while still delivering enough fat and protein to feel like a full meal.</p>
+                </div>
+                <div class="goal-card">
+                    <h3>Best Cava Bowl for Vegan / Vegetarian</h3>
+                    <p>Start with black lentils and SuperGreens, add falafel, hummus, and harissa, top with roasted eggplant dip and pickled onions, and dress with skhug. This build has no animal products but still delivers roughly 22 to 27 grams of protein from the lentils and falafel combined.</p>
+                </div>
+                <!-- Added Flavor Goal Back -->
+                <div class="goal-card">
+                    <h3>Best Cava Bowl for Flavor</h3>
+                    <p>The Harissa Avocado Bowl already covers most flavor categories, but building it yourself lets you push further. Add harissa honey chicken, Crazy Feta, harissa dip, avocado, pickled onions, fire-roasted corn, and hot harissa vinaigrette in one order. Sweet, spicy, smoky, creamy, and tangy all show up somewhere in that combination.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="section" style="padding-top: 0;">
+            <div style="text-align: center; margin-bottom: 40px;">
+                <h2 class="section-title">Frequently Asked Questions About Cava Bowls</h2>
+            </div>
+            
+            <div class="faq-container">
+                <details>
+                    <summary>What is the most popular Cava bowl?</summary>
+                    <div class="faq-answer">The Chicken + Rice Bowl is widely regarded as the top seller, thanks to its balanced, low-risk flavor. The Harissa Avocado Bowl is frequently cited by reviewers and repeat customers as a favorite.</div>
+                </details>
+                <details>
+                    <summary>What is the healthiest Cava bowl?</summary>
+                    <div class="faq-answer">The SuperGreens + Grilled Chicken combination, at around 480 calories with 33 grams of protein, offers the strongest balance of low calories and high protein among common builds.</div>
+                </details>
+                <details>
+                    <summary>How many calories are in a typical Cava bowl?</summary>
+                    <div class="faq-answer">Most bowls fall between 400 and 900 calories, depending on base, protein, and toppings. Check the Cava app before ordering for the exact number on your specific build.</div>
+                </details>
+                <details>
+                    <summary>How much does a Cava bowl cost?</summary>
+                    <div class="faq-answer">Prices range from $10.97 for a basic build-your-own order up to $19.89 for premium signature bowls. Location and protein choice are the two biggest factors in where your order lands.</div>
+                </details>
+                <details>
+                    <summary>Can you get a double protein at Cava?</summary>
+                    <div class="faq-answer">Yes, for an added charge. Two servings of grilled chicken is the most common way customers push total protein above 60 grams in one order.</div>
+                </details>
+                <details>
+                    <summary>What is the best Cava bowl for weight loss?</summary>
+                    <div class="faq-answer">A romaine or SuperGreens base with grilled chicken, tzatziki, roasted eggplant dip, and yogurt dill dressing lands around 400 to 450 calories with strong protein, making it one of the more efficient options on the menu.</div>
+                </details>
+                <details>
+                    <summary>Is Cava a good option for vegans?</summary>
+                    <div class="faq-answer">Yes. Falafel, roasted vegetables, and roasted white sweet potato all work as plant-based proteins, and dips like hummus, harissa, and roasted eggplant dip are vegan by default.</div>
+                </details>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <h2 class="brand-font">Final Thoughts: Which Cava Bowl Should You Order?</h2>
+            <p>If you're new to Cava, start with the Chicken + Rice Bowl. It shows you what the menu does well without asking you to make many decisions. Once you know the base flavors, try the Harissa Avocado Bowl and Spicy Lamb + Avocado Bowl next, and check out the newer sweet potato and salmon bowls if you haven't visited recently. There's no single right Cava bowl for everyone, since the best choice depends on whether you're chasing low calories, high protein, or bold flavor. Building your own bowl with a lean protein, two well-chosen dips, and a lighter dressing remains the most reliable way to control the outcome, no matter which combination you land on.</p>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 CAVA Menu & Food Guide. Designed with Premium Aesthetics.
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
