@@ -200,33 +200,101 @@
             color: var(--text-secondary);
             font-weight: 400;
             max-width: 650px;
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
             line-height: 1.7;
         }
 
         @media (max-width: 992px) {
-            .hero-lead { margin: 0 auto 2rem; }
+            .hero-lead { margin: 0 auto 2.5rem; }
         }
 
-        .hero-meta-bottom {
+        .hero-cta-group {
             display: flex;
             align-items: center;
-            justify-content: flex-start;
-            gap: 1.5rem;
-            font-size: 0.95rem;
-            color: var(--text-secondary);
-            font-weight: 500;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
         }
 
         @media (max-width: 992px) {
-            .hero-meta-bottom { justify-content: center; }
+            .hero-cta-group { justify-content: center; }
         }
 
-        .meta-divider {
-            width: 4px;
-            height: 4px;
-            background: var(--accent-gold);
-            border-radius: 50%;
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: linear-gradient(135deg, var(--accent-warm), #e8590c);
+            color: #fff;
+            font-weight: 700;
+            padding: 0.85rem 1.85rem;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 4px 16px rgba(217, 72, 15, 0.25);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(217, 72, 15, 0.3);
+            color: white;
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: var(--surface-color);
+            color: var(--text-primary);
+            font-weight: 700;
+            padding: 0.85rem 1.85rem;
+            border-radius: 50px;
+            text-decoration: none;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: var(--bg-color);
+            border-color: var(--accent-warm);
+            transform: translateY(-2px);
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2.5rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
+        }
+
+        @media (max-width: 992px) {
+            .hero-stats { justify-content: center; flex-wrap: wrap; }
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+        
+        @media (max-width: 992px) {
+            .stat-item { text-align: center; }
+        }
+
+        .stat-val {
+            font-size: 1.6rem;
+            font-weight: 800;
+            font-family: var(--font-serif);
+            color: var(--accent-brand);
+            line-height: 1.2;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         /* --- Hero Visual (Right Column) --- */
@@ -294,20 +362,53 @@
         
         .visual-card-main h3 {
             font-family: var(--font-serif);
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             color: var(--text-primary);
             margin: 0 0 0.5rem 0;
             font-weight: 800;
+            letter-spacing: -0.5px;
         }
         
         .visual-card-main p {
             font-size: 0.95rem;
             color: var(--accent-warm);
-            font-weight: 600;
+            font-weight: 700;
             margin: 0;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
+
+        .floating-badge-left, .floating-badge-right {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            padding: 0.75rem 1.15rem;
+            border-radius: 14px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 25px rgba(28, 56, 47, 0.08);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            z-index: 5;
+            animation: float 4s ease-in-out infinite;
+            text-align: left;
+        }
+
+        .floating-badge-left {
+            top: 20px;
+            left: -40px;
+        }
+
+        .floating-badge-right {
+            bottom: 40px;
+            right: -30px;
+            animation-delay: 2s;
+        }
+
+        .f-badge-icon { font-size: 1.6rem; }
+        .f-badge-text { display: flex; flex-direction: column; }
+        .f-badge-title { font-size: 0.9rem; font-weight: 800; color: var(--text-primary); line-height: 1.2; }
+        .f-badge-sub { font-size: 0.75rem; color: var(--text-secondary); font-weight: 500; }
 
         /* --- Main Layout Grid --- */
         .article-layout {
@@ -594,12 +695,25 @@
                 </div>
                 <h1>CAVA Drink Menu Prices & Calories <span>(2026)</span><br>with Nutrition Guide</h1>
                 <p class="hero-lead">Most diners spend ten minutes customizing the perfect Mediterranean bowl, only to completely overlook their drink choice at the fountain station.</p>
-                <div class="hero-meta-bottom">
-                    <span>⏱️ 5 Min Read</span>
-                    <div class="meta-divider"></div>
-                    <span>📋 Nutrition & Prices</span>
-                    <div class="meta-divider"></div>
-                    <span>🥤 Secret Combos</span>
+                
+                <div class="hero-cta-group">
+                    <a href="#juices" class="btn-primary">Explore Drinks</a>
+                    <a href="#secret" class="btn-secondary">Secret Combos</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-val">12+</span>
+                        <span class="stat-label">Beverages</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-val">0-480</span>
+                        <span class="stat-label">Calories</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-val">$3.60</span>
+                        <span class="stat-label">Starting Price</span>
+                    </div>
                 </div>
             </div>
             
@@ -610,6 +724,22 @@
                     <div class="visual-icon">🌿🍋</div>
                     <h3>The Clean Refresh</h3>
                     <p>Lemonade + Cucumber Lime</p>
+                </div>
+                
+                <div class="floating-badge-left">
+                    <div class="f-badge-icon">🧊</div>
+                    <div class="f-badge-text">
+                        <span class="f-badge-title">Zero Calorie</span>
+                        <span class="f-badge-sub">Options Available</span>
+                    </div>
+                </div>
+
+                <div class="floating-badge-right">
+                    <div class="f-badge-icon">♾️</div>
+                    <div class="f-badge-text">
+                        <span class="f-badge-title">Free Refills</span>
+                        <span class="f-badge-sub">For Dine-in Guests</span>
+                    </div>
                 </div>
             </div>
         </div>
