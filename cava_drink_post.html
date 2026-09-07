@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAVA Drink Menu Prices & Calories (2026) with Nutrition Guide</title>
-    <meta name="description" content="Complete guide to CAVA's scratch-made beverage program.">
+    <meta name="description" content="Complete guide to CAVA's scratch-made beverage program, including prices, calorie counts, sugar content, secret menu combos, and FAQs.">
     
     <!-- Premium Editorial Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,18 +14,24 @@
     <style>
         :root {
             /* Premium Color Palette */
-            --bg-color: #faf9f6; /* Elegant off-white */
+            --bg-color: #faf9f6; 
             --text-primary: #1a1a1a;
             --text-secondary: #5a5a5a;
-            --accent-brand: #13392a; /* Deep Cava Green */
-            --accent-gold: #c9933b; /* Subtle luxury gold */
-            --accent-warm: #d9480f; /* Cava Orange */
+            --accent-brand: #13392a; 
+            --accent-gold: #c9933b; 
+            --accent-warm: #d9480f; 
             --border-color: #e5e5e5;
+            --surface-color: #ffffff;
             
             --font-serif: 'DM Serif Display', serif;
             --font-sans: 'Inter', sans-serif;
             
             --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            --shadow-sm: 0 4px 6px rgba(0,0,0,0.02);
+            --shadow-md: 0 10px 25px rgba(0,0,0,0.05);
+            --shadow-lg: 0 20px 40px rgba(0,0,0,0.08);
+            --radius-md: 12px;
+            --radius-lg: 20px;
         }
 
         * {
@@ -48,7 +54,7 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(250, 249, 246, 0.85);
+            background: rgba(250, 249, 246, 0.9);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
             border-bottom: 1px solid rgba(0,0,0,0.05);
@@ -79,9 +85,9 @@
             letter-spacing: 1px;
             text-decoration: none;
             color: var(--text-primary);
-            padding: 0.5rem 1.2rem;
+            padding: 0.6rem 1.4rem;
             border: 1px solid var(--border-color);
-            border-radius: 4px;
+            border-radius: 6px;
             transition: var(--transition);
         }
 
@@ -93,44 +99,60 @@
 
         /* --- Editorial Hero --- */
         .hero {
-            padding: 12rem 2rem 6rem;
+            padding: 10rem 2rem 5rem;
             display: flex;
             justify-content: center;
             align-items: center;
-            border-bottom: 1px solid var(--border-color);
-            background: radial-gradient(circle at 50% 0%, #ffffff 0%, var(--bg-color) 100%);
+            background: var(--surface-color);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle at top right, rgba(201, 147, 59, 0.05) 0%, transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(19, 57, 42, 0.05) 0%, transparent 50%);
+            pointer-events: none;
         }
 
         .hero-content {
             max-width: 900px;
             text-align: center;
+            position: relative;
+            z-index: 2;
         }
 
         .hero-tag {
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             color: var(--accent-gold);
             margin-bottom: 1.5rem;
-            display: block;
+            display: inline-block;
+            background: rgba(201, 147, 59, 0.1);
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
         }
 
         .hero h1 {
             font-family: var(--font-serif);
-            font-size: clamp(3rem, 6vw, 5rem);
-            line-height: 1.05;
+            font-size: clamp(3rem, 6vw, 4.5rem);
+            line-height: 1.1;
             color: var(--accent-brand);
             margin-bottom: 2rem;
+            letter-spacing: -1px;
         }
 
         .hero-lead {
-            font-size: 1.4rem;
+            font-size: 1.35rem;
             color: var(--text-secondary);
             font-weight: 300;
-            max-width: 700px;
+            max-width: 750px;
             margin: 0 auto;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         /* --- Main Layout Grid --- */
@@ -140,12 +162,13 @@
             padding: 4rem 2rem;
             display: grid;
             grid-template-columns: 1fr 300px;
-            gap: 5rem;
+            gap: 6rem;
         }
 
         @media (max-width: 992px) {
             .article-layout {
                 grid-template-columns: 1fr;
+                gap: 3rem;
             }
             .sidebar {
                 display: none;
@@ -155,16 +178,21 @@
         /* --- Sidebar / Table of Contents --- */
         .sidebar-sticky {
             position: sticky;
-            top: 6rem;
+            top: 7rem;
+            background: var(--surface-color);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-md);
         }
         
         .toc-title {
             font-family: var(--font-serif);
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-bottom: 1.5rem;
-            color: var(--text-primary);
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 0.5rem;
+            color: var(--accent-brand);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.8rem;
         }
 
         .toc-list {
@@ -182,284 +210,214 @@
             transition: var(--transition);
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.6rem;
+            font-weight: 500;
         }
 
         .toc-list a::before {
             content: "";
-            width: 0;
-            height: 1px;
-            background: var(--accent-gold);
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--border-color);
             transition: var(--transition);
         }
 
         .toc-list a:hover {
             color: var(--accent-brand);
+            transform: translateX(5px);
         }
         
         .toc-list a:hover::before {
-            width: 15px;
+            background: var(--accent-gold);
+            transform: scale(1.5);
         }
 
         /* --- Article Body --- */
         .article-body p {
-            margin-bottom: 1.8rem;
+            margin-bottom: 2rem;
+            font-size: 1.15rem;
+            color: #333;
         }
 
         .article-body h2 {
             font-family: var(--font-serif);
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             color: var(--accent-brand);
-            margin: 4rem 0 2rem;
+            margin: 5rem 0 2.5rem;
             line-height: 1.2;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
         }
 
-        .article-body h2::before {
-            content: "✦";
-            color: var(--accent-gold);
+        .article-body h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            height: 3px;
+            width: 80px;
+            background: var(--accent-gold);
+        }
+        
+        .article-body h3 {
+            font-family: var(--font-sans);
             font-size: 1.5rem;
-            margin-right: 0.8rem;
-            vertical-align: middle;
+            color: var(--accent-brand);
+            margin: 3rem 0 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
         }
 
         /* --- Big Pull Quote --- */
         .pull-quote {
             margin: 4rem 0;
-            padding: 3rem;
-            background: var(--accent-brand);
+            padding: 3.5rem;
+            background: linear-gradient(145deg, var(--accent-brand) 0%, #0a1f18 100%);
             color: white;
-            border-radius: 8px;
+            border-radius: var(--radius-lg);
             position: relative;
-            box-shadow: 0 20px 40px rgba(19, 57, 42, 0.15);
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+        }
+        
+        .pull-quote::before {
+            content: '"';
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: var(--font-serif);
+            font-size: 6rem;
+            color: var(--accent-gold);
+            line-height: 1;
+            opacity: 0.5;
         }
 
         .pull-quote p {
             font-family: var(--font-serif);
-            font-size: 1.8rem;
-            line-height: 1.4;
+            font-size: 1.9rem;
+            line-height: 1.5;
             margin: 0;
-            text-align: center;
+            color: white;
         }
 
-        /* --- Premium Metrics Block --- */
-        .metrics-block {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
+        /* --- Note Box --- */
+        .note-box {
+            background: rgba(201, 147, 59, 0.08);
+            border-left: 4px solid var(--accent-gold);
+            padding: 2rem;
             margin: 3rem 0;
-            padding: 3rem 0;
-            border-top: 1px solid var(--border-color);
-            border-bottom: 1px solid var(--border-color);
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
         }
-
-        .metric {
-            text-align: center;
-        }
-
-        .metric-val {
-            font-family: var(--font-serif);
-            font-size: 2.5rem;
+        
+        .note-box p {
+            margin: 0;
+            font-size: 1.1rem;
             color: var(--accent-brand);
-            margin-bottom: 0.5rem;
+            font-style: italic;
         }
 
-        .metric-label {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: var(--text-secondary);
-            font-weight: 600;
-        }
-
-        /* --- Editorial Drink Cards --- */
-        .editorial-grid {
+        /* --- Drink Showcases --- */
+        .drink-showcase {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            transition: var(--transition);
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 100px 1fr;
             gap: 2.5rem;
-            margin-top: 3rem;
+            align-items: center;
         }
 
-        @media (max-width: 768px) {
-            .editorial-grid {
+        @media (max-width: 600px) {
+            .drink-showcase {
                 grid-template-columns: 1fr;
+                text-align: center;
             }
         }
 
-        .card {
-            background: white;
-            border: 1px solid var(--border-color);
-            transition: var(--transition);
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
+        .drink-showcase:hover {
+            box-shadow: var(--shadow-md);
+            border-color: rgba(0,0,0,0.08);
+            transform: translateY(-3px);
         }
 
-        .card:hover {
-            box-shadow: 0 15px 35px rgba(0,0,0,0.06);
-            transform: translateY(-5px);
-            border-color: rgba(0,0,0,0.1);
-        }
-
-        .card-visual {
-            height: 250px;
-            background: #f4f4f4;
+        .drink-icon-wrap {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: var(--bg-color);
             display: flex;
             align-items: center;
             justify-content: center;
-            position: relative;
+            font-size: 3.5rem;
+            box-shadow: inset 0 2px 10px rgba(0,0,0,0.05);
+            margin: 0 auto;
         }
 
-        .card-visual img {
-            max-width: 80%;
-            max-height: 80%;
-            object-fit: contain;
-            mix-blend-mode: multiply;
-            transition: transform 0.6s ease;
-        }
-        
-        .card:hover .card-visual img {
-            transform: scale(1.05);
-        }
-
-        .card-price {
-            position: absolute;
-            top: 1rem;
-            left: 1rem;
-            background: rgba(255,255,255,0.9);
-            padding: 0.4rem 1rem;
-            border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 700;
-            color: var(--accent-brand);
-        }
-
-        .card-body {
-            padding: 2.5rem;
-            flex-grow: 1;
-        }
-
-        .card-title {
+        .drink-showcase h3 {
+            margin: 0 0 0.5rem 0;
             font-family: var(--font-serif);
-            font-size: 1.6rem;
-            color: var(--text-primary);
-            margin-bottom: 1rem;
+            font-size: 1.8rem;
         }
 
-        .card-meta {
+        .drink-meta-bar {
             display: flex;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-            font-size: 0.85rem;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
             font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .meta-item {
+        .drink-meta-bar span {
             display: flex;
             align-items: center;
             gap: 0.4rem;
         }
+        
+        .drink-price { color: var(--accent-brand); }
+        .drink-cal { color: var(--accent-warm); }
+        .drink-sugar { color: var(--accent-gold); }
 
-        .meta-cal { color: var(--accent-warm); }
-        .meta-sugar { color: var(--accent-brand); }
-
-        .card-desc {
-            font-size: 1rem;
-            color: var(--text-secondary);
+        .drink-showcase p {
             margin: 0;
-            line-height: 1.6;
+            font-size: 1.1rem;
+            color: var(--text-secondary);
         }
 
-        /* --- Interactive Secret Combos --- */
-        .combo-list {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
+        /* --- FAQ Accordion --- */
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            padding: 2rem 0;
         }
 
-        .combo-item {
-            padding: 2rem;
-            background: white;
-            border: 1px solid var(--border-color);
-            border-left: 4px solid var(--accent-gold);
-            transition: var(--transition);
-        }
-
-        .combo-item:hover {
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            background: #fdfbf7;
-        }
-
-        .combo-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 0.8rem;
-        }
-
-        .combo-header h3 {
-            font-family: var(--font-serif);
+        .faq-item h3 {
+            margin: 0 0 1rem 0;
             font-size: 1.4rem;
-            color: var(--text-primary);
+            cursor: default;
         }
-
-        .combo-formula {
-            font-size: 0.85rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--accent-brand);
-        }
-
-        .combo-item p {
+        
+        .faq-item p {
             margin: 0;
-            font-size: 1rem;
-            color: var(--text-secondary);
-        }
-        
-        /* --- Dietary Info Grid --- */
-        .dietary-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-        
-        @media (max-width: 600px) {
-            .dietary-grid { grid-template-columns: 1fr; }
-        }
-
-        .dietary-box {
-            background: white;
-            padding: 2rem;
-            border: 1px solid var(--border-color);
-        }
-        
-        .dietary-box h4 {
-            font-family: var(--font-sans);
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--text-primary);
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .dietary-box p {
-            margin: 0;
-            font-size: 0.95rem;
             color: var(--text-secondary);
         }
 
         /* --- Footer --- */
         footer {
             background: var(--text-primary);
-            color: white;
+            color: rgba(255,255,255,0.7);
             text-align: center;
-            padding: 4rem 2rem;
-            font-size: 0.9rem;
+            padding: 5rem 2rem;
+            font-size: 0.95rem;
             letter-spacing: 1px;
+            border-top: 5px solid var(--accent-brand);
         }
         
     </style>
@@ -473,188 +431,208 @@
 
     <header class="hero">
         <div class="hero-content">
-            <span class="hero-tag">Editorial Feature • 2026 Guide</span>
-            <h1>The Complete Guide to CAVA's Drink Menu</h1>
+            <span class="hero-tag">Complete Guide 2026</span>
+            <h1>CAVA Drink Menu Prices & Calories (2026) with Nutrition Guide</h1>
             <p class="hero-lead">Most diners spend ten minutes customizing the perfect Mediterranean bowl, only to completely overlook their drink choice at the fountain station.</p>
         </div>
     </header>
 
     <main class="article-layout">
         <article class="article-body">
+            
             <p>Choosing the wrong beverage can add well over 300 unexpected calories, or clash with the bold, savory spices already in the meal. Unlike fast-casual chains that lean on bag-in-box syrups and artificial dyes, CAVA runs a scratch-made beverage program built on cold-pressed juices, steeped teas, and Fair Trade cane sugar.</p>
             
-            <p>That scratch-made approach is what separates CAVA's drink station from a typical soda fountain: the juices are batched fresh, the teas are brewed rather than powdered, and the sweeteners are traceable. Whether you're grabbing a quick lunch or taking a dinner break, the right beverage can neutralize fiery harissa and cut through rich garlic dressings — or quietly wreck an otherwise balanced meal if you're not paying attention to the sugar content.</p>
+            <p>That scratch-made approach is what separates CAVA's drink station from a typical soda fountain: the juices are batched fresh, the teas are brewed rather than powdered, and the sweeteners are traceable. Whether you're grabbing a quick lunch near the University of Maryland or taking a dinner break around Dupont Circle in Washington D.C., the right beverage can neutralize fiery harissa and cut through rich garlic dressings — or quietly wreck an otherwise balanced meal if you're not paying attention.</p>
+            
+            <p>This guide breaks down the full CAVA drink menu for 2026: price ranges, calories by cup size, sugar content, and which combinations actually work with the food.</p>
 
-            <div class="metrics-block">
-                <div class="metric">
-                    <div class="metric-val">$3.60+</div>
-                    <div class="metric-label">Avg. Price</div>
-                </div>
-                <div class="metric-card metric">
-                    <div class="metric-val">∞</div>
-                    <div class="metric-label">Dine-in Refills</div>
-                </div>
-                <div class="metric">
-                    <div class="metric-val">0-480</div>
-                    <div class="metric-label">Calories</div>
-                </div>
-            </div>
-
-            <h2 id="pricing">Pricing Breakdown</h2>
+            <h2 id="pricing">Quick Answer: How Much Are Drinks at CAVA?</h2>
             <p>A standard fountain drink at the self-serve station runs <strong>$3.60–$3.85</strong> depending on your market. Bottled options — Spindrift sparkling water and Open Water — run <strong>$3.00–$3.25</strong>. Kids drinks, including organic milk, chocolate milk, and apple juice, are a flat <strong>$3.00</strong> at most locations.</p>
             
+            <p>Pricing shifts slightly by region: expect the higher end (~$3.85) in dense urban markets like Manhattan, and the lower end (~$3.60) in cities like Austin.</p>
+
             <div class="pull-quote">
-                <p>"Dining in gets you free refills on every fountain drink for the length of your visit, and you're free to mix flavors as many times as you like."</p>
+                <p>Dining in gets you free refills on every fountain drink — juices, teas, and sodas — for the length of your visit, and you're free to mix flavors as many times as you like.</p>
             </div>
 
-            <h2 id="juices">House-Made Juices & Lemonade</h2>
-            <p>CAVA batches its juices fresh in-house, mixing filtered water, real fruit purée, and cane sugar by hand each morning. Because there's no stabilizer, it's normal to see fruit pulp or herb flecks settle.</p>
-
-            <div class="editorial-grid">
-                <!-- Card 1 -->
-                <div class="card">
-                    <div class="card-visual" style="background: #fefcf5;">
-                        <span class="card-price">$3.60</span>
-                        <div style="font-size: 6rem;">🍍</div>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Pineapple Apple Mint</h3>
-                        <div class="card-meta">
-                            <span class="meta-item meta-cal">🔥 180-220 cal</span>
-                            <span class="meta-item meta-sugar">🍯 20-25g sugar</span>
-                        </div>
-                        <p class="card-desc">The lighter alternative — tropical pineapple sweetness balanced by crisp apple cider and a mint finish. Pairs cleanly with simpler bowls.</p>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="card">
-                    <div class="card-visual" style="background: #fcf9fe;">
-                        <span class="card-price">$3.60</span>
-                        <img src="img/blueberry-lavender.webp" alt="Blueberry Lavender" onerror="this.outerHTML='<div style=\'font-size: 6rem;\'>🫐</div>'">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Blueberry Lavender</h3>
-                        <div class="card-meta">
-                            <span class="meta-item meta-cal">🔥 220-260 cal</span>
-                            <span class="meta-item meta-sugar">🍯 30-35g sugar</span>
-                        </div>
-                        <p class="card-desc">Floral and earthy. Most regulars cut it at the fountain with classic lemonade, which tames the lavender and adds a balancing tart edge.</p>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="card">
-                    <div class="card-visual" style="background: #f6fcf8;">
-                        <span class="card-price">$3.60</span>
-                        <img src="img/cucumber-mint-lime.webp" alt="Cucumber Mint Lime" onerror="this.outerHTML='<div style=\'font-size: 6rem;\'>🥒</div>'">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Cucumber Mint Lime</h3>
-                        <div class="card-meta">
-                            <span class="meta-item meta-cal">🔥 250-300 cal</span>
-                            <span class="meta-item meta-sugar">🍯 30-38g sugar</span>
-                        </div>
-                        <p class="card-desc">The ultimate palate reset. Pressed cucumber, fresh mint, and tart lime make it refreshing and effective at cooling down spicy dishes.</p>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="card">
-                    <div class="card-visual" style="background: #fefdf5;">
-                        <span class="card-price">$3.60</span>
-                        <img src="img/classic-lemonade.webp" alt="Classic Lemonade" onerror="this.outerHTML='<div style=\'font-size: 6rem;\'>🍋</div>'">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Classic Lemonade</h3>
-                        <div class="card-meta">
-                            <span class="meta-item meta-cal" style="color: #b91c1c;">⚠️ 450-480 cal</span>
-                            <span class="meta-item meta-sugar">🍯 ~50g sugar</span>
-                        </div>
-                        <p class="card-desc">The highest-sugar drink on the menu. Real lemon juice gives it a sharp, traditional tartness. Best cut with unsweetened iced tea.</p>
-                    </div>
-                </div>
-            </div>
-
-            <h2 id="teas">Fresh Brewed Iced Teas</h2>
-            <p>For anyone avoiding sugar entirely, CAVA brews iced tea fresh daily — no powdered mix. The simplest lever for keeping a meal's calories low.</p>
+            <h2 id="juices">CAVA House-Made Juices & Lemonade (Prices & Macros)</h2>
+            <p>CAVA batches its juices fresh in-house, mixing filtered water, real fruit purée, and cane sugar by hand each morning rather than shipping in concentrate. Because there's no stabilizer keeping things uniform, it's normal to see fruit pulp or herb flecks settle at the bottom of the dispenser over the course of a shift.</p>
             
-            <div class="editorial-grid">
-                <div class="card">
-                    <div class="card-visual" style="background: #f5f9fc;">
-                        <span class="card-price">$3.60</span>
-                        <img src="img/unsweet-tea.webp" alt="Unsweet Tea" onerror="this.outerHTML='<div style=\'font-size: 6rem;\'>🧊</div>'">
+            <p><em>The figures below are approximate estimates for a standard 16 oz pour, no ice — filling a full 22 oz cup will run meaningfully higher, and a 12 oz kids' cup will run lower. For an exact figure on the day you order, check CAVA's nutrition calculator in the app.</em></p>
+
+            <div class="drink-showcase">
+                <div class="drink-icon-wrap" style="color: #ca8a04; background: #fefce8;">🍍</div>
+                <div>
+                    <h3>Pineapple Apple Mint</h3>
+                    <div class="drink-meta-bar">
+                        <span class="drink-price">💰 $3.60–$3.85</span>
+                        <span class="drink-cal">🔥 ~180–220 cal</span>
+                        <span class="drink-sugar">🍯 ~20–25g sugar</span>
                     </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Unsweetened Iced Tea</h3>
-                        <div class="card-meta">
-                            <span class="meta-item meta-cal" style="color: #15803d;">✨ 0 cal</span>
-                            <span class="meta-item meta-sugar">✨ 0g sugar</span>
-                        </div>
-                        <p class="card-desc">Zero-calorie and zero-sugar. The perfect base for half-and-half combinations — its bitterness brilliantly cuts the sugar load of any juice.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-visual" style="background: #fdfaf6;">
-                        <span class="card-price">$3.60</span>
-                        <img src="img/sweet-tea.jpg" alt="Sweet Tea" onerror="this.outerHTML='<div style=\'font-size: 6rem;\'>🥤</div>'">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Sweetened Iced Tea</h3>
-                        <div class="card-meta">
-                            <span class="meta-item meta-cal">🔥 120-150 cal</span>
-                            <span class="meta-item meta-sugar">🍯 Moderate</span>
-                        </div>
-                        <p class="card-desc">The sweetened counterpart. A straightforward classic if you want sweet tea without the citrus or floral notes of the house juices.</p>
-                    </div>
+                    <p>For diners who want something juice-like without the calorie hit of the lemonade, this is the lighter alternative — tropical pineapple sweetness balanced by crisp apple cider and a mint finish. It pairs cleanly with simpler bowls, like chicken and rice, without competing with the flavors.</p>
                 </div>
             </div>
 
-            <h2 id="secret">The "Secret Menu" Combos</h2>
-            <p>Because the fountain station is fully self-serve, regulars have quietly built their own combinations. Blending two house juices — or a juice with tea — controls both sweetness and flavor.</p>
+            <div class="drink-showcase">
+                <div class="drink-icon-wrap" style="color: #6d28d9; background: #f5f3ff;">🫐</div>
+                <div>
+                    <h3>Blueberry Lavender</h3>
+                    <div class="drink-meta-bar">
+                        <span class="drink-price">💰 $3.60–$3.85</span>
+                        <span class="drink-cal">🔥 ~220–260 cal</span>
+                        <span class="drink-sugar">🍯 ~30–35g sugar</span>
+                    </div>
+                    <p>Floral and earthy rather than straightforwardly sweet, this one splits opinion on its own. Most regulars don't drink it straight — they cut it at the fountain with classic lemonade, which tames the lavender and adds a tart edge that balances the whole cup.</p>
+                </div>
+            </div>
+
+            <div class="drink-showcase">
+                <div class="drink-icon-wrap" style="color: #15803d; background: #f0fdf4;">🥒</div>
+                <div>
+                    <h3>Cucumber Mint Lime</h3>
+                    <div class="drink-meta-bar">
+                        <span class="drink-price">💰 $3.60–$3.85</span>
+                        <span class="drink-cal">🔥 ~250–300 cal</span>
+                        <span class="drink-sugar">🍯 ~30–38g sugar</span>
+                    </div>
+                    <p>If the goal is putting out a fire from the Spicy Lamb Meatballs or a heavy hand with skhug, this is the drink for it. Pressed cucumber, fresh mint, and a tart lime finish make it one of the more effective palate resets on the menu — sweet enough to be refreshing, but not cloying.</p>
+                </div>
+            </div>
+
+            <div class="drink-showcase">
+                <div class="drink-icon-wrap" style="color: #b45309; background: #fffbeb;">🍋</div>
+                <div>
+                    <h3>Classic Lemonade</h3>
+                    <div class="drink-meta-bar">
+                        <span class="drink-price">💰 $3.60–$3.85</span>
+                        <span class="drink-cal" style="color: #b91c1c;">⚠️ ~450–480 cal</span>
+                        <span class="drink-sugar" style="color: #b91c1c;">🍯 ~50g sugar</span>
+                    </div>
+                    <p>Worth flagging directly: this is the highest-sugar drink on the entire menu, and it's not close — it runs around 50g of sugar in a standard serving. Real lemon juice and cane sugar give it a genuinely sharp, traditional tartness, but if sugar intake is a concern, this is the one to skip or cut with unsweetened iced tea.</p>
+                </div>
+            </div>
+
+            <div class="note-box">
+                <p>Note: CAVA occasionally rotates in limited-time or seasonal juice flavors. Check the menu board or app at your location for anything beyond this core lineup before assuming it's a permanent item.</p>
+            </div>
+
+            <h2 id="teas">Fresh Brewed Iced Teas (Zero-Calorie Options)</h2>
+            <p>For anyone avoiding sugar entirely, CAVA brews iced tea fresh daily — no powdered mix. Given that a fully loaded bowl can already run 500–900+ calories, pairing it with a zero-calorie drink is the simplest lever for keeping a meal from tipping too high.</p>
             
-            <div class="combo-list">
-                <div class="combo-item">
-                    <div class="combo-header">
-                        <h3>The Tropical Cutter</h3>
-                        <span class="combo-formula">Lemonade + Pineapple Mint</span>
+            <div class="drink-showcase">
+                <div class="drink-icon-wrap" style="color: #475569; background: #f8fafc;">🧊</div>
+                <div>
+                    <h3>Unsweetened Iced Tea</h3>
+                    <div class="drink-meta-bar">
+                        <span class="drink-price">💰 $3.60–$3.85</span>
+                        <span class="drink-cal" style="color: #15803d;">✨ 0 cal</span>
+                        <span class="drink-sugar" style="color: #15803d;">✨ 0g sugar</span>
                     </div>
-                    <p>Half classic lemonade, topped off with pineapple apple mint. The lemon's tartness keeps the pineapple from tipping into overly sweet.</p>
+                    <p>Zero-calorie and zero-sugar, this is the best base for the half-and-half combinations covered further down — the bitterness cuts the sugar load of any juice it's mixed with.</p>
                 </div>
-                <div class="combo-item">
-                    <div class="combo-header">
-                        <h3>The Floral Palmer</h3>
-                        <span class="combo-formula">Unsweet Tea + Blueberry Lavender</span>
+            </div>
+
+            <div class="drink-showcase">
+                <div class="drink-icon-wrap" style="color: #9a3412; background: #fff7ed;">🥤</div>
+                <div>
+                    <h3>Sweetened Iced Tea (Sweet Tea)</h3>
+                    <div class="drink-meta-bar">
+                        <span class="drink-price">💰 $3.60–$3.85</span>
+                        <span class="drink-cal">🔥 ~120–150 cal</span>
+                        <span class="drink-sugar">🍯 Moderate sugar</span>
                     </div>
-                    <p>A lower-sugar spin on an Arnold Palmer. Unsweetened iced tea cuts straight through the floral sweetness of the blueberry lavender juice.</p>
+                    <p>The sweetened counterpart, brewed the same way but finished with added sugar. A straightforward classic if you want tea without the citrus or floral notes of the juices. Meaningfully lower than the lemonade, but not sugar-free.</p>
                 </div>
-                <div class="combo-item">
-                    <div class="combo-header">
-                        <h3>The Clean Refresh</h3>
-                        <span class="combo-formula">Lemonade + Cucumber Mint Lime</span>
+            </div>
+
+            <h2 id="bottled">Fountain Sodas & Bottled Drinks</h2>
+            <p>Not everyone wants juice or tea — CAVA's carbonated lineup covers that without falling back on standard big-brand soda syrup at most locations.</p>
+
+            <h3>Maine Root Fair Trade Sodas</h3>
+            <p>At many locations, CAVA's fountain sodas come from Maine Root, a Fair Trade brand that sweetens with real cane sugar rather than high-fructose corn syrup. Availability and exact flavor lineup can vary by store, so confirm what's on tap at your location. Priced $3.60–$3.85.</p>
+
+            <h3>Spindrift Sparkling Water</h3>
+            <p>At $3.00–$3.25 a can, Spindrift is the closest thing on the menu to a genuinely "clean" carbonated option: it's flavored with real squeezed fruit juice rather than concentrate, and runs just a few calories with zero added sugar. Lemon and Half-Tea with Lemon are commonly stocked flavors, though this varies by store.</p>
+
+            <h3>Kids Beverages (Organic Milk, Chocolate Milk & Apple Juice)</h3>
+            <p>The Kids Meal lineup keeps things simple: organic apple juice (no added sugar), organic lowfat milk (a solid source of calcium and protein), and organic chocolate milk. All are a flat $3.00.</p>
+
+
+            <h2 id="secret">The "Secret Menu": Best Half-and-Half Drink Combos</h2>
+            <p>Because the fountain station is fully self-serve, regulars have quietly built their own combinations over time. Blending two house juices — or a juice with tea — is the easiest way to control both sweetness and flavor without asking anyone behind the counter.</p>
+            
+            <div class="drink-showcase" style="background: linear-gradient(145deg, #fefce8, white);">
+                <div class="drink-icon-wrap" style="background: white;">🍹</div>
+                <div>
+                    <h3>The Tropical Cutter</h3>
+                    <div class="drink-meta-bar">
+                        <span style="color: var(--text-secondary);">🍋 Lemonade + 🍍 Pineapple Apple Mint</span>
                     </div>
-                    <p>Diluting the lemonade keeps the herbal, sweet-tart profile while cutting the sugar load roughly in half. Very refreshing.</p>
+                    <p>Half classic lemonade, topped off with pineapple apple mint. The lemon's tartness keeps the pineapple from tipping into overly sweet, and the combination holds up well against garlic-heavy chicken bowls.</p>
+                </div>
+            </div>
+
+            <div class="drink-showcase" style="background: linear-gradient(145deg, #f5f3ff, white);">
+                <div class="drink-icon-wrap" style="background: white;">🌺</div>
+                <div>
+                    <h3>The Floral Palmer</h3>
+                    <div class="drink-meta-bar">
+                        <span style="color: var(--text-secondary);">🧊 Unsweetened Iced Tea + 🫐 Blueberry Lavender</span>
+                    </div>
+                    <p>A lower-sugar spin on an Arnold Palmer: unsweetened iced tea cuts straight through the floral sweetness of the blueberry lavender juice. Moderate caffeine, without the sugar crash a straight juice would bring.</p>
+                </div>
+            </div>
+
+            <div class="drink-showcase" style="background: linear-gradient(145deg, #f0fdf4, white);">
+                <div class="drink-icon-wrap" style="background: white;">🌿</div>
+                <div>
+                    <h3>The Clean Refresh</h3>
+                    <div class="drink-meta-bar">
+                        <span style="color: var(--text-secondary);">🍋 Lemonade + 🥒 Cucumber Mint Lime</span>
+                    </div>
+                    <p>Diluting the lemonade with cucumber mint lime keeps the herbal, sweet-tart profile while cutting the sugar load roughly in half. Some regulars take it further by adding a splash of Spindrift for a DIY sparkling version.</p>
                 </div>
             </div>
             
-            <h2 id="dietary">Dietary & Health Guide</h2>
-            <div class="dietary-grid">
-                <div class="dietary-box">
-                    <h4><span style="font-size:1.2rem;">🟢</span> Zero-Sugar & Keto</h4>
-                    <p>Juices and lemonade carry 20g+ of sugar. Safe options: <strong>unsweetened iced tea</strong> and <strong>Spindrift</strong> (zero/near-zero sugar).</p>
-                </div>
-                <div class="dietary-box">
-                    <h4><span style="font-size:1.2rem;">⚡</span> Caffeine Content</h4>
-                    <p>House juices and lemonade are caffeine-free. Iced tea and cola-style sodas contain caffeine.</p>
-                </div>
-                <div class="dietary-box">
-                    <h4><span style="font-size:1.2rem;">🥤</span> Bottled Options</h4>
-                    <p>Spindrift Sparkling Water ($3.00–$3.25) is flavored with real squeezed fruit juice with zero added sugar.</p>
-                </div>
-                <div class="dietary-box">
-                    <h4><span style="font-size:1.2rem;">🧃</span> Kids Beverages</h4>
-                    <p>Organic apple juice (no added sugar), organic lowfat milk, and organic chocolate milk ($3.00 flat).</p>
-                </div>
+            <h2 id="dietary">Dietary Guide: Healthiest CAVA Drinks</h2>
+            <p>Liquid calories are easy to lose track of — they don't register the same way solid food does, which makes them an easy place for a "healthy" meal to quietly go over budget.</p>
+
+            <h3>Best Zero-Sugar & Keto-Friendly Options</h3>
+            <p>For strict keto or diabetes management, the juices and lemonade are off the table — even the lighter ones carry 20g+ of sugar per serving. The safe options are unsweetened iced tea and Spindrift sparkling water, both of which come in at zero or near-zero sugar.</p>
+
+            <h3>Which CAVA Drinks Are Caffeine-Free?</h3>
+            <p>The house-made juices and the classic lemonade are naturally caffeine-free. Iced tea (sweetened or unsweetened) contains caffeine, as does cola-style soda where available; other soda flavors like lemon-lime and root beer are typically caffeine-free.</p>
+
+
+            <h2 id="faqs">Frequently Asked Questions (FAQs)</h2>
+            
+            <div class="faq-item">
+                <h3>Does CAVA offer free refills on drinks?</h3>
+                <p>Yes — dining in gets unlimited refills on house juices, iced tea, and sodas for the duration of the visit, since the fountain station is self-serve.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>What is the lowest-calorie drink at CAVA?</h3>
+                <p>Excluding plain water, unsweetened iced tea is the zero-calorie option. For a carbonated pick, Spindrift Lemon comes in at just a few calories per can.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Are CAVA juices made with real fruit?</h3>
+                <p>Yes — the juices use real fruit purée, pressed vegetable juice, and fresh herbs rather than flavored syrup concentrate, which is why pulp and fiber settling in the cup is normal rather than a quality issue.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Can you order just a drink at CAVA without buying food?</h3>
+                <p>Yes — the fountain station and bottled drinks can be purchased on their own at the register, without ordering a bowl or pita. Free refills, however, are generally reserved for guests dining in with a food order, so a drink-only purchase may not come with the same refill policy.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Are CAVA's drinks vegan and dairy-free?</h3>
+                <p>Every drink except the kids' organic milk and chocolate milk is vegan and dairy-free. The house-made juices, lemonade, iced tea, sodas, and Spindrift sparkling water all use plant-based or water-based bases with no dairy, honey, or animal-derived sweeteners.</p>
+            </div>
+
+            <div class="note-box" style="margin-top: 4rem;">
+                <p>Prices, calories, and available flavors are approximate and can vary by location and season. Confirm exact figures at your local CAVA or through the CAVA app's nutrition calculator before ordering, especially if you're managing a specific dietary restriction.</p>
             </div>
 
         </article>
@@ -662,20 +640,22 @@
         <!-- Sidebar Navigation -->
         <aside class="sidebar">
             <div class="sidebar-sticky">
-                <h3 class="toc-title">In This Article</h3>
+                <h3 class="toc-title">In This Guide</h3>
                 <ul class="toc-list">
                     <li><a href="#pricing">Pricing Breakdown</a></li>
                     <li><a href="#juices">House-Made Juices</a></li>
                     <li><a href="#teas">Brewed Iced Teas</a></li>
+                    <li><a href="#bottled">Sodas & Bottled Drinks</a></li>
                     <li><a href="#secret">Secret Menu Combos</a></li>
                     <li><a href="#dietary">Dietary Guide</a></li>
+                    <li><a href="#faqs">Frequently Asked Questions</a></li>
                 </ul>
             </div>
         </aside>
     </main>
 
     <footer>
-        <p>&copy; 2026 CAVA Menu Guide. An independent editorial feature.</p>
+        <p>&copy; 2026 CAVA Menu Guide. This is an independent guide and not affiliated with CAVA.</p>
     </footer>
 
 </body>
