@@ -6,25 +6,25 @@
     <title>CAVA Drink Menu Prices & Calories (2026) with Nutrition Guide</title>
     <meta name="description" content="Complete guide to CAVA's scratch-made beverage program, including prices, calorie counts, sugar content, secret menu combos, and FAQs.">
     
-    <!-- Premium Editorial Typography -->
+    <!-- Home Page Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            /* Premium Color Palette */
-            --bg-color: #faf9f6; 
-            --text-primary: #1a1a1a;
-            --text-secondary: #5a5a5a;
-            --accent-brand: #13392a; 
-            --accent-gold: #c9933b; 
+            /* Home Page Color Palette */
+            --bg-color: #fcf9f4; 
+            --text-primary: #171f1d;
+            --text-secondary: #5b6864;
+            --accent-brand: #1c382f; 
+            --accent-gold: #f59e0b; 
             --accent-warm: #d9480f; 
-            --border-color: #e5e5e5;
+            --border-color: #e8e0d5;
             --surface-color: #ffffff;
             
-            --font-serif: 'DM Serif Display', serif;
-            --font-sans: 'Inter', sans-serif;
+            --font-serif: 'Outfit', sans-serif;
+            --font-sans: 'Plus Jakarta Sans', sans-serif;
             
             --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
             --shadow-sm: 0 4px 6px rgba(0,0,0,0.02);
@@ -185,11 +185,12 @@
 
         .hero h1 {
             font-family: var(--font-serif);
+            font-weight: 800;
             font-size: clamp(2.5rem, 6vw, 4.2rem);
-            line-height: 1.15;
+            line-height: 1.12;
             color: var(--text-primary);
             margin-bottom: 1.5rem;
-            letter-spacing: -1px;
+            letter-spacing: -1.2px;
         }
         
         .hero h1 span {
@@ -311,31 +312,33 @@
 
         .article-body h2 {
             font-family: var(--font-serif);
+            font-weight: 800;
             font-size: 2.8rem;
-            color: var(--accent-brand);
+            color: var(--text-primary);
             margin: 5rem 0 2.5rem;
-            line-height: 1.2;
+            line-height: 1.12;
             padding-bottom: 1rem;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 2px solid var(--border-color);
             position: relative;
+            letter-spacing: -1px;
         }
 
         .article-body h2::after {
             content: '';
             position: absolute;
             left: 0;
-            bottom: -1px;
-            height: 3px;
+            bottom: -2px;
+            height: 4px;
             width: 80px;
-            background: var(--accent-gold);
+            background: var(--accent-warm);
         }
         
         .article-body h3 {
-            font-family: var(--font-sans);
-            font-size: 1.5rem;
+            font-family: var(--font-serif);
+            font-weight: 700;
+            font-size: 1.6rem;
             color: var(--accent-brand);
             margin: 3rem 0 1.5rem;
-            font-weight: 700;
             letter-spacing: -0.5px;
         }
 
