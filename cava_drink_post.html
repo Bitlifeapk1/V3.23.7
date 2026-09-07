@@ -99,7 +99,7 @@
 
         /* --- Editorial Hero (Grid Layout) --- */
         .hero {
-            padding: 4.5rem 2rem 6rem;
+            padding: 7.5rem 2rem 6rem;
             background: linear-gradient(180deg, var(--bg-color) 0%, #ffffff 100%);
             border-bottom: 1px solid var(--border-color);
             position: relative;
@@ -306,23 +306,32 @@
             min-height: 400px;
         }
 
-        .visual-card-main {
+        .visual-image-frame {
             background: var(--surface-color);
-            border: 1px solid var(--border-color);
-            padding: 3.5rem 2rem;
+            border: 8px solid white;
             border-radius: 24px;
-            box-shadow: 0 25px 50px rgba(28, 56, 47, 0.08);
+            box-shadow: 0 25px 50px rgba(28, 56, 47, 0.15);
             position: relative;
             z-index: 2;
-            width: 85%;
-            text-align: center;
+            width: 90%;
             transform: rotate(-3deg);
             transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            overflow: hidden;
+            display: flex;
         }
-        
-        .visual-card-main:hover {
+
+        .visual-image-frame:hover {
             transform: rotate(0deg) scale(1.03);
-            box-shadow: 0 30px 60px rgba(28, 56, 47, 0.12);
+            box-shadow: 0 30px 60px rgba(28, 56, 47, 0.2);
+        }
+
+        .hero-img {
+            width: 100%;
+            height: auto;
+            max-height: 450px;
+            display: block;
+            object-fit: cover;
+            border-radius: 16px;
         }
 
         .visual-card-bg {
@@ -719,11 +728,8 @@
             
             <div class="hero-visual">
                 <div class="visual-card-bg"></div>
-                <div class="visual-card-main">
-                    <div class="visual-badge">Top Combo</div>
-                    <div class="visual-icon">🌿🍋</div>
-                    <h3>The Clean Refresh</h3>
-                    <p>Lemonade + Cucumber Lime</p>
+                <div class="visual-image-frame">
+                    <img src="img/drinks_beverages.jpg" alt="CAVA Drink Selection" class="hero-img">
                 </div>
                 
                 <div class="floating-badge-left">
